@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/bitacora.html",
+    "href": "entregas/E0_comprension_negocio/bitacora.html",
+    "title": "Bitacora de entrevista",
+    "section": "",
+    "text": "Bitacora"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Proyecto Almacenes y Mineria de Datos",
+    "section": "",
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  }
+]

@@ -2,4 +2,9 @@
 title: "Bitacora de entrevista"
 ---
 
-Bitacora
+El negocio que buscamos comprender es la biblioteca de la facultad de ciencias y el espacio disponible
+para libros.
+
+## Skateholder
+
+El skateholder que nos otrogo la entrevista fue el 

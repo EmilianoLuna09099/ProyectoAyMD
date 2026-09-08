@@ -11,13 +11,29 @@
     "href": "entregas/E0_comprension_negocio/bitacora.html",
     "title": "Bitacora de entrevista",
     "section": "",
-    "text": "Bitacora"
+    "text": "El negocio que buscamos comprender es la biblioteca de la facultad de ciencias y el espacio disponible para libros.",
+    "crumbs": [
+      "E0"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/bitacora.html#skateholder",
+    "href": "entregas/E0_comprension_negocio/bitacora.html#skateholder",
+    "title": "Bitacora de entrevista",
+    "section": "Skateholder",
+    "text": "Skateholder\nEl skateholder que nos otrogo la entrevista fue el",
+    "crumbs": [
+      "E0"
+    ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Proyecto Almacenes y Mineria de Datos",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Sitio de Quarto para el semestre en la materia de Almacenes y Mineria de Datos.",
+    "crumbs": [
+      "Introduction"
+    ]
   }
 ]

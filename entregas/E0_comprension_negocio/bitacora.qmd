@@ -1,10 +1,94 @@
 ---
-title: "Bitacora de entrevista"
+title: "Bitácora de entrevista"
 ---
 
-El negocio que buscamos comprender es la biblioteca de la facultad de ciencias y el espacio disponible
-para libros.
+## Datos generales
 
-## Skateholder
+| Campo | Detalle |
+|-------|---------|
+| Fecha | 09 de septiembre de 2026 |
+| Hora | 9:00 - 10:00 am |
+| Lugar | Oficinas de personal de biblioteca "El Búnker" |
+| Entrevistada | Dra. María Victoria Guzmán Sánchez, coordinadora de la biblioteca de la Facultad de Ciencias de la UNAM |
+| Entrevistadores | *(pendiente completar)* |
+| Objetivo | Obtener una perspectiva con experiencia sobre las problemáticas de espacio en la biblioteca |
 
-El skateholder que nos otrogo la entrevista fue el 
+## Contexto de la entrevista
+
+La entrevista se realizó de manera presencial en la oficina de la Dra. María y se llevó a cabo sin interrupción alguna.
+
+Por parte de la entrevistada, siempre se mostró muy abierta y amigable, dispuesta a tomarse el tiempo necesario para responder detenidamente las preguntas. Todas las respuestas fueron seguras y fundamentadas con explicaciones detalladas.
+
+## Bitácora
+
+Primero nos presentamos y realizamos una breve introducción de por qué queríamos hacerle la entrevista. Antes de que pudiéramos formular cualquier pregunta, la Dra. María comenzó a describirnos las situaciones en las que se encontraba la biblioteca.
+
+Se le hicieron preguntas acerca del descarte de libros para ganar espacio en la biblioteca. Esto ya se podía intuir de cierto modo, ya que al recorrer los pasillos se notaban libros y cajas apiladas; incluso la oficina misma de la doctora estaba repleta de cajas de libros.
+
+Algo interesante es que ella realizó su doctorado en el área de minería de datos, por lo que estaba familiarizada con el tema y entendía en qué zonas del problema podíamos aplicar algoritmos.
+
+> "Esta cantidad de cajas que hay aquí en los pasillos, esa bodega que está ahí está llena de cajas y el sótano está lleno de cajas. Entonces el problema es... yo me encontré así, el montón es acumulativo y yo tengo que solucionar ese problema como biblioteca."
+
+> "Por ejemplo, yo tengo ahora mismo 8000 títulos en cajas que están hoy en el catálogo... pero realmente no está en el acervo, está metido en una caja. Eso es un problema."
+
+> "Aquí tenemos los 8000 títulos que están en caja, porque quien estuvo antes que yo decidió meterlos en caja, no sé bajo qué criterio, 8000 títulos."
+
+> "Entonces ahí tendrían que aplicar técnicas de data mining... tendrían que hacer un análisis para saber qué libros son los que se deben descartar, ya que yo sí tengo inventario, pero después tengo un montón que no están en ningún lugar."
+
+Dándonos ya un panorama amplio de una de las problemáticas de la biblioteca, comenzamos a realizarle las preguntas que habíamos preparado. Cabe mencionar que algunas no fueron formuladas, ya que en sus propios argumentos ya se habían respondido.
+
+### Situación actual del espacio
+
+Al realizarle una pregunta más concreta en cuanto a espacios, nos dio una respuesta relacionada con cómo la ocupación de libros limita a su vez el espacio para los alumnos.
+
+**¿Cuál es la situación actual del espacio en la biblioteca y cómo les afecta día a día?**
+
+> "Los estudiantes y los profesores de asignatura que también asisten a la biblioteca nos han dicho que la biblioteca está gentrificada, que no hay espacio, que necesitan incluso más espacio. Realmente hay poco espacio, sobre todo para que crezca el fondo o para crear espacios colaborativos para los estudiantes, donde haya pizarrones, donde haya mesas para trabajo en equipo, porque hoy solo tenemos espacios de silencio y, a veces, también hacen trabajo en equipo y los dejamos, porque entendemos que hay ejercicios que hay que hacer en grupo.
+>
+> Y una manera de crear espacio es tener un proceso de descarte realmente acorde a lo que debe hacerse en una biblioteca. Pero aquí se pasó... no sé, hace 30 años que no se termina un proceso de descarte."
+
+### Consecuencias de mantener libros sin circulación
+
+**¿Qué consecuencias operativas o para los usuarios tiene mantener libros sin circulación en las estanterías principales?**
+
+> "Mientras más libros tú tengas que no se estén usando... muchos libros se compran, vamos a partir de ahí, por las propias sugerencias que hacen los estudiantes o los profesores, y eso se va acumulando. Quizás en un momento tuvieron un uso, pero aquí hay libros de hace más de 20 años, 30 años, libros de 40 años. Si tú no haces un proceso de cómo es el uso de ese libro, en función de las necesidades de la comunidad de estudiantes, se te van a ir acumulando infinitamente; entonces tienes que hacer, obligatoriamente, un proceso de descarte."
+
+> "A la vez que tú hagas ese proceso, te deshaces de los 8000 libros que no se utilizan porque están obsoletos. Entonces, todo eso les afecta a ustedes realmente, porque no se tiene un fondo actualizado acorde a las nuevas tendencias del conocimiento, en la línea de conocimiento que hay ahora."
+
+### Frecuencia del problema
+
+**¿Qué tan frecuente es que un libro ocioso ocupe el lugar de material nuevo o de mayor demanda?**
+
+> "Muy frecuente. De hecho, ahora te estoy diciendo que tenemos ese problema: no sabemos la magnitud de libros que tenemos que nunca se han usado. Sí tenemos identificado lo que más se ha usado."
+
+> "Pero muchas veces ya no nos caben en el fondo, y los libros nuevos y los libros viejos coexisten en el espacio físico, no coexisten en una estantería por criterio de uso. Puede haber un libro del año 50 o 52 junto con un libro del año 2025; podría suceder que coincidan en el mismo espacio y no hemos hecho un estudio de si el del año 50 realmente se está utilizando."
+
+### Limitaciones de tiempo e infraestructura
+
+Como coordinadora, esto nos ayuda a tener un panorama completo del problema, ya que se relaciona con otra situación.
+
+**¿Qué limitaciones de tiempo, personal o infraestructura tienen para realizar este proceso de clasificación y reagrupamiento?**
+
+> "Bueno, el personal bibliotecario que debería hacer ese proceso no lo tiene en su función; es un tema administrativo."
+
+> "Para que ellos trabajen en este proceso —por ejemplo, lo que ya hicimos, que fue escanear en un sistema cada libro y registrarlo— se tuvo que solicitar una cláusula especial, que implica un pago adicional para la facultad. La facultad tiene que reembolsar un presupuesto para realizar ese trabajo."
+
+> "Entonces el proceso depende de esa negociación entre delegados sindicales, personal administrativo y la administración de la facultad."
+
+> "Por ejemplo, este proceso lo hicimos sábado y domingo, fuera de sus horarios de trabajo, durante un mes, para poder escanear todo lo que estaba en bodega o en el piso, en cualquier lugar."
+
+### Errores al retirar libros
+
+**¿Se han equivocado antes al retirar un libro que, tiempo después, un profesor o alumno volvió a pedir?**
+
+> "El problema es que cuando tú retiras el libro, ya lo descartaste, ya se le da de baja del catálogo, y el profesor no lo puede localizar. Entonces nunca va a pasar que el profesor pida un libro que tú ya hayas descartado, porque lo quitaste del catálogo."
+
+> "Sí suele pasar que, de los 8000 libros que tengo en caja —que sí siguen en el catálogo— me los pueden pedir, y yo no los puedo localizar, porque, como estaban en caja desde la gestión anterior, tienes que ponerte a revisar caja por caja."
+
+> "Tengo muchísimas cajas de libros que no están en el catálogo, que en su momento alguien decidió meter en caja y dar de baja del catálogo sin terminar el proceso, porque cuando tú terminas el proceso, termina donándolo."
+
+### Métricas de éxito del proyecto
+
+**¿Qué resultado haría que consideraran este proyecto un éxito? Por ejemplo, ¿liberar el 15% de los estantes sin recibir quejas por falta de títulos?**
+
+> "Sí, yo pienso así, más del 15%. Pero, fíjense, más que el estante, yo me sentiría satisfecha si al menos liberamos los espacios comunes. El problema no es solo la estantería, sino todo lo demás que tenemos. Liberar el 15% sería perfecto, pero después tenemos que liberar todo lo que tenemos en pasillos, en bodegas, en sótanos, que también es parte de la eficiencia del uso del espacio de la biblioteca."

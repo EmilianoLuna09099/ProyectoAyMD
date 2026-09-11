@@ -7,11 +7,33 @@
     "text": "About this site"
   },
   {
+    "objectID": "entregas/E0_comprension_negocio/riesgos_supuestos.html",
+    "href": "entregas/E0_comprension_negocio/riesgos_supuestos.html",
+    "title": "Riesgos",
+    "section": "",
+    "text": "A partir de la entrevista y del recorrido por las instalaciones, identificamos los siguientes riesgos para el proyecto.\n\n\nDurante la entrevista, la doctora dejó ver que no se puede saber a ciencia cierta si un libro ha sido consultado o no. Esto abre la posibilidad de que falten datos sobre la consulta de ciertos títulos, información necesaria para determinar si pueden ser descartados.\nMitigación propuesta: implementar un seguimiento más detallado del uso de los libros, para identificar cuáles son realmente consultados y cuáles han sido “olvidados” desde hace tiempo.\n\n\n\nOtro punto importante que la doctora aportó con mucho detalle es que el proceso de descarte o ingreso de libros debe estar estrictamente regulado por la facultad, ya que existe la posibilidad de que haya libros únicos en la universidad —o incluso en el país— y libros que sean patrimonio. Por esta razón, la manipulación o el descarte de libros puede verse limitado por intereses ajenos a la simple optimización de espacio.\nMitigación propuesta: generar un proceso de selección específico para este tipo de libros, que contemple un espacio especial, categorizado y resguardado, pero que no impida la llegada de nuevas líneas de conocimiento.\n\n\n\nSiguiendo con este tema, la doctora también enfatizó en que el equipo no puede realizar ciertas tareas porque no están dentro de sus funciones. Esto significa que, por mucho que ella quisiera catalogar los datos personalmente, no podría hacerlo.\nMitigación propuesta: plantear a la facultad un plan que genere un presupuesto para apoyar la organización de la biblioteca.\n\n\n\nDurante el recorrido por los pasillos notamos cajas de libros con hongos, lo cual plantea la necesidad de una revisión a profundidad por motivos de sanidad.",
+    "crumbs": [
+      "E0",
+      "Riesgos"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/riesgos_supuestos.html#riesgos-identificados",
+    "href": "entregas/E0_comprension_negocio/riesgos_supuestos.html#riesgos-identificados",
+    "title": "Riesgos",
+    "section": "",
+    "text": "A partir de la entrevista y del recorrido por las instalaciones, identificamos los siguientes riesgos para el proyecto.\n\n\nDurante la entrevista, la doctora dejó ver que no se puede saber a ciencia cierta si un libro ha sido consultado o no. Esto abre la posibilidad de que falten datos sobre la consulta de ciertos títulos, información necesaria para determinar si pueden ser descartados.\nMitigación propuesta: implementar un seguimiento más detallado del uso de los libros, para identificar cuáles son realmente consultados y cuáles han sido “olvidados” desde hace tiempo.\n\n\n\nOtro punto importante que la doctora aportó con mucho detalle es que el proceso de descarte o ingreso de libros debe estar estrictamente regulado por la facultad, ya que existe la posibilidad de que haya libros únicos en la universidad —o incluso en el país— y libros que sean patrimonio. Por esta razón, la manipulación o el descarte de libros puede verse limitado por intereses ajenos a la simple optimización de espacio.\nMitigación propuesta: generar un proceso de selección específico para este tipo de libros, que contemple un espacio especial, categorizado y resguardado, pero que no impida la llegada de nuevas líneas de conocimiento.\n\n\n\nSiguiendo con este tema, la doctora también enfatizó en que el equipo no puede realizar ciertas tareas porque no están dentro de sus funciones. Esto significa que, por mucho que ella quisiera catalogar los datos personalmente, no podría hacerlo.\nMitigación propuesta: plantear a la facultad un plan que genere un presupuesto para apoyar la organización de la biblioteca.\n\n\n\nDurante el recorrido por los pasillos notamos cajas de libros con hongos, lo cual plantea la necesidad de una revisión a profundidad por motivos de sanidad.",
+    "crumbs": [
+      "E0",
+      "Riesgos"
+    ]
+  },
+  {
     "objectID": "entregas/E0_comprension_negocio/bitacora.html",
     "href": "entregas/E0_comprension_negocio/bitacora.html",
     "title": "Bitácora de entrevista",
     "section": "",
-    "text": "Campo\nDetalle\n\n\n\n\nFecha\n09 de septiembre de 2026\n\n\nHora\n9:00 - 10:00 am\n\n\nLugar\nOficinas de personal de biblioteca “El Búnker”\n\n\nEntrevistada\nDra. María Victoria Guzmán Sánchez, coordinadora de la biblioteca de la Facultad de Ciencias de la UNAM\n\n\nEntrevistadores\n(pendiente completar)\n\n\nObjetivo\nObtener una perspectiva con experiencia sobre las problemáticas de espacio en la biblioteca",
+    "text": "Campo\nDetalle\n\n\n\n\nFecha\n09 de septiembre de 2026\n\n\nHora\n9:00 - 10:00 am\n\n\nLugar\nOficinas de personal de biblioteca “El Búnker”\n\n\nEntrevistada\nDra. María Victoria Guzmán Sánchez, coordinadora de la biblioteca de la Facultad de Ciencias de la UNAM\n\n\nEntrevistadores\nOscar Figueroa Bobadilla, José Adolfo Vázquez Dávila, Emiliano Luna Campos\n\n\nObjetivo\nObtener una perspectiva con experiencia sobre las problemáticas de espacio en la biblioteca",
     "crumbs": [
       "E0"
     ]
@@ -21,7 +43,7 @@
     "href": "entregas/E0_comprension_negocio/bitacora.html#datos-generales",
     "title": "Bitácora de entrevista",
     "section": "",
-    "text": "Campo\nDetalle\n\n\n\n\nFecha\n09 de septiembre de 2026\n\n\nHora\n9:00 - 10:00 am\n\n\nLugar\nOficinas de personal de biblioteca “El Búnker”\n\n\nEntrevistada\nDra. María Victoria Guzmán Sánchez, coordinadora de la biblioteca de la Facultad de Ciencias de la UNAM\n\n\nEntrevistadores\n(pendiente completar)\n\n\nObjetivo\nObtener una perspectiva con experiencia sobre las problemáticas de espacio en la biblioteca",
+    "text": "Campo\nDetalle\n\n\n\n\nFecha\n09 de septiembre de 2026\n\n\nHora\n9:00 - 10:00 am\n\n\nLugar\nOficinas de personal de biblioteca “El Búnker”\n\n\nEntrevistada\nDra. María Victoria Guzmán Sánchez, coordinadora de la biblioteca de la Facultad de Ciencias de la UNAM\n\n\nEntrevistadores\nOscar Figueroa Bobadilla, José Adolfo Vázquez Dávila, Emiliano Luna Campos\n\n\nObjetivo\nObtener una perspectiva con experiencia sobre las problemáticas de espacio en la biblioteca",
     "crumbs": [
       "E0"
     ]
@@ -41,9 +63,97 @@
     "href": "entregas/E0_comprension_negocio/bitacora.html#bitácora",
     "title": "Bitácora de entrevista",
     "section": "Bitácora",
-    "text": "Bitácora\nPrimero nos presentamos y realizamos una breve introducción de por qué queríamos hacerle la entrevista. Antes de que pudiéramos formular cualquier pregunta, la Dra. María comenzó a describirnos las situaciones en las que se encontraba la biblioteca.\nSe le hicieron preguntas acerca del descarte de libros para ganar espacio en la biblioteca. Esto ya se podía intuir de cierto modo, ya que al recorrer los pasillos se notaban libros y cajas apiladas; incluso la oficina misma de la doctora estaba repleta de cajas de libros.\nAlgo interesante es que ella realizó su doctorado en el área de minería de datos, por lo que estaba familiarizada con el tema y entendía en qué zonas del problema podíamos aplicar algoritmos.\n\n“Esta cantidad de cajas que hay aquí en los pasillos, esa bodega que está ahí está llena de cajas y el sótano está lleno de cajas. Entonces el problema es… yo me encontré así, el montón es acumulativo y yo tengo que solucionar ese problema como biblioteca.”\n\n\n“Por ejemplo, yo tengo ahora mismo 8000 títulos en cajas que están hoy en el catálogo… pero realmente no está en el acervo, está metido en una caja. Eso es un problema.”\n\n\n“Aquí tenemos los 8000 títulos que están en caja, porque quien estuvo antes que yo decidió meterlos en caja, no sé bajo qué criterio, 8000 títulos.”\n\n\n“Entonces ahí tendrían que aplicar técnicas de data mining… tendrían que hacer un análisis para saber qué libros son los que se deben descartar, ya que yo sí tengo inventario, pero después tengo un montón que no están en ningún lugar.”\n\nDándonos ya un panorama amplio de una de las problemáticas de la biblioteca, comenzamos a realizarle las preguntas que habíamos preparado. Cabe mencionar que algunas no fueron formuladas, ya que en sus propios argumentos ya se habían respondido.\n\nSituación actual del espacio\nAl realizarle una pregunta más concreta en cuanto a espacios, nos dio una respuesta relacionada con cómo la ocupación de libros limita a su vez el espacio para los alumnos.\n¿Cuál es la situación actual del espacio en la biblioteca y cómo les afecta día a día?\n\n“Los estudiantes y los profesores de asignatura que también asisten a la biblioteca nos han dicho que la biblioteca está gentrificada, que no hay espacio, que necesitan incluso más espacio. Realmente hay poco espacio, sobre todo para que crezca el fondo o para crear espacios colaborativos para los estudiantes, donde haya pizarrones, donde haya mesas para trabajo en equipo, porque hoy solo tenemos espacios de silencio y, a veces, también hacen trabajo en equipo y los dejamos, porque entendemos que hay ejercicios que hay que hacer en grupo.\nY una manera de crear espacio es tener un proceso de descarte realmente acorde a lo que debe hacerse en una biblioteca. Pero aquí se pasó… no sé, hace 30 años que no se termina un proceso de descarte.”\n\n\n\nConsecuencias de mantener libros sin circulación\n¿Qué consecuencias operativas o para los usuarios tiene mantener libros sin circulación en las estanterías principales?\n\n“Mientras más libros tú tengas que no se estén usando… muchos libros se compran, vamos a partir de ahí, por las propias sugerencias que hacen los estudiantes o los profesores, y eso se va acumulando. Quizás en un momento tuvieron un uso, pero aquí hay libros de hace más de 20 años, 30 años, libros de 40 años. Si tú no haces un proceso de cómo es el uso de ese libro, en función de las necesidades de la comunidad de estudiantes, se te van a ir acumulando infinitamente; entonces tienes que hacer, obligatoriamente, un proceso de descarte.”\n\n\n“A la vez que tú hagas ese proceso, te deshaces de los 8000 libros que no se utilizan porque están obsoletos. Entonces, todo eso les afecta a ustedes realmente, porque no se tiene un fondo actualizado acorde a las nuevas tendencias del conocimiento, en la línea de conocimiento que hay ahora.”\n\n\n\nFrecuencia del problema\n¿Qué tan frecuente es que un libro ocioso ocupe el lugar de material nuevo o de mayor demanda?\n\n“Muy frecuente. De hecho, ahora te estoy diciendo que tenemos ese problema: no sabemos la magnitud de libros que tenemos que nunca se han usado. Sí tenemos identificado lo que más se ha usado.”\n\n\n“Pero muchas veces ya no nos caben en el fondo, y los libros nuevos y los libros viejos coexisten en el espacio físico, no coexisten en una estantería por criterio de uso. Puede haber un libro del año 50 o 52 junto con un libro del año 2025; podría suceder que coincidan en el mismo espacio y no hemos hecho un estudio de si el del año 50 realmente se está utilizando.”\n\n\n\nLimitaciones de tiempo e infraestructura\nComo coordinadora, esto nos ayuda a tener un panorama completo del problema, ya que se relaciona con otra situación.\n¿Qué limitaciones de tiempo, personal o infraestructura tienen para realizar este proceso de clasificación y reagrupamiento?\n\n“Bueno, el personal bibliotecario que debería hacer ese proceso no lo tiene en su función; es un tema administrativo.”\n\n\n“Para que ellos trabajen en este proceso —por ejemplo, lo que ya hicimos, que fue escanear en un sistema cada libro y registrarlo— se tuvo que solicitar una cláusula especial, que implica un pago adicional para la facultad. La facultad tiene que reembolsar un presupuesto para realizar ese trabajo.”\n\n\n“Entonces el proceso depende de esa negociación entre delegados sindicales, personal administrativo y la administración de la facultad.”\n\n\n“Por ejemplo, este proceso lo hicimos sábado y domingo, fuera de sus horarios de trabajo, durante un mes, para poder escanear todo lo que estaba en bodega o en el piso, en cualquier lugar.”\n\n\n\nErrores al retirar libros\n¿Se han equivocado antes al retirar un libro que, tiempo después, un profesor o alumno volvió a pedir?\n\n“El problema es que cuando tú retiras el libro, ya lo descartaste, ya se le da de baja del catálogo, y el profesor no lo puede localizar. Entonces nunca va a pasar que el profesor pida un libro que tú ya hayas descartado, porque lo quitaste del catálogo.”\n\n\n“Sí suele pasar que, de los 8000 libros que tengo en caja —que sí siguen en el catálogo— me los pueden pedir, y yo no los puedo localizar, porque, como estaban en caja desde la gestión anterior, tienes que ponerte a revisar caja por caja.”\n\n\n“Tengo muchísimas cajas de libros que no están en el catálogo, que en su momento alguien decidió meter en caja y dar de baja del catálogo sin terminar el proceso, porque cuando tú terminas el proceso, termina donándolo.”\n\n\n\nMétricas de éxito del proyecto\n¿Qué resultado haría que consideraran este proyecto un éxito? Por ejemplo, ¿liberar el 15% de los estantes sin recibir quejas por falta de títulos?\n\n“Sí, yo pienso así, más del 15%. Pero, fíjense, más que el estante, yo me sentiría satisfecha si al menos liberamos los espacios comunes. El problema no es solo la estantería, sino todo lo demás que tenemos. Liberar el 15% sería perfecto, pero después tenemos que liberar todo lo que tenemos en pasillos, en bodegas, en sótanos, que también es parte de la eficiencia del uso del espacio de la biblioteca.”",
+    "text": "Bitácora\nPrimero nos presentamos y realizamos una breve introducción de por qué queríamos hacerle la entrevista. Antes de que pudiéramos formular cualquier pregunta, la Dra. María comenzó a describirnos las situaciones en las que se encontraba la biblioteca.\nSe le hicieron preguntas acerca del descarte de libros para ganar espacio en la biblioteca. Esto ya se podía intuir de cierto modo, ya que al recorrer los pasillos se notaban libros y cajas apiladas; incluso la oficina misma de la doctora estaba repleta de cajas de libros.\nAlgo interesante es que ella realizó su doctorado en el área de minería de datos, por lo que estaba familiarizada con el tema y entendía en qué zonas del problema podíamos aplicar algoritmos.\n\n“Esta cantidad de cajas que hay aquí en los pasillos, esa bodega que está ahí está llena de cajas y el sótano está lleno de cajas. Entonces el problema es… yo me encontré así, el montón es acumulativo y yo tengo que solucionar ese problema como biblioteca.”\n\n\n“Por ejemplo, yo tengo ahora mismo 8000 títulos en cajas que están hoy en el catálogo… pero realmente no está en el acervo, está metido en una caja. Eso es un problema.”\n\n\n“Aquí tenemos los 8000 títulos que están en caja, porque quien estuvo antes que yo decidió meterlos en caja, no sé bajo qué criterio, 8000 títulos.”\n\n\n“Entonces ahí tendrían que aplicar técnicas de data mining… tendrían que hacer un análisis para saber qué libros son los que se deben descartar, ya que yo sí tengo inventario, pero después tengo un montón que no están en ningún lugar.”\n\nDándonos ya un panorama amplio de una de las problemáticas de la biblioteca, comenzamos a realizarle las preguntas que habíamos preparado. Cabe mencionar que algunas no fueron formuladas, ya que en sus propios argumentos ya se habían respondido.\n\nSituación actual del espacio\nAl realizarle una pregunta más concreta en cuanto a espacios, nos dio una respuesta relacionada con cómo la ocupación de libros limita a su vez el espacio para los alumnos.\n¿Cuál es la situación actual del espacio en la biblioteca y cómo les afecta día a día?\n\n“Los estudiantes y los profesores de asignatura que también asisten a la biblioteca nos han dicho que la biblioteca está gentrificada, que no hay espacio, que necesitan incluso más espacio. Realmente hay poco espacio, sobre todo para que crezca el fondo o para crear espacios colaborativos para los estudiantes, donde haya pizarrones, donde haya mesas para trabajo en equipo, porque hoy solo tenemos espacios de silencio y, a veces, también hacen trabajo en equipo y los dejamos, porque entendemos que hay ejercicios que hay que hacer en grupo.\nY una manera de crear espacio es tener un proceso de descarte realmente acorde a lo que debe hacerse en una biblioteca. Pero aquí se pasó… no sé, hace 30 años que no se termina un proceso de descarte.”\n\n\n\nConsecuencias de mantener libros sin circulación\n¿Qué consecuencias operativas o para los usuarios tiene mantener libros sin circulación en las estanterías principales?\n\n“Mientras más libros tú tengas que no se estén usando… muchos libros se compran, vamos a partir de ahí, por las propias sugerencias que hacen los estudiantes o los profesores, y eso se va acumulando. Quizás en un momento tuvieron un uso, pero aquí hay libros de hace más de 20 años, 30 años, libros de 40 años. Si tú no haces un proceso de cómo es el uso de ese libro, en función de las necesidades de la comunidad de estudiantes, se te van a ir acumulando infinitamente; entonces tienes que hacer, obligatoriamente, un proceso de descarte.”\n\n\n“A la vez que tú hagas ese proceso, te deshaces de los 8000 libros que no se utilizan porque están obsoletos. Entonces, todo eso les afecta a ustedes realmente, porque no se tiene un fondo actualizado acorde a las nuevas tendencias del conocimiento, en la línea de conocimiento que hay ahora.”\n\n\n\nFrecuencia del problema\n¿Qué tan frecuente es que un libro ocioso ocupe el lugar de material nuevo o de mayor demanda?\n\n“Muy frecuente. De hecho, ahora te estoy diciendo que tenemos ese problema: no sabemos la magnitud de libros que tenemos que nunca se han usado. Sí tenemos identificado lo que más se ha usado.”\n\n\n“Pero muchas veces ya no nos caben en el fondo, y los libros nuevos y los libros viejos coexisten en el espacio físico, no coexisten en una estantería por criterio de uso. Puede haber un libro del año 50 o 52 junto con un libro del año 2025; podría suceder que coincidan en el mismo espacio y no hemos hecho un estudio de si el del año 50 realmente se está utilizando.”\n\n\n\nLimitaciones de tiempo e infraestructura\nComo coordinadora, esto nos ayuda a tener un panorama completo del problema, ya que se relaciona con otra situación.\n¿Qué limitaciones de tiempo, personal o infraestructura tienen para realizar este proceso de clasificación y reagrupamiento?\n\n“Bueno, el personal bibliotecario que debería hacer ese proceso no lo tiene en su función; es un tema administrativo.”\n\n\n“Para que ellos trabajen en este proceso —por ejemplo, lo que ya hicimos, que fue escanear en un sistema cada libro y registrarlo— se tuvo que solicitar una cláusula especial, que implica un pago adicional para la facultad. La facultad tiene que reembolsar un presupuesto para realizar ese trabajo.”\n\n\n“Entonces el proceso depende de esa negociación entre delegados sindicales, personal administrativo y la administración de la facultad.”\n\n\n“Por ejemplo, este proceso lo hicimos sábado y domingo, fuera de sus horarios de trabajo, durante un mes, para poder escanear todo lo que estaba en bodega o en el piso, en cualquier lugar.”\n\n\n\nErrores al retirar libros\n¿Se han equivocado antes al retirar un libro que, tiempo después, un profesor o alumno volvió a pedir?\n\n“El problema es que cuando tú retiras el libro, ya lo descartaste, ya se le da de baja del catálogo, y el profesor no lo puede localizar. Entonces nunca va a pasar que el profesor pida un libro que tú ya hayas descartado, porque lo quitaste del catálogo.”\n\n\n“Sí suele pasar que, de los 8000 libros que tengo en caja —que sí siguen en el catálogo— me los pueden pedir, y yo no los puedo localizar, porque, como estaban en caja desde la gestión anterior, tienes que ponerte a revisar caja por caja.”\n\n\n“Tengo muchísimas cajas de libros que no están en el catálogo, que en su momento alguien decidió meter en caja y dar de baja del catálogo sin terminar el proceso, porque cuando tú terminas el proceso, termina donándolo.”\n\n\n\nMétricas de éxito del proyecto\n¿Qué resultado haría que consideraran este proyecto un éxito? Por ejemplo, ¿liberar el 15% de los estantes sin recibir quejas por falta de títulos?\n\n“Sí, yo pienso así, más del 15%. Pero, fíjense, más que el estante, yo me sentiría satisfecha si al menos liberamos los espacios comunes. El problema no es solo la estantería, sino todo lo demás que tenemos. Liberar el 15% sería perfecto, pero después tenemos que liberar todo lo que tenemos en pasillos, en bodegas, en sótanos, que también es parte de la eficiencia del uso del espacio de la biblioteca.”\n\n\n\nReflexiones finales\nTras salir de la entrevista, el equipo notó qué tan grande y entrelazado es el problema de los espacios en la facultad. Realmente, la idea inicial era la de que la biblioteca da entrada y salida de libros continuamente y cabía la posibilidad de agilizar el proceso buscando. Sin embargo, nos encontramos con un problema más grande, en el cual hay muchísimos libros ocupando espacio en condiciones en las cuales tal vez ni siquiera están registrados o su registro se ha perdido por completo. Ahora tenemos un panorama con más variables acerca de la cantidad de libros que ocupan espacios comunes, o intereses relacionados con la protección de libros por su valor como patrimonio, así como un posible problema de cómo saber si ciertos libros son consultados y cómo se busca un equilibrio para que libros antiguos convivan con los más recientes.",
     "crumbs": [
       "E0"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/criterio_exito.html",
+    "href": "entregas/E0_comprension_negocio/criterio_exito.html",
+    "title": "Exito",
+    "section": "",
+    "text": "El criterio de éxito se obtuvo de manera totalmente directa en la entrevista, a partir de la última pregunta. Se propuso optimizar en un 15% el espacio en los estantes de la biblioteca; sin embargo, la doctora propuso celebrar más bien el que espacios como pasillos, oficinas o el sótano queden despejados de cajas de libros o de libros tirados directamente.\nAsí, podríamos definir el criterio de la siguiente manera:\n\nLiberar el 15% de los espacios en las estanterías principales, bodegas y pasillos.",
+    "crumbs": [
+      "E0",
+      "Exito"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/criterio_exito.html#criterio-de-éxito",
+    "href": "entregas/E0_comprension_negocio/criterio_exito.html#criterio-de-éxito",
+    "title": "Exito",
+    "section": "",
+    "text": "El criterio de éxito se obtuvo de manera totalmente directa en la entrevista, a partir de la última pregunta. Se propuso optimizar en un 15% el espacio en los estantes de la biblioteca; sin embargo, la doctora propuso celebrar más bien el que espacios como pasillos, oficinas o el sótano queden despejados de cajas de libros o de libros tirados directamente.\nAsí, podríamos definir el criterio de la siguiente manera:\n\nLiberar el 15% de los espacios en las estanterías principales, bodegas y pasillos.",
+    "crumbs": [
+      "E0",
+      "Exito"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/criterio_exito.html#mediciones-y-métricas-de-apoyo",
+    "href": "entregas/E0_comprension_negocio/criterio_exito.html#mediciones-y-métricas-de-apoyo",
+    "title": "Exito",
+    "section": "Mediciones y métricas de apoyo",
+    "text": "Mediciones y métricas de apoyo\nPara poder dar seguimiento a este criterio, nos podemos apoyar de las siguientes mediciones:\n\nPorcentaje de libros sin préstamos registrados, o que se dejan en el carrito para ser acomodados.\nPasillos más visitados por piso, para identificar que libros son los mas concurridos.\nPrueba de exposición: colocar algunos libros del sótano en las estanterías principales, para observar si son consultados y con qué frecuencia.\nConsultas en los últimos N años (por ejemplo, 3 o 5 años), como indicador de vigencia de un título.\nProporción de préstamos totales respecto a la cantidad total de libros en el acervo.\n\nDe esta manera, estas mediciones se pueden convertir en las variables y etiquetas que permitan clasificar u ordenar los libros para el proceso de descarte.",
+    "crumbs": [
+      "E0",
+      "Exito"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/uso_ia.html",
+    "href": "entregas/E0_comprension_negocio/uso_ia.html",
+    "title": "IA",
+    "section": "",
+    "text": "Claude (Sonnet 5), de Anthropic, a través de la interfaz de chat.",
+    "crumbs": [
+      "E0",
+      "IA"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/uso_ia.html#herramienta-utilizada",
+    "href": "entregas/E0_comprension_negocio/uso_ia.html#herramienta-utilizada",
+    "title": "IA",
+    "section": "",
+    "text": "Claude (Sonnet 5), de Anthropic, a través de la interfaz de chat.",
+    "crumbs": [
+      "E0",
+      "IA"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/uso_ia.html#tareas-para-las-que-se-usó",
+    "href": "entregas/E0_comprension_negocio/uso_ia.html#tareas-para-las-que-se-usó",
+    "title": "IA",
+    "section": "Tareas para las que se usó",
+    "text": "Tareas para las que se usó\n\nRedacción y presentación de las páginas del sitio. Se utilizó la herramienta para organizar el contenido en formato Quarto (.qmd), corregir ortografía y dar estructura (encabezados, tablas, listas, citas) a la bitácora de entrevista, la sección de riesgos identificados y la sección de criterio de éxito.\nApoyo para ejemplificar indicadores/métricas. Se usó como apoyo para obtener ejemplos del tipo de indicadores que se podían proponer en la sección de criterio de éxito (por ejemplo, porcentaje de libros sin préstamos, frecuencia de consulta, proporción de préstamos respecto al acervo), como punto de partida para pensar qué variables podían ser relevantes.",
+    "crumbs": [
+      "E0",
+      "IA"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/uso_ia.html#prompts-empleados-resumen-fiel",
+    "href": "entregas/E0_comprension_negocio/uso_ia.html#prompts-empleados-resumen-fiel",
+    "title": "IA",
+    "section": "Prompts empleados (resumen fiel)",
+    "text": "Prompts empleados (resumen fiel)\n\n“¿Cómo puedo hacer tablas en Quarto para una página web?”\nSe compartió la transcripción de la bitácora de entrevista (en texto plano, con errores de formato en las tablas y de ortografía) y se pidió: “¿Me podrías organizar esto de mejor manera para un archivo qmd? Corrigiendo ortografía también, por favor.”\nSe compartió un borrador con los riesgos identificados durante la entrevista (falta de datos de consulta de libros, regulación de libros patrimoniales, limitaciones de funciones del personal, condiciones de sanidad) y se pidió darle presentación y organización para un archivo qmd.\nSe compartió un borrador de la sección de criterio de éxito, incluyendo el criterio definido con la stakeholder (liberar 15% del espacio) y una lista de posibles mediciones, junto con el enunciado de la indicación de tarea sobre cómo expresar el criterio de éxito. Se pidió ayuda para organizarlo en un archivo qmd.\nSe indicó una corrección: que no era necesario definir desde ese momento métricas técnicas específicas (como recall o error absoluto), sino explicar cómo el criterio de éxito del negocio podría vincularse con indicadores que después se conecten con métricas técnicas; se pidió ajustar la sección correspondiente conforme a esta aclaración.",
+    "crumbs": [
+      "E0",
+      "IA"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/uso_ia.html#nota",
+    "href": "entregas/E0_comprension_negocio/uso_ia.html#nota",
+    "title": "IA",
+    "section": "Nota",
+    "text": "Nota\nTodo el contenido generado con apoyo de la herramienta fue revisado por el equipo antes de incluirse en el sitio, y las ideas, decisiones y análisis presentados corresponden al criterio del equipo acorde al tema que se buscaba abordar y tomando como base la información recabada directamente en la entrevista con la Dra. María Victoria Guzmán Sánchez.",
+    "crumbs": [
+      "E0",
+      "IA"
     ]
   },
   {

@@ -1,3 +1,24 @@
 ---
 title: "Exito"
 ---
+
+## Criterio de éxito
+
+El criterio de éxito se obtuvo de manera totalmente directa en la entrevista, a partir de la última pregunta. Se propuso optimizar en un 15% el espacio en los estantes de la biblioteca; sin embargo, la doctora propuso celebrar más bien el que espacios como pasillos, oficinas o el sótano queden despejados de cajas de libros o de libros tirados directamente.
+
+Así, podríamos definir el criterio de la siguiente manera:
+
+> **Liberar el 15% de los espacios en las estanterías principales, bodegas y pasillos.**
+
+
+## Mediciones y métricas de apoyo
+
+Para poder dar seguimiento a este criterio, nos podemos apoyar de las siguientes mediciones:
+
+- **Porcentaje de libros sin préstamos registrados**, o que se dejan en el carrito para ser acomodados.
+- **Pasillos más visitados por piso**, para identificar que libros son los mas concurridos.
+- **Prueba de exposición**: colocar algunos libros del sótano en las estanterías principales, para observar si son consultados y con qué frecuencia.
+- **Consultas en los últimos *N* años** (por ejemplo, 3 o 5 años), como indicador de vigencia de un título.
+- **Proporción de préstamos totales** respecto a la cantidad total de libros en el acervo.
+
+De esta manera, estas mediciones se pueden convertir en las variables y etiquetas que permitan clasificar u ordenar los libros para el proceso de descarte.

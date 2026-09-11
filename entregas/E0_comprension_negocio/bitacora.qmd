@@ -10,7 +10,7 @@ title: "Bitácora de entrevista"
 | Hora | 9:00 - 10:00 am |
 | Lugar | Oficinas de personal de biblioteca "El Búnker" |
 | Entrevistada | Dra. María Victoria Guzmán Sánchez, coordinadora de la biblioteca de la Facultad de Ciencias de la UNAM |
-| Entrevistadores | *(pendiente completar)* |
+| Entrevistadores | Oscar Figueroa Bobadilla, José Adolfo Vázquez Dávila, Emiliano Luna Campos |
 | Objetivo | Obtener una perspectiva con experiencia sobre las problemáticas de espacio en la biblioteca |
 
 ## Contexto de la entrevista
@@ -92,3 +92,8 @@ Como coordinadora, esto nos ayuda a tener un panorama completo del problema, ya 
 **¿Qué resultado haría que consideraran este proyecto un éxito? Por ejemplo, ¿liberar el 15% de los estantes sin recibir quejas por falta de títulos?**
 
 > "Sí, yo pienso así, más del 15%. Pero, fíjense, más que el estante, yo me sentiría satisfecha si al menos liberamos los espacios comunes. El problema no es solo la estantería, sino todo lo demás que tenemos. Liberar el 15% sería perfecto, pero después tenemos que liberar todo lo que tenemos en pasillos, en bodegas, en sótanos, que también es parte de la eficiencia del uso del espacio de la biblioteca."
+
+
+### Reflexiones finales
+
+Tras salir de la entrevista, el equipo notó qué tan grande y entrelazado es el problema de los espacios en la facultad. Realmente, la idea inicial era la de que la biblioteca da entrada y salida de libros continuamente y cabía la posibilidad de agilizar el proceso buscando. Sin embargo, nos encontramos con un problema más grande, en el cual hay muchísimos libros ocupando espacio en condiciones en las cuales tal vez ni siquiera están registrados o su registro se ha perdido por completo. Ahora tenemos un panorama con más variables acerca de la cantidad de libros que ocupan espacios comunes, o intereses relacionados con la protección de libros por su valor como patrimonio, así como un posible problema de cómo saber si ciertos libros son consultados y cómo se busca un equilibrio para que libros antiguos convivan con los más recientes.

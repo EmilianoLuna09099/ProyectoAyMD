@@ -1,3 +1,30 @@
 ---
 title: "Riesgos"
 ---
+
+
+## Riesgos identificados
+
+A partir de la entrevista y del recorrido por las instalaciones, identificamos los siguientes riesgos para el proyecto.
+
+### 1. Falta de datos sobre consulta de libros
+
+Durante la entrevista, la doctora dejó ver que no se puede saber a ciencia cierta si un libro ha sido consultado o no. Esto abre la posibilidad de que falten datos sobre la consulta de ciertos títulos, información necesaria para determinar si pueden ser descartados.
+
+**Mitigación propuesta:** implementar un seguimiento más detallado del uso de los libros, para identificar cuáles son realmente consultados y cuáles han sido "olvidados" desde hace tiempo.
+
+### 2. Regulación estricta sobre el descarte de libros
+
+Otro punto importante que la doctora aportó con mucho detalle es que el proceso de descarte o ingreso de libros debe estar estrictamente regulado por la facultad, ya que existe la posibilidad de que haya libros únicos en la universidad —o incluso en el país— y libros que sean patrimonio. Por esta razón, la manipulación o el descarte de libros puede verse limitado por intereses ajenos a la simple optimización de espacio.
+
+**Mitigación propuesta:** generar un proceso de selección específico para este tipo de libros, que contemple un espacio especial, categorizado y resguardado, pero que no impida la llegada de nuevas líneas de conocimiento.
+
+### 3. Limitaciones de funciones del personal
+
+Siguiendo con este tema, la doctora también enfatizó en que el equipo no puede realizar ciertas tareas porque no están dentro de sus funciones. Esto significa que, por mucho que ella quisiera catalogar los datos personalmente, no podría hacerlo.
+
+**Mitigación propuesta:** plantear a la facultad un plan que genere un presupuesto para apoyar la organización de la biblioteca.
+
+### 4. Condiciones de sanidad en el acervo
+
+Durante el recorrido por los pasillos notamos cajas de libros con hongos, lo cual plantea la necesidad de una revisión a profundidad por motivos de sanidad.

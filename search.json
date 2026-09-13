@@ -102,6 +102,39 @@
     ]
   },
   {
+    "objectID": "entregas/E0_comprension_negocio/preguntas.html",
+    "href": "entregas/E0_comprension_negocio/preguntas.html",
+    "title": "Preguntas de investigación",
+    "section": "",
+    "text": "Después de la entrevista con la Dra. María Victoria Guzmán Sánchez, y de conocer más a profundidad la situación sobre los problemas de optimización de la biblioteca, pudimos darnos cuenta de que la cuestión no se limita únicamente al espacio físico en las estanterías ocupado por libros que no son consultados, sino que los espacios comunes se ven afectados de igual manera.\nTeniendo en cuenta que nuestro objetivo de minería de datos es:\n\nAnalizar los patrones de uso de los libros dentro del acervo histórico para su posterior evaluación y descarte.\n\nLas preguntas que guiarán este proyecto son las siguientes.",
+    "crumbs": [
+      "E0",
+      "Preguntas de investigación"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/preguntas.html#contexto",
+    "href": "entregas/E0_comprension_negocio/preguntas.html#contexto",
+    "title": "Preguntas de investigación",
+    "section": "",
+    "text": "Después de la entrevista con la Dra. María Victoria Guzmán Sánchez, y de conocer más a profundidad la situación sobre los problemas de optimización de la biblioteca, pudimos darnos cuenta de que la cuestión no se limita únicamente al espacio físico en las estanterías ocupado por libros que no son consultados, sino que los espacios comunes se ven afectados de igual manera.\nTeniendo en cuenta que nuestro objetivo de minería de datos es:\n\nAnalizar los patrones de uso de los libros dentro del acervo histórico para su posterior evaluación y descarte.\n\nLas preguntas que guiarán este proyecto son las siguientes.",
+    "crumbs": [
+      "E0",
+      "Preguntas de investigación"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/preguntas.html#preguntas-de-investigación",
+    "href": "entregas/E0_comprension_negocio/preguntas.html#preguntas-de-investigación",
+    "title": "Preguntas de investigación",
+    "section": "Preguntas de investigación",
+    "text": "Preguntas de investigación\n\nPregunta 1 — Prioridad alta\n¿Qué libros dentro del acervo histórico de la biblioteca de la Facultad de Ciencias se encuentran en el catálogo y no son localizables en el acervo?\n\n\nPregunta 2 — Prioridad alta\n¿Cuáles son las características comunes de los ejemplares fuera de circulación dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?\n\n\nPregunta 3\n¿Qué criterios determinan qué libros deberían ser descartados?\n\n\nPregunta 4\n¿Qué factores influyen para que un libro deje de ser relevante?",
+    "crumbs": [
+      "E0",
+      "Preguntas de investigación"
+    ]
+  },
+  {
     "objectID": "entregas/E0_comprension_negocio/uso_ia.html",
     "href": "entregas/E0_comprension_negocio/uso_ia.html",
     "title": "IA",

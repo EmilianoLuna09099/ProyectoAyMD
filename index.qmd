@@ -3,3 +3,12 @@ title: "Proyecto Almacenes y Mineria de Datos"
 ---
 
 Sitio de Quarto para el semestre en la materia de Almacenes y Mineria de Datos.
+
+Integrantes:
+
+
+José Adolfo Vázquez Dávila
+
+Oscar Figueroa Bobadilla
+
+Emiliano Luna Campos

@@ -1,3 +1,31 @@
 ---
-title: "Preguntas"
+title: "Preguntas de investigación"
 ---
+
+## Contexto
+
+Después de la entrevista con la Dra. María Victoria Guzmán Sánchez, y de conocer más a profundidad la situación sobre los problemas de optimización de la biblioteca, pudimos darnos cuenta de que la cuestión no se limita únicamente al espacio físico en las estanterías ocupado por libros que no son consultados, sino que los espacios comunes se ven afectados de igual manera.
+
+Teniendo en cuenta que nuestro objetivo de minería de datos es:
+
+> **Analizar los patrones de uso de los libros dentro del acervo histórico para su posterior evaluación y descarte.**
+
+Las preguntas que guiarán este proyecto son las siguientes.
+
+## Preguntas de investigación
+
+### Pregunta 1 — Prioridad alta
+
+¿Qué libros dentro del acervo histórico de la biblioteca de la Facultad de Ciencias se encuentran en el catálogo y no son localizables en el acervo?
+
+### Pregunta 2 — Prioridad alta
+
+¿Cuáles son las características comunes de los ejemplares fuera de circulación dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?
+
+### Pregunta 3
+
+¿Qué criterios determinan qué libros deberían ser descartados?
+
+### Pregunta 4
+
+¿Qué factores influyen para que un libro deje de ser relevante?

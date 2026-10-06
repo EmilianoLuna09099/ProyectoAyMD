@@ -102,6 +102,72 @@
     ]
   },
   {
+    "objectID": "entregas/E1_arquitectura_dw/estrella.html",
+    "href": "entregas/E1_arquitectura_dw/estrella.html",
+    "title": "Diagrama estrella",
+    "section": "",
+    "text": "Alguno de los granos que podriamos tener es:\nLa cantidad de libros que se prestan en un dia.\nOtra podria ser los libros que ha pedido una persona desde 2020.\nSin embargo el mas natural y que mas puede servir es claramente el siguiente:\n“Una fila por cada evento de préstamo de un ítem/libro realizado a un usuario.”",
+    "crumbs": [
+      "E1",
+      "Diagrama estrella"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/estrella.html#grano",
+    "href": "entregas/E1_arquitectura_dw/estrella.html#grano",
+    "title": "Diagrama estrella",
+    "section": "",
+    "text": "Alguno de los granos que podriamos tener es:\nLa cantidad de libros que se prestan en un dia.\nOtra podria ser los libros que ha pedido una persona desde 2020.\nSin embargo el mas natural y que mas puede servir es claramente el siguiente:\n“Una fila por cada evento de préstamo de un ítem/libro realizado a un usuario.”",
+    "crumbs": [
+      "E1",
+      "Diagrama estrella"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/fuentes.html",
+    "href": "entregas/E1_arquitectura_dw/fuentes.html",
+    "title": "Datos",
+    "section": "",
+    "text": "Los datos se obtuvieron directamente de la misma biblioteca de la Facultad de Ciencias.",
+    "crumbs": [
+      "E1",
+      "Datos"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/fuentes.html#obtención-de-datos",
+    "href": "entregas/E1_arquitectura_dw/fuentes.html#obtención-de-datos",
+    "title": "Datos",
+    "section": "Obtención de datos",
+    "text": "Obtención de datos\nAl hablar por primera vez en la entrevista con la coordinadora de la biblioteca, se mostró abierta a prestarnos los datos del acervo y los préstamos de biblioteca para poder trabajar sobre estos mismos.\nEs por esta razón que, en lugar de buscar en DeepSearch, portales de datos, buscadores de datasets o datos públicos, se visitó nuevamente el “búnker” de la biblioteca para solicitar una segunda reunion con la coordinadora. Esta segunda reunión se llevo nuevamente a cabo en la oficina de la Dra. María Victoria Guzmán Sánchez, en esta ocasion no se tenia la intencionde “robarle” tanto tiempo a la coordinadora por lo que sin muchas vueltas se le solicitaron los datos acerca de los que nos había mencionado con anterioridad.\nLa coordinadora muy abierta y entusiasmada nos proporcionó a través de correo los datos del acervo de libros y de préstamos, los cuales son un par de datasets que contienen alrededor de 150 mil y 170 mil registros respectivamente, cada uno.",
+    "crumbs": [
+      "E1",
+      "Datos"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/fuentes.html#catálogo",
+    "href": "entregas/E1_arquitectura_dw/fuentes.html#catálogo",
+    "title": "Datos",
+    "section": "Catálogo",
+    "text": "Catálogo\n\n\n\n\nDrive donde se compartieron los datasets\n\n\n\n\n\n\n\nDatasets desplegados\n\n\n\n\nLibros del acervo\n\n\n\n\nVistazo de los libros del acervo\n\n\n\n\n\n\n\n\n\n\nCampo\nLibros\n\n\n\n\nNombre y dueño\nTodos los libros del acervo de la biblioteca, Facultad de Ciencias, UNAM\n\n\nURL y acceso\nEnlace verificado y forma de acceso (descarga, API, BigQuery)\n\n\nFormato y tamaño\nCSV de 14.6 MB\n\n\nGrano\nCada fila representa un libro único perteneciente al acervo de la biblioteca\n\n\nCobertura\nTodos los libros registrados en el acervo\n\n\nLicencia y restricciones\nNo se presentó alguna restricción especial\n\n\nLlaves de integración\nNombres e identificadores de libros; su catálogo se relaciona con los préstamos\n\n\nPregunta(s) relacionada(s)\nEste catálogo alimenta directamente las cuatro preguntas planteadas en la E0, ya que contiene las características de qué libros están en el dataset y permite identificar cuáles no es posible localizar, sus características comunes y sus factores de relevancia\n\n\n\n\n\nPréstamos de la biblioteca\n\n\n\n\nVistazo de los prestamos\n\n\n\n\n\n\n\n\n\n\nCampo\nPrestamos\n\n\n\n\nNombre y dueño\nPréstamos desde 2020, Facultad de Ciencias, UNAM\n\n\nURL y acceso\nEnlace verificado y forma de acceso (descarga, API, BigQuery)\n\n\nFormato y tamaño\nCSV de 25.5 MB\n\n\nGrano\nCada fila representa un préstamo de un libro a una persona\n\n\nCobertura\nPeriodo 2020–2026\n\n\nLicencia y restricciones\nContiene nombres y números de cuenta de las personas que piden libros, los cuales se solicitó explícitamente que no fueran revelados\n\n\nLlaves de integración\nNombres e identificadores de libros; su catálogo se relaciona con los préstamos\n\n\nPregunta(s) relacionada(s)\nEste dataset también se relaciona con las cuatro preguntas, ya que brinda la información de los libros prestados, permitiendo relacionarlos con su información particular",
+    "crumbs": [
+      "E1",
+      "Datos"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/fuentes.html#análisis-de-integración",
+    "href": "entregas/E1_arquitectura_dw/fuentes.html#análisis-de-integración",
+    "title": "Datos",
+    "section": "Análisis de integración",
+    "text": "Análisis de integración\nAmbas fuentes se unen a través de la variable libro: una indica qué libro se prestó, y la otra indica la información propia del libro. De esta manera se pueden encontrar patrones, como identificar qué libros son los que más se prestan.\nLa diferencia en su granularidad se encuentra principalmente en que, en los datos de préstamo —al ser únicos por fecha, alumno y libro—, hay repeticiones en la aparición de los libros, mientras que en los datos del acervo cada libro aparece una sola vez.\nAlgunos problemas que podríamos anticipar:\n\nQue no concuerden el número del libro y su nombre entre los datos del acervo y los de préstamos.\nQue los campos de credencial y de cuenta en los datos de préstamos no concuerden entre sí, ya sea porque el número se completa con ceros a la izquierda, o porque directamente los números sean completamente distintos. Si estos casos no se revisan con precaución, podrían duplicarse resultados, sesgando los datos.",
+    "crumbs": [
+      "E1",
+      "Datos"
+    ]
+  },
+  {
     "objectID": "entregas/E0_comprension_negocio/preguntas.html",
     "href": "entregas/E0_comprension_negocio/preguntas.html",
     "title": "Preguntas de investigación",

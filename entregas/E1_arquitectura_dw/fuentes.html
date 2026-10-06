@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Preguntas de investigación – Proyecto Almacenes y Mineria de Datos</title>
+<title>Datos – Proyecto Almacenes y Mineria de Datos</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -87,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E0_comprension_negocio/bitacora.html">E0</a></li><li class="breadcrumb-item"><a href="../../entregas/E0_comprension_negocio/preguntas.html">Preguntas de investigación</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/bitacora.qmd">E1</a></li><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/fuentes.html">Datos</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -147,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../entregas/E0_comprension_negocio/preguntas.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../entregas/E0_comprension_negocio/preguntas.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Preguntas de investigación</span></a>
   </div>
 </li>
@@ -188,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../entregas/E1_arquitectura_dw/fuentes.html" class="sidebar-item-text sidebar-link">
+  <a href="../../entregas/E1_arquitectura_dw/fuentes.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Datos</span></a>
   </div>
 </li>
@@ -216,23 +216,22 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#contexto" id="toc-contexto" class="nav-link active" data-scroll-target="#contexto">Contexto</a></li>
-  <li><a href="#preguntas-de-investigación" id="toc-preguntas-de-investigación" class="nav-link" data-scroll-target="#preguntas-de-investigación">Preguntas de investigación</a>
+  <li><a href="#obtención-de-datos" id="toc-obtención-de-datos" class="nav-link active" data-scroll-target="#obtención-de-datos">Obtención de datos</a></li>
+  <li><a href="#catálogo" id="toc-catálogo" class="nav-link" data-scroll-target="#catálogo">Catálogo</a>
   <ul class="collapse">
-  <li><a href="#pregunta-1-prioridad-alta" id="toc-pregunta-1-prioridad-alta" class="nav-link" data-scroll-target="#pregunta-1-prioridad-alta">Pregunta 1 — Prioridad alta</a></li>
-  <li><a href="#pregunta-2-prioridad-alta" id="toc-pregunta-2-prioridad-alta" class="nav-link" data-scroll-target="#pregunta-2-prioridad-alta">Pregunta 2 — Prioridad alta</a></li>
-  <li><a href="#pregunta-3" id="toc-pregunta-3" class="nav-link" data-scroll-target="#pregunta-3">Pregunta 3</a></li>
-  <li><a href="#pregunta-4" id="toc-pregunta-4" class="nav-link" data-scroll-target="#pregunta-4">Pregunta 4</a></li>
+  <li><a href="#libros-del-acervo" id="toc-libros-del-acervo" class="nav-link" data-scroll-target="#libros-del-acervo">Libros del acervo</a></li>
+  <li><a href="#préstamos-de-la-biblioteca" id="toc-préstamos-de-la-biblioteca" class="nav-link" data-scroll-target="#préstamos-de-la-biblioteca">Préstamos de la biblioteca</a></li>
   </ul></li>
+  <li><a href="#análisis-de-integración" id="toc-análisis-de-integración" class="nav-link" data-scroll-target="#análisis-de-integración">Análisis de integración</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E0_comprension_negocio/bitacora.html">E0</a></li><li class="breadcrumb-item"><a href="../../entregas/E0_comprension_negocio/preguntas.html">Preguntas de investigación</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/bitacora.qmd">E1</a></li><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/fuentes.html">Datos</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Preguntas de investigación</h1>
+<h1 class="title">Datos</h1>
 </div>
 
 
@@ -249,35 +248,157 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="contexto" class="level2">
-<h2 class="anchored" data-anchor-id="contexto">Contexto</h2>
-<p>Después de la entrevista con la Dra. María Victoria Guzmán Sánchez, y de conocer más a profundidad la situación sobre los problemas de optimización de la biblioteca, pudimos darnos cuenta de que la cuestión no se limita únicamente al espacio físico en las estanterías ocupado por libros que no son consultados, sino que los espacios comunes se ven afectados de igual manera.</p>
-<p>Teniendo en cuenta que nuestro objetivo de minería de datos es:</p>
-<blockquote class="blockquote">
-<p><strong>Analizar los patrones de uso de los libros dentro del acervo histórico para su posterior evaluación y descarte.</strong></p>
-</blockquote>
-<p>Las preguntas que guiarán este proyecto son las siguientes.</p>
+<p>Los datos se obtuvieron directamente de la misma biblioteca de la Facultad de Ciencias.</p>
+<section id="obtención-de-datos" class="level2">
+<h2 class="anchored" data-anchor-id="obtención-de-datos">Obtención de datos</h2>
+<p>Al hablar por primera vez en la entrevista con la coordinadora de la biblioteca, se mostró abierta a prestarnos los datos del acervo y los préstamos de biblioteca para poder trabajar sobre estos mismos.</p>
+<p>Es por esta razón que, en lugar de buscar en DeepSearch, portales de datos, buscadores de datasets o datos públicos, se visitó nuevamente el “búnker” de la biblioteca para solicitar una segunda reunion con la coordinadora. Esta segunda reunión se llevo nuevamente a cabo en la oficina de la Dra. María Victoria Guzmán Sánchez, en esta ocasion no se tenia la intencionde “robarle” tanto tiempo a la coordinadora por lo que sin muchas vueltas se le solicitaron los datos acerca de los que nos había mencionado con anterioridad.</p>
+<p>La coordinadora muy abierta y entusiasmada nos proporcionó a través de correo los datos del acervo de libros y de préstamos, los cuales son un par de datasets que contienen alrededor de 150 mil y 170 mil registros respectivamente, cada uno.</p>
 </section>
-<section id="preguntas-de-investigación" class="level2">
-<h2 class="anchored" data-anchor-id="preguntas-de-investigación">Preguntas de investigación</h2>
-<section id="pregunta-1-prioridad-alta" class="level3">
-<h3 class="anchored" data-anchor-id="pregunta-1-prioridad-alta">Pregunta 1 — Prioridad alta</h3>
-<p>¿Qué libros dentro del acervo histórico de la biblioteca de la Facultad de Ciencias se encuentran en el catálogo y no son localizables en el acervo?</p>
+<section id="catálogo" class="level2">
+<h2 class="anchored" data-anchor-id="catálogo">Catálogo</h2>
+<div style="font-size: 1.5em; text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/2026-10-05_17-33-41.png" class="img-fluid figure-img" width="1000"></p>
+<figcaption>Drive donde se compartieron los datasets</figcaption>
+</figure>
+</div>
+</div>
+<div style="font-size: 1.5em; text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/2026-10-05_17-33-50.png" class="img-fluid figure-img" width="1000"></p>
+<figcaption>Datasets desplegados</figcaption>
+</figure>
+</div>
+</div>
+<section id="libros-del-acervo" class="level3">
+<h3 class="anchored" data-anchor-id="libros-del-acervo">Libros del acervo</h3>
+<div style="font-size: 1.5em; text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/2026-10-05_17-34-04.png" class="img-fluid figure-img" width="1000"></p>
+<figcaption>Vistazo de los libros del acervo</figcaption>
+</figure>
+</div>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Campo</th>
+<th>Libros</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nombre y dueño</td>
+<td>Todos los libros del acervo de la biblioteca, Facultad de Ciencias, UNAM</td>
+</tr>
+<tr class="even">
+<td>URL y acceso</td>
+<td>Enlace verificado y forma de acceso (descarga, API, BigQuery)</td>
+</tr>
+<tr class="odd">
+<td>Formato y tamaño</td>
+<td>CSV de 14.6 MB</td>
+</tr>
+<tr class="even">
+<td>Grano</td>
+<td>Cada fila representa un libro único perteneciente al acervo de la biblioteca</td>
+</tr>
+<tr class="odd">
+<td>Cobertura</td>
+<td>Todos los libros registrados en el acervo</td>
+</tr>
+<tr class="even">
+<td>Licencia y restricciones</td>
+<td>No se presentó alguna restricción especial</td>
+</tr>
+<tr class="odd">
+<td>Llaves de integración</td>
+<td>Nombres e identificadores de libros; su catálogo se relaciona con los préstamos</td>
+</tr>
+<tr class="even">
+<td>Pregunta(s) relacionada(s)</td>
+<td>Este catálogo alimenta directamente las cuatro preguntas planteadas en la E0, ya que contiene las características de qué libros están en el dataset y permite identificar cuáles no es posible localizar, sus características comunes y sus factores de relevancia</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="pregunta-2-prioridad-alta" class="level3">
-<h3 class="anchored" data-anchor-id="pregunta-2-prioridad-alta">Pregunta 2 — Prioridad alta</h3>
-<p>¿Cuáles son las características comunes de los ejemplares fuera de circulación dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?</p>
+<section id="préstamos-de-la-biblioteca" class="level3">
+<h3 class="anchored" data-anchor-id="préstamos-de-la-biblioteca">Préstamos de la biblioteca</h3>
+<div style="font-size: 1.5em; text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/2026-10-05_17-34-24.png" class="img-fluid figure-img" width="1000"></p>
+<figcaption>Vistazo de los prestamos</figcaption>
+</figure>
+</div>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Campo</th>
+<th>Prestamos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nombre y dueño</td>
+<td>Préstamos desde 2020, Facultad de Ciencias, UNAM</td>
+</tr>
+<tr class="even">
+<td>URL y acceso</td>
+<td>Enlace verificado y forma de acceso (descarga, API, BigQuery)</td>
+</tr>
+<tr class="odd">
+<td>Formato y tamaño</td>
+<td>CSV de 25.5 MB</td>
+</tr>
+<tr class="even">
+<td>Grano</td>
+<td>Cada fila representa un préstamo de un libro a una persona</td>
+</tr>
+<tr class="odd">
+<td>Cobertura</td>
+<td>Periodo 2020–2026</td>
+</tr>
+<tr class="even">
+<td>Licencia y restricciones</td>
+<td>Contiene nombres y números de cuenta de las personas que piden libros, los cuales se solicitó explícitamente que no fueran revelados</td>
+</tr>
+<tr class="odd">
+<td>Llaves de integración</td>
+<td>Nombres e identificadores de libros; su catálogo se relaciona con los préstamos</td>
+</tr>
+<tr class="even">
+<td>Pregunta(s) relacionada(s)</td>
+<td>Este dataset también se relaciona con las cuatro preguntas, ya que brinda la información de los libros prestados, permitiendo relacionarlos con su información particular</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="pregunta-3" class="level3">
-<h3 class="anchored" data-anchor-id="pregunta-3">Pregunta 3</h3>
-<p>¿Qué criterios determinan qué libros deberían ser descartados?</p>
 </section>
-<section id="pregunta-4" class="level3">
-<h3 class="anchored" data-anchor-id="pregunta-4">Pregunta 4</h3>
-<p>¿Qué factores influyen para que un libro deje de ser relevante?</p>
+<section id="análisis-de-integración" class="level2">
+<h2 class="anchored" data-anchor-id="análisis-de-integración">Análisis de integración</h2>
+<p>Ambas fuentes se unen a través de la variable <em>libro</em>: una indica qué libro se prestó, y la otra indica la información propia del libro. De esta manera se pueden encontrar patrones, como identificar qué libros son los que más se prestan.</p>
+<p>La diferencia en su granularidad se encuentra principalmente en que, en los datos de préstamo —al ser únicos por fecha, alumno y libro—, hay repeticiones en la aparición de los libros, mientras que en los datos del acervo cada libro aparece una sola vez.</p>
+<p>Algunos problemas que podríamos anticipar:</p>
+<ul>
+<li>Que no concuerden el número del libro y su nombre entre los datos del acervo y los de préstamos.</li>
+<li>Que los campos de credencial y de cuenta en los datos de préstamos no concuerden entre sí, ya sea porque el número se completa con ceros a la izquierda, o porque directamente los números sean completamente distintos. Si estos casos no se revisan con precaución, podrían duplicarse resultados, sesgando los datos.</li>
+</ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

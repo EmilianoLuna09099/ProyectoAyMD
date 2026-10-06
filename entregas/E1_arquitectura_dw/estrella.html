@@ -73,6 +73,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="../../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -87,7 +90,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/bitacora.qmd">E1</a></li><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/estrella.html">Diagrama estrella</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/arquitectura.html">E1</a></li><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/estrella.html">Diagrama estrella</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -167,7 +170,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../entregas/E1_arquitectura_dw/bitacora.qmd" class="sidebar-item-text sidebar-link">
+            <a href="../../entregas/E1_arquitectura_dw/arquitectura.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">E1</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -217,13 +220,20 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#grano" id="toc-grano" class="nav-link active" data-scroll-target="#grano">Grano</a></li>
+  <li><a href="#arquitectura-de-3-capas" id="toc-arquitectura-de-3-capas" class="nav-link" data-scroll-target="#arquitectura-de-3-capas">Arquitectura de 3 capas</a>
+  <ul class="collapse">
+  <li><a href="#staging" id="toc-staging" class="nav-link" data-scroll-target="#staging">Staging</a></li>
+  <li><a href="#dw" id="toc-dw" class="nav-link" data-scroll-target="#dw">DW</a></li>
+  <li><a href="#datamart" id="toc-datamart" class="nav-link" data-scroll-target="#datamart">DataMart</a></li>
+  </ul></li>
+  <li><a href="#diagrama-estrella" id="toc-diagrama-estrella" class="nav-link" data-scroll-target="#diagrama-estrella">Diagrama Estrella</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/bitacora.qmd">E1</a></li><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/estrella.html">Diagrama estrella</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/arquitectura.html">E1</a></li><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/estrella.html">Diagrama estrella</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Diagrama estrella</h1>
 </div>
@@ -249,6 +259,69 @@ ul.task-list li input[type="checkbox"] {
 <p>Otra podria ser los libros que ha pedido una persona desde 2020.</p>
 <p>Sin embargo el mas natural y que mas puede servir es claramente el siguiente:</p>
 <p>“Una fila por cada evento de préstamo de un ítem/libro realizado a un usuario.”</p>
+</section>
+<section id="arquitectura-de-3-capas" class="level2">
+<h2 class="anchored" data-anchor-id="arquitectura-de-3-capas">Arquitectura de 3 capas</h2>
+<p>Aqui se presenta nuestra arquitectura planteada.</p>
+<section id="staging" class="level3">
+<h3 class="anchored" data-anchor-id="staging">Staging</h3>
+<p>Ambas son los par de datasets compartidos por bilbioteca el dia 29 de septiembre.</p>
+<p>Capturas de las tablas.</p>
+</section>
+<section id="dw" class="level3">
+<h3 class="anchored" data-anchor-id="dw">DW</h3>
+<p>Codigo del DDL y captura de las tablas ya creadas</p>
+</section>
+<section id="datamart" class="level3">
+<h3 class="anchored" data-anchor-id="datamart">DataMart</h3>
+<p>Codigo de las tablas que contestan las preguntas y sus respectivas capturas</p>
+</section>
+</section>
+<section id="diagrama-estrella" class="level2">
+<h2 class="anchored" data-anchor-id="diagrama-estrella">Diagrama Estrella</h2>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">%%{init: {'er': {'layoutDirection': 'LR'}}}%%
+erDiagram
+    Dim_fecha ||--o{ Hecho_Prestamo : prestamo
+    Dim_fecha ||--o{ Hecho_Prestamo : devolucion
+    Dim_libro ||--o{ Hecho_Prestamo : libro
+    Dim_usuario ||--o{ Hecho_Prestamo : usuario
+
+    Dim_libro {
+        int numero_adquisicion PK
+        string titulo
+        string autor
+        string clasificacion
+        string tipo_item
+    }
+
+    Hecho_Prestamo {
+        int libro_key FK
+        int usuario_key FK
+        int fecha_prestamo_key FK
+        int fecha_devolucion_key FK
+    }
+
+    Dim_usuario {
+        int numero_cuenta PK
+        string categoria
+    }
+
+    Dim_fecha {
+        date fecha_completa PK
+        int anio
+        int mes
+    }
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
 
 
 </section>

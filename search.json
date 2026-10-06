@@ -124,6 +124,28 @@
     ]
   },
   {
+    "objectID": "entregas/E1_arquitectura_dw/estrella.html#arquitectura-de-3-capas",
+    "href": "entregas/E1_arquitectura_dw/estrella.html#arquitectura-de-3-capas",
+    "title": "Diagrama estrella",
+    "section": "Arquitectura de 3 capas",
+    "text": "Arquitectura de 3 capas\nAqui se presenta nuestra arquitectura planteada.\n\nStaging\nAmbas son los par de datasets compartidos por bilbioteca el dia 29 de septiembre.\nCapturas de las tablas.\n\n\nDW\nCodigo del DDL y captura de las tablas ya creadas\n\n\nDataMart\nCodigo de las tablas que contestan las preguntas y sus respectivas capturas",
+    "crumbs": [
+      "E1",
+      "Diagrama estrella"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/estrella.html#diagrama-estrella",
+    "href": "entregas/E1_arquitectura_dw/estrella.html#diagrama-estrella",
+    "title": "Diagrama estrella",
+    "section": "Diagrama Estrella",
+    "text": "Diagrama Estrella\n\n\n\n\n\n%%{init: {'er': {'layoutDirection': 'LR'}}}%%\nerDiagram\n    Dim_fecha ||--o{ Hecho_Prestamo : prestamo\n    Dim_fecha ||--o{ Hecho_Prestamo : devolucion\n    Dim_libro ||--o{ Hecho_Prestamo : libro\n    Dim_usuario ||--o{ Hecho_Prestamo : usuario\n\n    Dim_libro {\n        int numero_adquisicion PK\n        string titulo\n        string autor\n        string clasificacion\n        string tipo_item\n    }\n\n    Hecho_Prestamo {\n        int libro_key FK\n        int usuario_key FK\n        int fecha_prestamo_key FK\n        int fecha_devolucion_key FK\n    }\n\n    Dim_usuario {\n        int numero_cuenta PK\n        string categoria\n    }\n\n    Dim_fecha {\n        date fecha_completa PK\n        int anio\n        int mes\n    }",
+    "crumbs": [
+      "E1",
+      "Diagrama estrella"
+    ]
+  },
+  {
     "objectID": "entregas/E1_arquitectura_dw/fuentes.html",
     "href": "entregas/E1_arquitectura_dw/fuentes.html",
     "title": "Datos",

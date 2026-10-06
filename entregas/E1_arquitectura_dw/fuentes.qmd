@@ -1,0 +1,70 @@
+
+---
+title: "Datos"
+---
+
+Los datos se obtuvieron directamente de la misma biblioteca de la Facultad de Ciencias.
+
+## Obtención de datos
+
+Al hablar por primera vez en la entrevista con la coordinadora de la biblioteca, se mostró abierta a prestarnos los datos del acervo y los préstamos de biblioteca para poder trabajar sobre estos mismos.
+
+Es por esta razón que, en lugar de buscar en DeepSearch, portales de datos, buscadores de datasets o datos públicos, se visitó nuevamente el "búnker" de la biblioteca para solicitar una segunda reunion con la coordinadora.
+Esta segunda reunión se llevo nuevamente a cabo en la oficina de la Dra. María Victoria Guzmán Sánchez, en esta ocasion no se tenia la intencionde "robarle" tanto tiempo a la coordinadora por lo que sin muchas vueltas se le solicitaron los datos acerca de los que nos había mencionado con anterioridad.
+
+La coordinadora muy abierta y entusiasmada nos proporcionó a través de correo los datos del acervo de libros y de préstamos, los cuales son un par de datasets que contienen alrededor de 150 mil y 170 mil registros respectivamente, cada uno.
+
+## Catálogo
+
+::: {style="font-size: 1.5em; text-align: center;"}
+![Drive donde se compartieron los datasets](img/2026-10-05_17-33-41.png){width="1000px"}
+:::
+
+::: {style="font-size: 1.5em; text-align: center;"}
+![Datasets desplegados](img/2026-10-05_17-33-50.png){width="1000px"}
+:::
+
+### Libros del acervo
+
+::: {style="font-size: 1.5em; text-align: center;"}
+![Vistazo de los libros del acervo](img/2026-10-05_17-34-04.png){width="1000px"}
+:::
+
+| Campo | Libros |
+|-------|---------|
+| Nombre y dueño | Todos los libros del acervo de la biblioteca, Facultad de Ciencias, UNAM |
+| URL y acceso | Enlace verificado y forma de acceso (descarga, API, BigQuery) |
+| Formato y tamaño | CSV de 14.6 MB |
+| Grano | Cada fila representa un libro único perteneciente al acervo de la biblioteca |
+| Cobertura | Todos los libros registrados en el acervo |
+| Licencia y restricciones | No se presentó alguna restricción especial |
+| Llaves de integración | Nombres e identificadores de libros; su catálogo se relaciona con los préstamos |
+| Pregunta(s) relacionada(s) | Este catálogo alimenta directamente las cuatro preguntas planteadas en la E0, ya que contiene las características de qué libros están en el dataset y permite identificar cuáles no es posible localizar, sus características comunes y sus factores de relevancia |
+
+### Préstamos de la biblioteca
+
+::: {style="font-size: 1.5em; text-align: center;"}
+![Vistazo de los prestamos](img/2026-10-05_17-34-24.png){width="1000px"}
+:::
+
+| Campo | Prestamos |
+|-------|---------|
+| Nombre y dueño | Préstamos desde 2020, Facultad de Ciencias, UNAM |
+| URL y acceso | Enlace verificado y forma de acceso (descarga, API, BigQuery) |
+| Formato y tamaño | CSV de 25.5 MB |
+| Grano | Cada fila representa un préstamo de un libro a una persona |
+| Cobertura | Periodo 2020–2026 |
+| Licencia y restricciones | Contiene nombres y números de cuenta de las personas que piden libros, los cuales se solicitó explícitamente que no fueran revelados |
+| Llaves de integración | Nombres e identificadores de libros; su catálogo se relaciona con los préstamos |
+| Pregunta(s) relacionada(s) | Este dataset también se relaciona con las cuatro preguntas, ya que brinda la información de los libros prestados, permitiendo relacionarlos con su información particular |
+
+## Análisis de integración
+
+Ambas fuentes se unen a través de la variable *libro*: una indica qué libro se prestó, y la otra indica la información propia del libro. De esta manera se pueden encontrar patrones, como identificar qué libros son los que más se prestan.
+
+La diferencia en su granularidad se encuentra principalmente en que, en los datos de préstamo —al ser únicos por fecha, alumno y libro—, hay repeticiones en la aparición de los libros, mientras que en los datos del acervo cada libro aparece una sola vez.
+
+Algunos problemas que podríamos anticipar:
+
+- Que no concuerden el número del libro y su nombre entre los datos del acervo y los de préstamos.
+- Que los campos de credencial y de cuenta en los datos de préstamos no concuerden entre sí, ya sea porque el número se completa con ceros a la izquierda, o porque directamente los números sean completamente distintos. Si estos casos no se revisan con precaución, podrían duplicarse resultados, sesgando los datos.

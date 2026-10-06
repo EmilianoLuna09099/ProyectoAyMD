@@ -13,3 +13,64 @@ Otra podria ser los libros que ha pedido una persona desde 2020.
 Sin embargo el mas natural y que mas puede servir es claramente el siguiente: 
 
 "Una fila por cada evento de préstamo de un ítem/libro realizado a un usuario."
+
+## Arquitectura de 3 capas
+
+Aqui se presenta nuestra arquitectura planteada.
+
+### Staging 
+
+Ambas son los par de datasets compartidos por bilbioteca el dia 29 de septiembre.
+
+Capturas de las tablas.
+
+
+
+### DW 
+
+Codigo del DDL y captura de las tablas ya creadas
+
+
+### DataMart
+
+Codigo de las tablas que contestan las preguntas y sus respectivas capturas
+
+
+
+
+## Diagrama Estrella
+
+```{mermaid}
+%%{init: {'er': {'layoutDirection': 'LR'}}}%%
+erDiagram
+    Dim_fecha ||--o{ Hecho_Prestamo : prestamo
+    Dim_fecha ||--o{ Hecho_Prestamo : devolucion
+    Dim_libro ||--o{ Hecho_Prestamo : libro
+    Dim_usuario ||--o{ Hecho_Prestamo : usuario
+
+    Dim_libro {
+        int numero_adquisicion PK
+        string titulo
+        string autor
+        string clasificacion
+        string tipo_item
+    }
+
+    Hecho_Prestamo {
+        int libro_key FK
+        int usuario_key FK
+        int fecha_prestamo_key FK
+        int fecha_devolucion_key FK
+    }
+
+    Dim_usuario {
+        int numero_cuenta PK
+        string categoria
+    }
+
+    Dim_fecha {
+        date fecha_completa PK
+        int anio
+        int mes
+    }
+```

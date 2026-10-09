@@ -1,0 +1,21 @@
+---
+title: "Arquitectura"
+---
+
+## Arquitectura de 3 capas
+
+Aquí se presenta nuestra arquitectura planteada.
+
+### Staging 
+
+Ambas son los par de datasets compartidos por bilbioteca el dia 29 de septiembre.
+
+Capturas de las tablas.
+
+### DW 
+
+Codigo del DDL y captura de las tablas ya creadas
+
+### DataMart
+
+Codigo de las tablas que contestan las preguntas y sus respectivas capturas

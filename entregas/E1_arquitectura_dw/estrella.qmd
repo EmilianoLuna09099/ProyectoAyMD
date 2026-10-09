@@ -4,73 +4,72 @@ title: "Diagrama estrella"
 
 ## Grano
 
-Alguno de los granos que podriamos tener es:
+Algunos de los granos que podríamos tener como candidatos son:
 
-La cantidad de libros que se prestan en un dia. 
+1. La cantidad de libros que se prestan en un día.
+2. Los libros que ha pedido una persona desde 2020.
 
-Otra podria ser los libros que ha pedido una persona desde 2020.
+Sin embargo, el grano más natural y que nos otorga mayor flexibilidad analítica es el siguiente:
 
-Sin embargo el mas natural y que mas puede servir es claramente el siguiente: 
+> **"Una fila por cada evento de préstamo de un ejemplar físico."**
 
-"Una fila por cada evento de préstamo de un ítem/libro realizado a un usuario."
+**Justificación y limitaciones:**
 
-## Arquitectura de 3 capas
+Elegimos este grano porque documenta cada transacción a nivel atómico, lo que nos permite responder de forma directa preguntas como la **P2** (características y duración de cada préstamo individual).
 
-Aqui se presenta nuestra arquitectura planteada.
+Cabe mencionar que este grano responde la **P1** de manera *parcial*. Dado que nos basaremos en "eventos de préstamo", nuestra tabla de hechos es ciega a los libros que desaparecen o son robados directamente de la estantería (ya que no generan un registro en el sistema). A pesar de esta limitación, utilizaremos este grano para responder la P1 identificando aquellos eventos cuya fecha de devolución es nula, detectando así los ejemplares prestados que nunca regresaron a la biblioteca.
 
-### Staging 
+## Dimensiones
 
-Ambas son los par de datasets compartidos por bilbioteca el dia 29 de septiembre.
+Para mantener el modelo alineado con nuestro objetivo de negocio (identificar libros para descarte) y respetar la privacidad de los estudiantes (eliminando los datos personales), nuestro esquema contará unicamente con dos dimensiones:
 
-Capturas de las tablas.
+*   **Dim_Libro:** Contiene el detalle de cada ejemplar físico.
+    *   *Atributos principales:* Llave sustituta (`sk_libro`), Número de adquisición (Llave natural), Título, Clasificación y Jerarquía LC (Prefijo y Clase).
+    *   *Justificación:* Es esencial para agrupar los libros inactivos por área de conocimiento (Ciencias, Matemáticas, etc.) usando la tercera fuente oficial.
+    *   *SCD (Tipo 1 - Sobrescribir):* Si en el futuro un bibliotecario corrige un error ortográfico en el título o ajusta la clasificación de un libro, simplemente sobrescribiremos el registro. No necesitamos guardar el historial de errores tipográficos.
+*   **Dim_Tiempo:** Contiene el desglose de fechas.
+    *   *Atributos principales:* Llave sustituta (`sk_fecha`), Fecha completa (Llave natural), Año, Mes, Semestre.
+    *   *Justificación:* Es obligatoria para calcular tiempos de retención y responder cómo se comportaron los préstamos a través de los años.
+    *   *SCD (Tipo 0 - Fijo):* Los datos del calendario son inmutables. El 15 de marzo de 2021 siempre pertenecerá al año 2021, por lo que esta dimensión jamás cambia.
 
+## Medidas
 
+En nuestra tabla central de hechos (`Hecho_Prestamo`), almacenaremos métricas puramente numéricas:
 
-### DW 
-
-Codigo del DDL y captura de las tablas ya creadas
-
-
-### DataMart
-
-Codigo de las tablas que contestan las preguntas y sus respectivas capturas
-
-
-
+1.  **`cantidad_prestamos` (Aditiva):** Siempre tendrá el valor de `1`. Al sumarla, nos permite contar cuántas transacciones ocurrieron por libro, por mes o por área de conocimiento.
+2.  **`dias_prestamo` (Aditiva):** Calculada como la diferencia de días entre la fecha de préstamo y la fecha de devolución. Nos sirve para sacar promedios de tiempo de retención.
 
 ## Diagrama Estrella
 
 ```{mermaid}
 %%{init: {'er': {'layoutDirection': 'LR'}}}%%
 erDiagram
-    Dim_fecha ||--o{ Hecho_Prestamo : prestamo
-    Dim_fecha ||--o{ Hecho_Prestamo : devolucion
-    Dim_libro ||--o{ Hecho_Prestamo : libro
-    Dim_usuario ||--o{ Hecho_Prestamo : usuario
+    Dim_tiempo ||--o{ Hecho_prestamo : prestamo
+    Dim_tiempo ||--o{ Hecho_prestamo : devolucion
+    Dim_libro ||--o{ Hecho_prestamo : libro
 
     Dim_libro {
-        int numero_adquisicion PK
+        int sk_libro PK "Llave sustituta"
+        string numero_adquisicion "Llave natural"
         string titulo
-        string autor
         string clasificacion
-        string tipo_item
+        string prefijo_lc "Jerarquía LC"
+        string clase_lc "Jerarquía LC"
     }
 
-    Hecho_Prestamo {
-        int libro_key FK
-        int usuario_key FK
-        int fecha_prestamo_key FK
-        int fecha_devolucion_key FK
+    Hecho_prestamo {
+        int sk_libro FK "Llave sustituta"
+        int sk_fecha_prestamo FK "Llave sustituta"
+        int sk_fecha_devolucion FK "Llave sustituta"
+        int cantidad_prestamos "Medida (Aditiva)"
+        int dias_prestamo "Medida (Aditiva)"
     }
 
-    Dim_usuario {
-        int numero_cuenta PK
-        string categoria
-    }
-
-    Dim_fecha {
-        date fecha_completa PK
+    Dim_tiempo {
+        int sk_fecha PK "Llave sustituta"
+        date fecha_completa "Llave natural"
         int anio
         int mes
+        string semestre
     }
 ```

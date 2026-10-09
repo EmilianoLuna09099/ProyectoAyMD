@@ -329,6 +329,39 @@
     ]
   },
   {
+    "objectID": "entregas/E1_arquitectura_dw/uso_ia.html",
+    "href": "entregas/E1_arquitectura_dw/uso_ia.html",
+    "title": "Uso de IA",
+    "section": "",
+    "text": "Se utilizó la IA para analizar los prefijos temáticos de los libros de la Facultad. Geminí ayudó a detectar y confirmar que dichas letras correspondían al formato global estándar de la Library of Congress (LC).\nA partir de este hallazgo, la herramienta nos asistió en la creación del archivo base Catalogo_LC.csv que sirvió como nuestra tercera fuente de datos externa.",
+    "crumbs": [
+      "E1",
+      "Uso de IA"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/uso_ia.html#identificación-y-creación-del-3er-conjunto-de-datos",
+    "href": "entregas/E1_arquitectura_dw/uso_ia.html#identificación-y-creación-del-3er-conjunto-de-datos",
+    "title": "Uso de IA",
+    "section": "",
+    "text": "Se utilizó la IA para analizar los prefijos temáticos de los libros de la Facultad. Geminí ayudó a detectar y confirmar que dichas letras correspondían al formato global estándar de la Library of Congress (LC).\nA partir de este hallazgo, la herramienta nos asistió en la creación del archivo base Catalogo_LC.csv que sirvió como nuestra tercera fuente de datos externa.",
+    "crumbs": [
+      "E1",
+      "Uso de IA"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/uso_ia.html#mejora-de-redacción-y-formato",
+    "href": "entregas/E1_arquitectura_dw/uso_ia.html#mejora-de-redacción-y-formato",
+    "title": "Uso de IA",
+    "section": "Mejora de redacción y formato",
+    "text": "Mejora de redacción y formato\nSe empleó la herramienta como revisor de estilo para mejorar la claridad, fluidez y corrección ortotipográfica de los documentos finales redactados en formato Markdown (Quarto). Así mismo, sirvió como apoyo para la creación correcta de tablas y esquemas visuales.",
+    "crumbs": [
+      "E1",
+      "Uso de IA"
+    ]
+  },
+  {
     "objectID": "entregas/E0_comprension_negocio/canvas.html",
     "href": "entregas/E0_comprension_negocio/canvas.html",
     "title": "Canvas",

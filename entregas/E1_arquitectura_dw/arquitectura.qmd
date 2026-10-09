@@ -1,21 +1,63 @@
 ---
 title: "Arquitectura"
+format:
+  html:
+    toc: true
+    toc-title: "Contenido"
 ---
 
-## Arquitectura de 3 capas
+## Arquitectura de 3 Capas en Google Cloud
 
-Aquí se presenta nuestra arquitectura planteada.
+---
 
-### Staging 
+## 1. Zona de Staging
 
-Ambas son los par de datasets compartidos por bilbioteca el dia 29 de septiembre.
+En esta capa (`eq01_staging`) están los datos extraídos de las fuentes originales. Aquí se aplicaron transformaciones de privacidad (eliminación de columnas PII como `_CREDENCIAL_` y `NOMBRE`) y se cargó el catálogo externo de la Library of Congress.
 
-Capturas de las tablas.
+**Evidencia de esquemas de carga en Staging:**
 
-### DW 
+![Esquema Catalogo LC](img/staging_schema_catalogo_lc.png)
 
-Codigo del DDL y captura de las tablas ya creadas
+![Esquema Libros Completos](img/staging_schema_libros_completos.png)
 
-### DataMart
+![Esquema Préstamos](img/staging_schema_prestamo.png)
 
-Codigo de las tablas que contestan las preguntas y sus respectivas capturas
+---
+
+## 2. Data Warehouse (Esquema Estrella)
+
+`eq01_dw` se construyó utilizando el enfoque de Kimball (Esquema Estrella). 
+
+El siguiente Script DDL fue ejecutado en BigQuery definiendo estrictamente las estructuras, metadatos y relaciones lógicas entre dimensiones y hechos.
+
+### Script de Definición (DDL)
+
+```sql
+{{< include sql/ddl_dw.sql >}}
+```
+
+**Evidencia de la creación de los esquemas en el DW:**
+
+![Esquema Dim_Tiempo](img/dw_schema_tiempo.png)
+
+![Esquema Dim_Libro](img/dw_schema_libro.png)
+
+![Esquema Hecho_Prestamo](img/dw_schema_hecho.png)
+
+---
+
+## 3. Data Marts
+
+En la capa final (`eq01_mart`) diseñamos las consultas SQL de análisis que responden directamente a las preguntas de negocio (P1-P4). 
+
+Implementamos la función de jerarquía **`ROLLUP`** para los niveles de clasificación LC.
+
+### Script de Consultas Analíticas
+
+```sql
+{{< include sql/consultas_mart.sql >}}
+```
+
+**Evidencia de validación sintáctica en BigQuery:**
+
+![Consultas Válidas P1-P4](img/mart_valida_todas.png)

@@ -70,6 +70,5 @@ erDiagram
         date fecha_completa "Llave natural"
         int anio
         int mes
-        string semestre
     }
 ```

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>trazabilidad – Proyecto Almacenes y Mineria de Datos</title>
+<title>Matriz de Trazabilidad – Proyecto Almacenes y Mineria de Datos</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -87,7 +87,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/arquitectura.html">E1</a></li><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/trazabilidad.html">trazabilidad.html</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/arquitectura.html">E1</a></li><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/trazabilidad.html">Matriz de Trazabilidad</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -177,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../entregas/E1_arquitectura_dw/arquitectura.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Arquitectura Implementada</span></a>
+ <span class="menu-text">Arquitectura</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -195,7 +195,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../entregas/E1_arquitectura_dw/trazabilidad.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">trazabilidad.html</span></a>
+ <span class="menu-text">Matriz de Trazabilidad</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -211,17 +211,205 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contenido</h2>
+   
+  <ul>
+  <li><a href="#objetivo-de-referencia-e0" id="toc-objetivo-de-referencia-e0" class="nav-link active" data-scroll-target="#objetivo-de-referencia-e0">Objetivo de referencia (E0)</a></li>
+  <li><a href="#matriz-de-trazabilidad" id="toc-matriz-de-trazabilidad" class="nav-link" data-scroll-target="#matriz-de-trazabilidad">Matriz de trazabilidad</a></li>
+  <li><a href="#verificación-inversa-dimensiones-y-métricas" id="toc-verificación-inversa-dimensiones-y-métricas" class="nav-link" data-scroll-target="#verificación-inversa-dimensiones-y-métricas">Verificación inversa: dimensiones y métricas</a></li>
+  <li><a href="#consultas-del-datamart-por-pregunta" id="toc-consultas-del-datamart-por-pregunta" class="nav-link" data-scroll-target="#consultas-del-datamart-por-pregunta">Consultas del DataMart por pregunta</a></li>
+  <li><a href="#relación-con-el-criterio-de-éxito" id="toc-relación-con-el-criterio-de-éxito" class="nav-link" data-scroll-target="#relación-con-el-criterio-de-éxito">Relación con el criterio de éxito</a></li>
+  <li><a href="#limitaciones-de-cobertura" id="toc-limitaciones-de-cobertura" class="nav-link" data-scroll-target="#limitaciones-de-cobertura">Limitaciones de cobertura</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/arquitectura.html">E1</a></li><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/trazabilidad.html">trazabilidad.html</a></li></ol></nav></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/arquitectura.html">E1</a></li><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/trazabilidad.html">Matriz de Trazabilidad</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Matriz de Trazabilidad</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
+</header>
 
+
+<section id="objetivo-de-referencia-e0" class="level2">
+<h2 class="anchored" data-anchor-id="objetivo-de-referencia-e0">Objetivo de referencia (E0)</h2>
+<blockquote class="blockquote">
+<p><strong>Analizar los patrones de uso de los libros dentro del acervo histórico para su posterior evaluación y descarte.</strong></p>
+</blockquote>
+<p><strong>Criterio de éxito:</strong> liberar el 15% de los espacios en las estanterías principales, bodegas y pasillos.</p>
+<p>No hubo pivote: el objetivo de minería y el criterio de éxito de E0 se mantienen sin cambios. Las preguntas se conservan con su redacción original; las restricciones que imponen los datos se reflejan en la columna <strong>Estado</strong>.</p>
+</section>
+<section id="matriz-de-trazabilidad" class="level2">
+<h2 class="anchored" data-anchor-id="matriz-de-trazabilidad">Matriz de trazabilidad</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+<col style="width: 16%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Pregunta</th>
+<th style="text-align: left;">Tarea de minería</th>
+<th style="text-align: left;">Métrica (hecho)</th>
+<th style="text-align: left;">Dimensiones</th>
+<th style="text-align: left;">Fuente(s)</th>
+<th style="text-align: left;">Estado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>P1 (E0):</strong> ¿Qué libros dentro del acervo histórico de la biblioteca de la Facultad de Ciencias se encuentran en el catálogo y no son localizables en el acervo?</td>
+<td style="text-align: left;">Detección de anomalías (descriptiva)</td>
+<td style="text-align: left;"><code>cantidad_prestamos</code> filtrada a préstamos sin fecha de devolución (<code>sk_fecha_devolucion</code> nula)</td>
+<td style="text-align: left;"><code>Dim_Libro</code>, <code>Dim_Tiempo</code> (roles: fecha de préstamo y fecha de devolución)</td>
+<td style="text-align: left;">Préstamos desde 2020, Libros completos</td>
+<td style="text-align: left;"><strong>Parcial:</strong> solo detecta ejemplares que salieron en préstamo y no regresaron. No detecta libros extraviados en la estantería sin haberse prestado, ni préstamos anteriores a 2020.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>P2 (E0):</strong> ¿Cuáles son las características comunes de los ejemplares fuera de circulación dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?</td>
+<td style="text-align: left;">Segmentación (clustering)</td>
+<td style="text-align: left;"><code>cantidad_prestamos</code>, <code>dias_prestamo</code></td>
+<td style="text-align: left;"><code>Dim_Libro</code> (clase y subclase LC, número de adquisición), <code>Dim_Tiempo</code></td>
+<td style="text-align: left;">Préstamos desde 2020, Libros completos, Catálogo LC</td>
+<td style="text-align: left;"><strong>Parcial:</strong> las características disponibles se limitan a la temática (jerarquía LC) y al número de adquisición. No se cuenta con año de publicación, idioma ni estado físico.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>P3 (E0):</strong> ¿Qué criterios determinan qué libros deberían ser descartados?</td>
+<td style="text-align: left;">Clasificación (candidato a descarte: sí / no)</td>
+<td style="text-align: left;"><code>cantidad_prestamos</code> (total y en los últimos <em>N</em> años), <code>dias_prestamo</code></td>
+<td style="text-align: left;"><code>Dim_Libro</code>, <code>Dim_Tiempo</code></td>
+<td style="text-align: left;">Préstamos desde 2020, Libros completos, Catálogo LC</td>
+<td style="text-align: left;"><strong>Parcial:</strong> solo es posible construir criterios de uso (circulación). Criterios como estado físico o valor histórico no están en las fuentes.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>P4 (E0):</strong> ¿Qué factores influyen para que un libro deje de ser relevante?</td>
+<td style="text-align: left;">Regresión (tendencia del uso en el tiempo y variables explicativas)</td>
+<td style="text-align: left;"><code>cantidad_prestamos</code> por año</td>
+<td style="text-align: left;"><code>Dim_Tiempo</code> (año), <code>Dim_Libro</code> (clase LC, número de adquisición)</td>
+<td style="text-align: left;">Préstamos desde 2020, Libros completos, Catálogo LC</td>
+<td style="text-align: left;"><strong>Parcial:</strong> solo se pueden evaluar como factores la temática y la antigüedad en el acervo, usando el número de adquisición como <em>proxy</em>. El año de publicación y los factores externos (p.&nbsp;ej. digitalización) no son observables.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="verificación-inversa-dimensiones-y-métricas" class="level2">
+<h2 class="anchored" data-anchor-id="verificación-inversa-dimensiones-y-métricas">Verificación inversa: dimensiones y métricas</h2>
+<p>Cada elemento del esquema estrella responde al menos una pregunta de E0, por lo que no existen dimensiones ni métricas huérfanas.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Elemento del esquema</th>
+<th style="text-align: left;">Tipo</th>
+<th style="text-align: left;">Preguntas que responde</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>Dim_Libro</code></td>
+<td style="text-align: left;">Dimensión</td>
+<td style="text-align: left;">P1, P2, P3, P4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>Dim_Tiempo</code> (rol fecha de préstamo)</td>
+<td style="text-align: left;">Dimensión</td>
+<td style="text-align: left;">P1, P2, P3, P4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>Dim_Tiempo</code> (rol fecha de devolución)</td>
+<td style="text-align: left;">Dimensión</td>
+<td style="text-align: left;">P1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>cantidad_prestamos</code></td>
+<td style="text-align: left;">Métrica aditiva</td>
+<td style="text-align: left;">P1, P2, P3, P4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>dias_prestamo</code></td>
+<td style="text-align: left;">Métrica aditiva</td>
+<td style="text-align: left;">P2, P3</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="consultas-del-datamart-por-pregunta" class="level2">
+<h2 class="anchored" data-anchor-id="consultas-del-datamart-por-pregunta">Consultas del DataMart por pregunta</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Pregunta</th>
+<th style="text-align: left;">Tabla en <code>eq01_mart</code></th>
+<th style="text-align: left;">Operación OLAP</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">P1</td>
+<td style="text-align: left;"><code>Respuesta_P1_Perdidos</code></td>
+<td style="text-align: left;">Filtro sobre el rol de fecha de devolución</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P2</td>
+<td style="text-align: left;"><code>Reporte_Jerarquia_LC</code></td>
+<td style="text-align: left;"><code>GROUP BY ROLLUP(clase_lc, subclase_lc)</code></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">P3</td>
+<td style="text-align: left;"><code>Reporte_Jerarquia_LC</code> (compartida con P2)</td>
+<td style="text-align: left;"><code>GROUP BY ROLLUP(clase_lc, subclase_lc)</code></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">P4</td>
+<td style="text-align: left;"><code>Respuesta_P4_Tendencia_Obsolescencia</code></td>
+<td style="text-align: left;">Agregación por año y clase LC</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="relación-con-el-criterio-de-éxito" class="level2">
+<h2 class="anchored" data-anchor-id="relación-con-el-criterio-de-éxito">Relación con el criterio de éxito</h2>
+<p>Las métricas de apoyo definidas en E0 que el modelo sí puede calcular son el <strong>porcentaje de libros sin préstamos registrados</strong> y las <strong>consultas en los últimos <em>N</em> años</strong>. Ambas se obtienen cruzando <code>Dim_Libro</code> con <code>Hecho_Prestamo</code> mediante un <code>LEFT JOIN</code>, de modo que los ejemplares sin ningún préstamo también aparecen en el resultado.</p>
+<p>Las métricas <em>pasillos más visitados</em> y <em>prueba de exposición</em> no se pueden medir con las fuentes disponibles, porque requieren observación física en la biblioteca.</p>
+<p>Además, el modelo cuenta <strong>ejemplares</strong>, no espacio físico: no existe un atributo de tamaño del libro ni de metros de estantería. Por ello, el 15% del criterio de éxito se aproximará como el 15% de los ejemplares del acervo.</p>
+</section>
+<section id="limitaciones-de-cobertura" class="level2">
+<h2 class="anchored" data-anchor-id="limitaciones-de-cobertura">Limitaciones de cobertura</h2>
+<ol type="1">
+<li><strong>Lectura en sala:</strong> los libros consultados dentro de la biblioteca sin préstamo a domicilio no generan registro. El modelo asume que “cero préstamos = cero uso”, lo que puede marcar como candidatos a descarte libros que sí se consultan (afecta P2 y P3).</li>
+<li><strong>Catálogo frente a acervo físico:</strong> <code>Libros completos</code> es un registro histórico de adquisiciones, no un inventario físico de los estantes. Por eso P1 solo puede responderse de forma indirecta.</li>
+<li><strong>Préstamos vigentes:</strong> un préstamo reciente sin fecha de devolución puede seguir activo, sin que el libro esté extraviado. Para P1 solo deben considerarse como no localizables los préstamos sin devolución con una antigüedad razonable.</li>
+<li><strong>Ventana temporal y pandemia:</strong> los préstamos inician en 2020. En 2020 y 2021 la circulación fue mínima por el cierre de instalaciones, lo que sesga las tendencias de P4 en esos años.</li>
+<li><strong>Clasificación LC incompleta:</strong> algunos ejemplares tienen un prefijo de clasificación que no coincide con el Catálogo LC y quedan sin clase asignada (5,817 préstamos de 170,898, alrededor del 3.4%).</li>
+<li><strong>Antigüedad del libro:</strong> al no existir el año de publicación, P4 usará el <code>numero_adquisicion</code> como <em>proxy</em> de antigüedad en el acervo, dado que se asigna de forma secuencial.</li>
+</ol>
+
+
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

@@ -106,6 +106,83 @@
     ]
   },
   {
+    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html",
+    "href": "entregas/E1_arquitectura_dw/trazabilidad.html",
+    "title": "Matriz de Trazabilidad",
+    "section": "",
+    "text": "Analizar los patrones de uso de los libros dentro del acervo histórico para su posterior evaluación y descarte.\n\nCriterio de éxito: liberar el 15% de los espacios en las estanterías principales, bodegas y pasillos.\nNo hubo pivote: el objetivo de minería y el criterio de éxito de E0 se mantienen sin cambios. Las preguntas se conservan con su redacción original; las restricciones que imponen los datos se reflejan en la columna Estado.",
+    "crumbs": [
+      "E1",
+      "Matriz de Trazabilidad"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html#objetivo-de-referencia-e0",
+    "href": "entregas/E1_arquitectura_dw/trazabilidad.html#objetivo-de-referencia-e0",
+    "title": "Matriz de Trazabilidad",
+    "section": "",
+    "text": "Analizar los patrones de uso de los libros dentro del acervo histórico para su posterior evaluación y descarte.\n\nCriterio de éxito: liberar el 15% de los espacios en las estanterías principales, bodegas y pasillos.\nNo hubo pivote: el objetivo de minería y el criterio de éxito de E0 se mantienen sin cambios. Las preguntas se conservan con su redacción original; las restricciones que imponen los datos se reflejan en la columna Estado.",
+    "crumbs": [
+      "E1",
+      "Matriz de Trazabilidad"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html#matriz-de-trazabilidad",
+    "href": "entregas/E1_arquitectura_dw/trazabilidad.html#matriz-de-trazabilidad",
+    "title": "Matriz de Trazabilidad",
+    "section": "Matriz de trazabilidad",
+    "text": "Matriz de trazabilidad\n\n\n\n\n\n\n\n\n\n\n\nPregunta\nTarea de minería\nMétrica (hecho)\nDimensiones\nFuente(s)\nEstado\n\n\n\n\nP1 (E0): ¿Qué libros dentro del acervo histórico de la biblioteca de la Facultad de Ciencias se encuentran en el catálogo y no son localizables en el acervo?\nDetección de anomalías (descriptiva)\ncantidad_prestamos filtrada a préstamos sin fecha de devolución (sk_fecha_devolucion nula)\nDim_Libro, Dim_Tiempo (roles: fecha de préstamo y fecha de devolución)\nPréstamos desde 2020, Libros completos\nParcial: solo detecta ejemplares que salieron en préstamo y no regresaron. No detecta libros extraviados en la estantería sin haberse prestado, ni préstamos anteriores a 2020.\n\n\nP2 (E0): ¿Cuáles son las características comunes de los ejemplares fuera de circulación dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?\nSegmentación (clustering)\ncantidad_prestamos, dias_prestamo\nDim_Libro (clase y subclase LC, número de adquisición), Dim_Tiempo\nPréstamos desde 2020, Libros completos, Catálogo LC\nParcial: las características disponibles se limitan a la temática (jerarquía LC) y al número de adquisición. No se cuenta con año de publicación, idioma ni estado físico.\n\n\nP3 (E0): ¿Qué criterios determinan qué libros deberían ser descartados?\nClasificación (candidato a descarte: sí / no)\ncantidad_prestamos (total y en los últimos N años), dias_prestamo\nDim_Libro, Dim_Tiempo\nPréstamos desde 2020, Libros completos, Catálogo LC\nParcial: solo es posible construir criterios de uso (circulación). Criterios como estado físico o valor histórico no están en las fuentes.\n\n\nP4 (E0): ¿Qué factores influyen para que un libro deje de ser relevante?\nRegresión (tendencia del uso en el tiempo y variables explicativas)\ncantidad_prestamos por año\nDim_Tiempo (año), Dim_Libro (clase LC, número de adquisición)\nPréstamos desde 2020, Libros completos, Catálogo LC\nParcial: solo se pueden evaluar como factores la temática y la antigüedad en el acervo, usando el número de adquisición como proxy. El año de publicación y los factores externos (p. ej. digitalización) no son observables.",
+    "crumbs": [
+      "E1",
+      "Matriz de Trazabilidad"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html#verificación-inversa-dimensiones-y-métricas",
+    "href": "entregas/E1_arquitectura_dw/trazabilidad.html#verificación-inversa-dimensiones-y-métricas",
+    "title": "Matriz de Trazabilidad",
+    "section": "Verificación inversa: dimensiones y métricas",
+    "text": "Verificación inversa: dimensiones y métricas\nCada elemento del esquema estrella responde al menos una pregunta de E0, por lo que no existen dimensiones ni métricas huérfanas.\n\n\n\nElemento del esquema\nTipo\nPreguntas que responde\n\n\n\n\nDim_Libro\nDimensión\nP1, P2, P3, P4\n\n\nDim_Tiempo (rol fecha de préstamo)\nDimensión\nP1, P2, P3, P4\n\n\nDim_Tiempo (rol fecha de devolución)\nDimensión\nP1\n\n\ncantidad_prestamos\nMétrica aditiva\nP1, P2, P3, P4\n\n\ndias_prestamo\nMétrica aditiva\nP2, P3",
+    "crumbs": [
+      "E1",
+      "Matriz de Trazabilidad"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html#consultas-del-datamart-por-pregunta",
+    "href": "entregas/E1_arquitectura_dw/trazabilidad.html#consultas-del-datamart-por-pregunta",
+    "title": "Matriz de Trazabilidad",
+    "section": "Consultas del DataMart por pregunta",
+    "text": "Consultas del DataMart por pregunta\n\n\n\n\n\n\n\n\nPregunta\nTabla en eq01_mart\nOperación OLAP\n\n\n\n\nP1\nRespuesta_P1_Perdidos\nFiltro sobre el rol de fecha de devolución\n\n\nP2\nReporte_Jerarquia_LC\nGROUP BY ROLLUP(clase_lc, subclase_lc)\n\n\nP3\nReporte_Jerarquia_LC (compartida con P2)\nGROUP BY ROLLUP(clase_lc, subclase_lc)\n\n\nP4\nRespuesta_P4_Tendencia_Obsolescencia\nAgregación por año y clase LC",
+    "crumbs": [
+      "E1",
+      "Matriz de Trazabilidad"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html#relación-con-el-criterio-de-éxito",
+    "href": "entregas/E1_arquitectura_dw/trazabilidad.html#relación-con-el-criterio-de-éxito",
+    "title": "Matriz de Trazabilidad",
+    "section": "Relación con el criterio de éxito",
+    "text": "Relación con el criterio de éxito\nLas métricas de apoyo definidas en E0 que el modelo sí puede calcular son el porcentaje de libros sin préstamos registrados y las consultas en los últimos N años. Ambas se obtienen cruzando Dim_Libro con Hecho_Prestamo mediante un LEFT JOIN, de modo que los ejemplares sin ningún préstamo también aparecen en el resultado.\nLas métricas pasillos más visitados y prueba de exposición no se pueden medir con las fuentes disponibles, porque requieren observación física en la biblioteca.\nAdemás, el modelo cuenta ejemplares, no espacio físico: no existe un atributo de tamaño del libro ni de metros de estantería. Por ello, el 15% del criterio de éxito se aproximará como el 15% de los ejemplares del acervo.",
+    "crumbs": [
+      "E1",
+      "Matriz de Trazabilidad"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html#limitaciones-de-cobertura",
+    "href": "entregas/E1_arquitectura_dw/trazabilidad.html#limitaciones-de-cobertura",
+    "title": "Matriz de Trazabilidad",
+    "section": "Limitaciones de cobertura",
+    "text": "Limitaciones de cobertura\n\nLectura en sala: los libros consultados dentro de la biblioteca sin préstamo a domicilio no generan registro. El modelo asume que “cero préstamos = cero uso”, lo que puede marcar como candidatos a descarte libros que sí se consultan (afecta P2 y P3).\nCatálogo frente a acervo físico: Libros completos es un registro histórico de adquisiciones, no un inventario físico de los estantes. Por eso P1 solo puede responderse de forma indirecta.\nPréstamos vigentes: un préstamo reciente sin fecha de devolución puede seguir activo, sin que el libro esté extraviado. Para P1 solo deben considerarse como no localizables los préstamos sin devolución con una antigüedad razonable.\nVentana temporal y pandemia: los préstamos inician en 2020. En 2020 y 2021 la circulación fue mínima por el cierre de instalaciones, lo que sesga las tendencias de P4 en esos años.\nClasificación LC incompleta: algunos ejemplares tienen un prefijo de clasificación que no coincide con el Catálogo LC y quedan sin clase asignada (5,817 préstamos de 170,898, alrededor del 3.4%).\nAntigüedad del libro: al no existir el año de publicación, P4 usará el numero_adquisicion como proxy de antigüedad en el acervo, dado que se asigna de forma secuencial.",
+    "crumbs": [
+      "E1",
+      "Matriz de Trazabilidad"
+    ]
+  },
+  {
     "objectID": "entregas/E1_arquitectura_dw/fuentes.html",
     "href": "entregas/E1_arquitectura_dw/fuentes.html",
     "title": "Datos",
@@ -224,9 +301,9 @@
   {
     "objectID": "entregas/E1_arquitectura_dw/arquitectura.html#zona-de-staging",
     "href": "entregas/E1_arquitectura_dw/arquitectura.html#zona-de-staging",
-    "title": "Arquitectura Implementada",
+    "title": "Arquitectura",
     "section": "1. Zona de Staging",
-    "text": "1. Zona de Staging\nEn esta capa (eq01_staging) están los datos extraídos de las fuentes originales. Aquí se aplicaron transformaciones de privacidad (eliminación de columnas PII como _CREDENCIAL_ y NOMBRE) y se cargó el catálogo externo de la Library of Congress.\n\n\n\nEvidencia en Staging",
+    "text": "1. Zona de Staging\nEn esta capa (eq01_staging) están los datos extraídos de las fuentes originales. Aquí se aplicaron transformaciones de privacidad (eliminación de columnas PII como _CREDENCIAL_ y NOMBRE) y se cargó el catálogo externo de la Library of Congress.\nEvidencia de esquemas de carga en Staging:\n\n\n\nEsquema Catalogo LC\n\n\n\n\n\nEsquema Libros Completos\n\n\n\n\n\nEsquema Préstamos",
     "crumbs": [
       "E1"
     ]
@@ -234,9 +311,9 @@
   {
     "objectID": "entregas/E1_arquitectura_dw/arquitectura.html#data-warehouse-esquema-estrella",
     "href": "entregas/E1_arquitectura_dw/arquitectura.html#data-warehouse-esquema-estrella",
-    "title": "Arquitectura Implementada",
+    "title": "Arquitectura",
     "section": "2. Data Warehouse (Esquema Estrella)",
-    "text": "2. Data Warehouse (Esquema Estrella)\neq01_dw se construyó utilizando el enfoque de Kimball (Esquema Estrella).\nEl siguiente Script DDL fue ejecutado en BigQuery para transformar los datos de Staging, limpiar la clasificación LC usando expresiones regulares (REGEXP_EXTRACT), resolver conflictos de tipos de datos (CAST), y generar las llaves sustitutas.\n\nScript de Transformación (Staging a DW)\n-- Dimensión Tiempo\nCREATE OR REPLACE TABLE `e1-aymd.eq01_dw.Dim_Tiempo` AS\nSELECT \n    CAST(FORMAT_DATE('%Y%m%d', fecha) AS INT64) AS sk_fecha,\n    fecha AS fecha_completa,\n    EXTRACT(YEAR FROM fecha) AS anio,\n    EXTRACT(MONTH FROM fecha) AS mes\nFROM UNNEST(GENERATE_DATE_ARRAY('2020-01-01', '2026-12-31')) AS fecha;\n\n\n-- Dimensión Libro\nCREATE OR REPLACE TABLE `e1-aymd.eq01_dw.Dim_Libro` AS\nWITH Libros_Limpios AS (\n    SELECT \n        Numero_Adquisicion AS numero_adquisicion,\n        Titulo AS titulo,\n        Clasificacion AS clasificacion,\n        REGEXP_EXTRACT(Clasificacion, r'^[A-Za-z]+') AS prefijo_lc\n    FROM `e1-aymd.eq01_staging.Libros_Completos`\n    WHERE Numero_Adquisicion IS NOT NULL\n)\nSELECT \n    ROW_NUMBER() OVER(ORDER BY l.numero_adquisicion) AS sk_libro,\n    l.numero_adquisicion,\n    l.titulo,\n    l.clasificacion,\n    l.prefijo_lc,\n    c.clase AS clase_lc,\n    c.subclase AS subclase_lc\nFROM Libros_Limpios l\nLEFT JOIN `e1-aymd.eq01_staging.Catalogo_LC` c \n    ON l.prefijo_lc = c.prefijo;\n\n-- Hecho_Prestamo\nCREATE OR REPLACE TABLE `e1-aymd.eq01_dw.Hecho_Prestamo` AS\nSELECT \n    l.sk_libro,\n    CAST(FORMAT_DATE('%Y%m%d', p.`FECHA PRÉSTAMO`) AS INT64) AS sk_fecha_prestamo,\n    CAST(FORMAT_DATE('%Y%m%d', p.`FECHA DEVOLUCIÓN`) AS INT64) AS sk_fecha_devolucion,\n    1 AS cantidad_prestamos,\n    DATE_DIFF(p.`FECHA DEVOLUCIÓN`, p.`FECHA PRÉSTAMO`, DAY) AS dias_prestamo\nFROM `e1-aymd.eq01_staging.Prestamo_Desde_2020` p\nINNER JOIN `e1-aymd.eq01_dw.Dim_Libro` l \n    ON CAST(p.`NÚMERO ADQUISICIÓN` AS STRING) = l.numero_adquisicion\nWHERE p.`FECHA PRÉSTAMO` IS NOT NULL;\n\n\n\nEvidencia Tablas DW",
+    "text": "2. Data Warehouse (Esquema Estrella)\neq01_dw se construyó utilizando el enfoque de Kimball (Esquema Estrella).\nEl siguiente Script DDL fue ejecutado en BigQuery definiendo estrictamente las estructuras, metadatos y relaciones lógicas entre dimensiones y hechos.\n\nScript de Definición (DDL)\n-- 1. Dimensión Tiempo\nCREATE TABLE `e1-aymd.eq01_dw.Dim_Tiempo` (\n    sk_fecha INT64 NOT NULL,\n    fecha_completa DATE,\n    anio INT64,\n    mes INT64,\n    PRIMARY KEY (sk_fecha) NOT ENFORCED\n) OPTIONS (description = 'Dimensión de tiempo. SCD Tipo 0. Responde a: P1, P4');\n\n-- 2. Dimensión Libro\nCREATE TABLE `e1-aymd.eq01_dw.Dim_Libro` (\n    sk_libro INT64 NOT NULL,\n    numero_adquisicion STRING,\n    titulo STRING,\n    clasificacion STRING,\n    prefijo_lc STRING,\n    clase_lc STRING,\n    subclase_lc STRING,\n    PRIMARY KEY (sk_libro) NOT ENFORCED\n) OPTIONS (description = 'Dimensión de ejemplares físicos. SCD Tipo 1. Responde a: P1, P2, P3, P4');\n\n-- 3. Tabla de Hechos: Préstamos\nCREATE TABLE `e1-aymd.eq01_dw.Hecho_Prestamo` (\n    sk_libro INT64 NOT NULL,\n    sk_fecha_prestamo INT64 NOT NULL,\n    sk_fecha_devolucion INT64,\n    cantidad_prestamos INT64,\n    dias_prestamo INT64,\n    FOREIGN KEY (sk_libro) REFERENCES `e1-aymd.eq01_dw.Dim_Libro`(sk_libro) NOT ENFORCED,\n    FOREIGN KEY (sk_fecha_prestamo) REFERENCES `e1-aymd.eq01_dw.Dim_Tiempo`(sk_fecha) NOT ENFORCED,\n    FOREIGN KEY (sk_fecha_devolucion) REFERENCES `e1-aymd.eq01_dw.Dim_Tiempo`(sk_fecha) NOT ENFORCED\n) OPTIONS (description = 'Grano: Una fila por cada evento de préstamo de un ejemplar físico.');\nEvidencia de la creación de los esquemas en el DW:\n\n\n\nEsquema Dim_Tiempo\n\n\n\n\n\nEsquema Dim_Libro\n\n\n\n\n\nEsquema Hecho_Prestamo",
     "crumbs": [
       "E1"
     ]
@@ -244,9 +321,9 @@
   {
     "objectID": "entregas/E1_arquitectura_dw/arquitectura.html#data-marts",
     "href": "entregas/E1_arquitectura_dw/arquitectura.html#data-marts",
-    "title": "Arquitectura Implementada",
+    "title": "Arquitectura",
     "section": "3. Data Marts",
-    "text": "3. Data Marts\nEn la capa final (eq01_mart) materializamos las vistas y tablas que responden directamente a las preguntas de negocio (P1-P4).\nImplementamos la función de jerarquía ROLLUP, la cual generó automáticamente los subtotales por Clase y el Total histórico de la biblioteca.\n\nScript de Generación de Resultados\n-- Reporte de Desuso por Jerarquía LC (ROLLUP)\n-- Responde a P2 y P3: Identificar qué temáticas tienen menor circulación\nCREATE OR REPLACE TABLE `e1-aymd.eq01_mart.Reporte_Jerarquia_LC` AS\nSELECT \n    l.clase_lc,\n    l.subclase_lc,\n    COUNT(h.sk_libro) AS total_prestamos\nFROM `e1-aymd.eq01_dw.Dim_Libro` l\nLEFT JOIN `e1-aymd.eq01_dw.Hecho_Prestamo` h \n    ON l.sk_libro = h.sk_libro\nGROUP BY ROLLUP(l.clase_lc, l.subclase_lc)\nORDER BY l.clase_lc, l.subclase_lc;\n\n-- Respuesta a P1 (Libros no localizables / no devueltos)\nCREATE OR REPLACE TABLE `e1-aymd.eq01_mart.Respuesta_P1_Perdidos` AS\nSELECT \n    l.numero_adquisicion,\n    l.titulo,\n    l.clasificacion,\n    l.clase_lc AS area_tematica,\n    t.fecha_completa AS fecha_del_prestamo_perdido\nFROM `e1-aymd.eq01_dw.Hecho_Prestamo` h\nINNER JOIN `e1-aymd.eq01_dw.Dim_Libro` l \n    ON h.sk_libro = l.sk_libro\nINNER JOIN `e1-aymd.eq01_dw.Dim_Tiempo` t \n    ON h.sk_fecha_prestamo = t.sk_fecha\nWHERE h.sk_fecha_devolucion IS NULL\nORDER BY t.fecha_completa DESC;\n\n-- Respuesta a P4 (Tendencia de Obsolescencia por Año y Área)\nCREATE OR REPLACE TABLE `e1-aymd.eq01_mart.Respuesta_P4_Tendencia_Obsolescencia` AS\nSELECT \n    t.anio AS anio_prestamo,\n    l.clase_lc AS area_tematica,\n    COUNT(h.sk_libro) AS total_prestamos\nFROM `e1-aymd.eq01_dw.Hecho_Prestamo` h\nINNER JOIN `e1-aymd.eq01_dw.Dim_Libro` l \n    ON h.sk_libro = l.sk_libro\nINNER JOIN `e1-aymd.eq01_dw.Dim_Tiempo` t \n    ON h.sk_fecha_prestamo = t.sk_fecha\nWHERE t.anio IS NOT NULL\nGROUP BY t.anio, l.clase_lc\nORDER BY l.clase_lc, t.anio;\nEjecución de ROLLUP:\n\n\n\nJerarquía LC con ROLLUP\n\n\n\n\n\nRespuesta P1 - Libros Perdidos\n\n\n\n\n\nRespuesta P4 - Tendencia de Obsolescencia",
+    "text": "3. Data Marts\nEn la capa final (eq01_mart) diseñamos las consultas SQL de análisis que responden directamente a las preguntas de negocio (P1-P4).\nImplementamos la función de jerarquía ROLLUP para los niveles de clasificación LC.\n\nScript de Consultas Analíticas\n-- Responde: P1 ¿Qué libros no son localizables en el acervo?\nSELECT \n    l.numero_adquisicion,\n    l.titulo,\n    l.clasificacion,\n    t.fecha_completa AS fecha_del_prestamo_perdido\nFROM `e1-aymd.eq01_dw.Hecho_Prestamo` h\nINNER JOIN `e1-aymd.eq01_dw.Dim_Libro` l ON h.sk_libro = l.sk_libro\nINNER JOIN `e1-aymd.eq01_dw.Dim_Tiempo` t ON h.sk_fecha_prestamo = t.sk_fecha\nWHERE h.sk_fecha_devolucion IS NULL;\n\n-- Responde: P2 Características comunes de ejemplares fuera de circulación (ROLLUP)\nSELECT \n    COALESCE(l.clase_lc, 'Sin Clasificación') AS clase,\n    l.subclase_lc AS subclase,\n    SUM(h.cantidad_prestamos) AS total_prestamos\nFROM `e1-aymd.eq01_dw.Dim_Libro` l\nLEFT JOIN `e1-aymd.eq01_dw.Hecho_Prestamo` h ON l.sk_libro = h.sk_libro\nGROUP BY ROLLUP(clase, l.subclase_lc)\nORDER BY clase, subclase;\n\n-- Responde: P3 Criterios de descarte (Ejemplares con CERO uso o nula circulación)\nSELECT \n    l.numero_adquisicion,\n    l.titulo,\n    COALESCE(SUM(h.cantidad_prestamos), 0) AS historico_prestamos\nFROM `e1-aymd.eq01_dw.Dim_Libro` l\nLEFT JOIN `e1-aymd.eq01_dw.Hecho_Prestamo` h ON l.sk_libro = h.sk_libro\nGROUP BY l.numero_adquisicion, l.titulo\nHAVING historico_prestamos = 0;\n\n-- Responde: P4 Factores de obsolescencia (Tendencia de caída temporal)\nSELECT \n    t.anio AS anio_prestamo,\n    l.clase_lc AS area_tematica,\n    SUM(h.cantidad_prestamos) AS total_prestamos\nFROM `e1-aymd.eq01_dw.Hecho_Prestamo` h\nINNER JOIN `e1-aymd.eq01_dw.Dim_Libro` l ON h.sk_libro = l.sk_libro\nINNER JOIN `e1-aymd.eq01_dw.Dim_Tiempo` t ON h.sk_fecha_prestamo = t.sk_fecha\nWHERE t.anio IS NOT NULL\nGROUP BY t.anio, l.clase_lc\nORDER BY l.clase_lc, t.anio;\nEvidencia de validación sintáctica en BigQuery:\n\n\n\nConsultas Válidas P1-P4",
     "crumbs": [
       "E1"
     ]

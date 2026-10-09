@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -42,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d248f73aeb05ac65ad0b5326cc8879c1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ec6c51f2d67698c1203769899b1e9b21.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -180,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../entregas/E1_arquitectura_dw/arquitectura.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">arquitectura.html</span></a>
+ <span class="menu-text">Arquitectura</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -220,12 +220,8 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#grano" id="toc-grano" class="nav-link active" data-scroll-target="#grano">Grano</a></li>
-  <li><a href="#arquitectura-de-3-capas" id="toc-arquitectura-de-3-capas" class="nav-link" data-scroll-target="#arquitectura-de-3-capas">Arquitectura de 3 capas</a>
-  <ul class="collapse">
-  <li><a href="#staging" id="toc-staging" class="nav-link" data-scroll-target="#staging">Staging</a></li>
-  <li><a href="#dw" id="toc-dw" class="nav-link" data-scroll-target="#dw">DW</a></li>
-  <li><a href="#datamart" id="toc-datamart" class="nav-link" data-scroll-target="#datamart">DataMart</a></li>
-  </ul></li>
+  <li><a href="#dimensiones" id="toc-dimensiones" class="nav-link" data-scroll-target="#dimensiones">Dimensiones</a></li>
+  <li><a href="#medidas" id="toc-medidas" class="nav-link" data-scroll-target="#medidas">Medidas</a></li>
   <li><a href="#diagrama-estrella" id="toc-diagrama-estrella" class="nav-link" data-scroll-target="#diagrama-estrella">Diagrama Estrella</a></li>
   </ul>
 </nav>
@@ -254,28 +250,44 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="grano" class="level2">
 <h2 class="anchored" data-anchor-id="grano">Grano</h2>
-<p>Alguno de los granos que podriamos tener es:</p>
-<p>La cantidad de libros que se prestan en un dia.</p>
-<p>Otra podria ser los libros que ha pedido una persona desde 2020.</p>
-<p>Sin embargo el mas natural y que mas puede servir es claramente el siguiente:</p>
-<p>“Una fila por cada evento de préstamo de un ítem/libro realizado a un usuario.”</p>
+<p>Algunos de los granos que podríamos tener como candidatos son:</p>
+<ol type="1">
+<li>La cantidad de libros que se prestan en un día.</li>
+<li>Los libros que ha pedido una persona desde 2020.</li>
+</ol>
+<p>Sin embargo, el grano más natural y que nos otorga mayor flexibilidad analítica es el siguiente:</p>
+<blockquote class="blockquote">
+<p><strong>“Una fila por cada evento de préstamo de un ejemplar físico.”</strong></p>
+</blockquote>
+<p><strong>Justificación y limitaciones:</strong></p>
+<p>Elegimos este grano porque documenta cada transacción a nivel atómico, lo que nos permite responder de forma directa preguntas como la <strong>P2</strong> (características y duración de cada préstamo individual).</p>
+<p>Cabe mencionar que este grano responde la <strong>P1</strong> de manera <em>parcial</em>. Dado que nos basaremos en “eventos de préstamo”, nuestra tabla de hechos es ciega a los libros que desaparecen o son robados directamente de la estantería (ya que no generan un registro en el sistema). A pesar de esta limitación, utilizaremos este grano para responder la P1 identificando aquellos eventos cuya fecha de devolución es nula, detectando así los ejemplares prestados que nunca regresaron a la biblioteca.</p>
 </section>
-<section id="arquitectura-de-3-capas" class="level2">
-<h2 class="anchored" data-anchor-id="arquitectura-de-3-capas">Arquitectura de 3 capas</h2>
-<p>Aqui se presenta nuestra arquitectura planteada.</p>
-<section id="staging" class="level3">
-<h3 class="anchored" data-anchor-id="staging">Staging</h3>
-<p>Ambas son los par de datasets compartidos por bilbioteca el dia 29 de septiembre.</p>
-<p>Capturas de las tablas.</p>
+<section id="dimensiones" class="level2">
+<h2 class="anchored" data-anchor-id="dimensiones">Dimensiones</h2>
+<p>Para mantener el modelo alineado con nuestro objetivo de negocio (identificar libros para descarte) y respetar la privacidad de los estudiantes (eliminando los datos personales), nuestro esquema contará unicamente con dos dimensiones:</p>
+<ul>
+<li><strong>Dim_Libro:</strong> Contiene el detalle de cada ejemplar físico.
+<ul>
+<li><em>Atributos principales:</em> Llave sustituta (<code>sk_libro</code>), Número de adquisición (Llave natural), Título, Clasificación y Jerarquía LC (Prefijo y Clase).</li>
+<li><em>Justificación:</em> Es esencial para agrupar los libros inactivos por área de conocimiento (Ciencias, Matemáticas, etc.) usando la tercera fuente oficial.</li>
+<li><em>SCD (Tipo 1 - Sobrescribir):</em> Si en el futuro un bibliotecario corrige un error ortográfico en el título o ajusta la clasificación de un libro, simplemente sobrescribiremos el registro. No necesitamos guardar el historial de errores tipográficos.</li>
+</ul></li>
+<li><strong>Dim_Tiempo:</strong> Contiene el desglose de fechas.
+<ul>
+<li><em>Atributos principales:</em> Llave sustituta (<code>sk_fecha</code>), Fecha completa (Llave natural), Año, Mes, Semestre.</li>
+<li><em>Justificación:</em> Es obligatoria para calcular tiempos de retención y responder cómo se comportaron los préstamos a través de los años.</li>
+<li><em>SCD (Tipo 0 - Fijo):</em> Los datos del calendario son inmutables. El 15 de marzo de 2021 siempre pertenecerá al año 2021, por lo que esta dimensión jamás cambia.</li>
+</ul></li>
+</ul>
 </section>
-<section id="dw" class="level3">
-<h3 class="anchored" data-anchor-id="dw">DW</h3>
-<p>Codigo del DDL y captura de las tablas ya creadas</p>
-</section>
-<section id="datamart" class="level3">
-<h3 class="anchored" data-anchor-id="datamart">DataMart</h3>
-<p>Codigo de las tablas que contestan las preguntas y sus respectivas capturas</p>
-</section>
+<section id="medidas" class="level2">
+<h2 class="anchored" data-anchor-id="medidas">Medidas</h2>
+<p>En nuestra tabla central de hechos (<code>Hecho_Prestamo</code>), almacenaremos métricas puramente numéricas:</p>
+<ol type="1">
+<li><strong><code>cantidad_prestamos</code> (Aditiva):</strong> Siempre tendrá el valor de <code>1</code>. Al sumarla, nos permite contar cuántas transacciones ocurrieron por libro, por mes o por área de conocimiento.</li>
+<li><strong><code>dias_prestamo</code> (Aditiva):</strong> Calculada como la diferencia de días entre la fecha de préstamo y la fecha de devolución. Nos sirve para sacar promedios de tiempo de retención.</li>
+</ol>
 </section>
 <section id="diagrama-estrella" class="level2">
 <h2 class="anchored" data-anchor-id="diagrama-estrella">Diagrama Estrella</h2>
@@ -286,35 +298,33 @@ ul.task-list li input[type="checkbox"] {
 <div>
 <pre class="mermaid mermaid-js">%%{init: {'er': {'layoutDirection': 'LR'}}}%%
 erDiagram
-    Dim_fecha ||--o{ Hecho_Prestamo : prestamo
-    Dim_fecha ||--o{ Hecho_Prestamo : devolucion
-    Dim_libro ||--o{ Hecho_Prestamo : libro
-    Dim_usuario ||--o{ Hecho_Prestamo : usuario
+    Dim_tiempo ||--o{ Hecho_prestamo : prestamo
+    Dim_tiempo ||--o{ Hecho_prestamo : devolucion
+    Dim_libro ||--o{ Hecho_prestamo : libro
 
     Dim_libro {
-        int numero_adquisicion PK
+        int sk_libro PK "Llave sustituta"
+        string numero_adquisicion "Llave natural"
         string titulo
-        string autor
         string clasificacion
-        string tipo_item
+        string prefijo_lc "Jerarquía LC"
+        string clase_lc "Jerarquía LC"
     }
 
-    Hecho_Prestamo {
-        int libro_key FK
-        int usuario_key FK
-        int fecha_prestamo_key FK
-        int fecha_devolucion_key FK
+    Hecho_prestamo {
+        int sk_libro FK "Llave sustituta"
+        int sk_fecha_prestamo FK "Llave sustituta"
+        int sk_fecha_devolucion FK "Llave sustituta"
+        int cantidad_prestamos "Medida (Aditiva)"
+        int dias_prestamo "Medida (Aditiva)"
     }
 
-    Dim_usuario {
-        int numero_cuenta PK
-        string categoria
-    }
-
-    Dim_fecha {
-        date fecha_completa PK
+    Dim_tiempo {
+        int sk_fecha PK "Llave sustituta"
+        date fecha_completa "Llave natural"
         int anio
         int mes
+        string semestre
     }
 </pre>
 </div>

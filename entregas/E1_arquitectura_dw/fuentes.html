@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.18">
+<meta name="generator" content="quarto-1.10.19">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -42,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-d248f73aeb05ac65ad0b5326cc8879c1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ec6c51f2d67698c1203769899b1e9b21.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -177,7 +177,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../entregas/E1_arquitectura_dw/arquitectura.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">arquitectura.html</span></a>
+ <span class="menu-text">Arquitectura</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -221,6 +221,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#libros-del-acervo" id="toc-libros-del-acervo" class="nav-link" data-scroll-target="#libros-del-acervo">Libros del acervo</a></li>
   <li><a href="#préstamos-de-la-biblioteca" id="toc-préstamos-de-la-biblioteca" class="nav-link" data-scroll-target="#préstamos-de-la-biblioteca">Préstamos de la biblioteca</a></li>
+  <li><a href="#clasificación-de-la-library-of-congress-tercera-fuente" id="toc-clasificación-de-la-library-of-congress-tercera-fuente" class="nav-link" data-scroll-target="#clasificación-de-la-library-of-congress-tercera-fuente">Clasificación de la Library of Congress (Tercera fuente)</a></li>
   </ul></li>
   <li><a href="#análisis-de-integración" id="toc-análisis-de-integración" class="nav-link" data-scroll-target="#análisis-de-integración">Análisis de integración</a></li>
   </ul>
@@ -278,7 +279,7 @@ ul.task-list li input[type="checkbox"] {
 <div style="font-size: 1.5em; text-align: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/2026-10-05_17-34-04.png" class="img-fluid figure-img" width="1000"></p>
+<p><img src="img/2026-10-05_17-34-24.png" class="img-fluid figure-img" width="1000"></p>
 <figcaption>Vistazo de los libros del acervo</figcaption>
 </figure>
 </div>
@@ -335,7 +336,7 @@ ul.task-list li input[type="checkbox"] {
 <div style="font-size: 1.5em; text-align: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="img/2026-10-05_17-34-24.png" class="img-fluid figure-img" width="1000"></p>
+<p><img src="img/2026-10-05_17-34-04.png" class="img-fluid figure-img" width="1000"></p>
 <figcaption>Vistazo de los prestamos</figcaption>
 </figure>
 </div>
@@ -387,15 +388,74 @@ ul.task-list li input[type="checkbox"] {
 </tbody>
 </table>
 </section>
+<section id="clasificación-de-la-library-of-congress-tercera-fuente" class="level3">
+<h3 class="anchored" data-anchor-id="clasificación-de-la-library-of-congress-tercera-fuente">Clasificación de la Library of Congress (Tercera fuente)</h3>
+<p>Durante la exploración de los datos del acervo, identificamos que los libros contaban con etiquetas, como QA, QC y QH. Tras investigar su significado, descubrimos que corresponden al sistema de clasificación de la Library of Congress (LC), así que extrajimos los prefijos más usados (QA, QC, QH…) y armamos un CSV, el cual cumple como una tercera fuente de datos.</p>
+<div style="font-size: 1.5em; text-align: center;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/Catalogo.png" class="img-fluid figure-img" width="1000"></p>
+<figcaption>Página oficial del catálogo LC</figcaption>
+</figure>
+</div>
+</div>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 43%">
+<col style="width: 56%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Campo</th>
+<th>Catálogo LC</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Nombre y dueño</td>
+<td>Library of Congress Classification Outline</td>
+</tr>
+<tr class="even">
+<td>URL y acceso</td>
+<td>Verificado en https://www.loc.gov/catdir/cpso/lcco/ (Convertido a CSV)</td>
+</tr>
+<tr class="odd">
+<td>Formato y tamaño</td>
+<td>CSV de menos de 1 KB</td>
+</tr>
+<tr class="even">
+<td>Grano</td>
+<td>Cada fila representa una subclase o materia específica (ej. Matemáticas, Física)</td>
+</tr>
+<tr class="odd">
+<td>Cobertura</td>
+<td>Clasificaciones internacionales de conocimiento</td>
+</tr>
+<tr class="even">
+<td>Licencia y restricciones</td>
+<td>Es de dominio público, sin restricciones</td>
+</tr>
+<tr class="odd">
+<td>Llaves de integración</td>
+<td>El prefijo de letras cruzará con la columna CLASIFICACIÓN del acervo</td>
+</tr>
+<tr class="even">
+<td>Pregunta(s) relacionada(s)</td>
+<td>Alimenta directamente la P1 y P2 al permitirnos saber de qué “área de la ciencia” son los libros que nunca se prestan.</td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="análisis-de-integración" class="level2">
 <h2 class="anchored" data-anchor-id="análisis-de-integración">Análisis de integración</h2>
-<p>Ambas fuentes se unen a través de la variable <em>libro</em>: una indica qué libro se prestó, y la otra indica la información propia del libro. De esta manera se pueden encontrar patrones, como identificar qué libros son los que más se prestan.</p>
-<p>La diferencia en su granularidad se encuentra principalmente en que, en los datos de préstamo —al ser únicos por fecha, alumno y libro—, hay repeticiones en la aparición de los libros, mientras que en los datos del acervo cada libro aparece una sola vez.</p>
-<p>Algunos problemas que podríamos anticipar:</p>
+<p>El acervo y los préstamos se unen a través del campo <em>NÚMERO ADQUISICIÓN</em>, el cual funciona como llave principal. Al hacer una revisión rápida en Python, vimos que el 100% de las llaves en los préstamos coinciden con el acervo. Además, la tercera fuente (el catálogo LC) se unirá usando las primeras letras de la columna <em>CLASIFICACIÓN</em>(esta columna también lo tienen los préstamos).</p>
+<p>La diferencia en su granularidad se encuentra principalmente en que, en los datos de préstamo —al ser únicos por fecha, alumno y libro—, hay repeticiones en la aparición de los libros, mientras que en los datos del acervo cada libro aparece una sola vez como un ejemplar físico. El catálogo LC es aún más general, pues agrupa muchas clasificaciones en una sola materia.</p>
+<p>Algunos problemas que anticipamos tras revisar los datos son:</p>
 <ul>
-<li>Que no concuerden el número del libro y su nombre entre los datos del acervo y los de préstamos.</li>
-<li>Que los campos de credencial y de cuenta en los datos de préstamos no concuerden entre sí, ya sea porque el número se completa con ceros a la izquierda, o porque directamente los números sean completamente distintos. Si estos casos no se revisan con precaución, podrían duplicarse resultados, sesgando los datos.</li>
+<li><strong>Tipos de datos distintos:</strong> El sistema exportó el número de adquisición como texto (<code>STRING</code>) en el acervo, pero como número (<code>INTEGER</code>) en los préstamos. Tendremos que igualarlos a texto en BigQuery para que crucen.</li>
+<li><strong>Valores vacíos (nulos):</strong> Notamos que alrededor del 1.1% de los préstamos no tienen fecha de devolución, lo que nos dará problemas al calcular tiempos de préstamo. También, 5,036 libros (3.3%) no tienen clasificación, por lo que no cruzarán con nuestra tercera fuente.</li>
+<li><strong>Libros sin uso:</strong> Descubrimos que el 76% de los ejemplares del acervo no tienen ni un solo préstamo registrado entre 2020 y 2026.</li>
 </ul>
 
 

@@ -3,3 +3,9 @@
 _site/
 /.quarto/
 **/*.quarto_ipynb
+
+*.csv
+*.json
+data/
+.env
+*.py

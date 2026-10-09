@@ -14,18 +14,18 @@ Las preguntas que guiarán este proyecto son las siguientes.
 
 ## Preguntas de investigación
 
-### Pregunta 1 — Prioridad alta
+### [P1] Pregunta 1 — Prioridad alta
 
 ¿Qué libros dentro del acervo histórico de la biblioteca de la Facultad de Ciencias se encuentran en el catálogo y no son localizables en el acervo?
 
-### Pregunta 2 — Prioridad alta
+### [P2] Pregunta 2 — Prioridad alta
 
 ¿Cuáles son las características comunes de los ejemplares fuera de circulación dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?
 
-### Pregunta 3
+### [P3] Pregunta 3
 
 ¿Qué criterios determinan qué libros deberían ser descartados?
 
-### Pregunta 4
+### [P4] Pregunta 4
 
 ¿Qué factores influyen para que un libro deje de ser relevante?

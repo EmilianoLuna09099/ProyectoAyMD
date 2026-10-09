@@ -27,7 +27,7 @@ La coordinadora muy abierta y entusiasmada nos proporcionó a través de correo 
 ### Libros del acervo
 
 ::: {style="font-size: 1.5em; text-align: center;"}
-![Vistazo de los libros del acervo](img/2026-10-05_17-34-04.png){width="1000px"}
+![Vistazo de los libros del acervo](img/2026-10-05_17-34-24.png){width="1000px"}
 :::
 
 | Campo | Libros |
@@ -44,7 +44,7 @@ La coordinadora muy abierta y entusiasmada nos proporcionó a través de correo 
 ### Préstamos de la biblioteca
 
 ::: {style="font-size: 1.5em; text-align: center;"}
-![Vistazo de los prestamos](img/2026-10-05_17-34-24.png){width="1000px"}
+![Vistazo de los prestamos](img/2026-10-05_17-34-04.png){width="1000px"}
 :::
 
 | Campo | Prestamos |
@@ -58,13 +58,33 @@ La coordinadora muy abierta y entusiasmada nos proporcionó a través de correo 
 | Llaves de integración | Nombres e identificadores de libros; su catálogo se relaciona con los préstamos |
 | Pregunta(s) relacionada(s) | Este dataset también se relaciona con las cuatro preguntas, ya que brinda la información de los libros prestados, permitiendo relacionarlos con su información particular |
 
+### Clasificación de la Library of Congress (Tercera fuente)
+
+Durante la exploración de los datos del acervo, identificamos que los libros contaban con etiquetas, como QA, QC y QH. Tras investigar su significado, descubrimos que corresponden al sistema de clasificación de la Library of Congress (LC), así que extrajimos los prefijos más usados (QA, QC, QH...) y armamos un CSV, el cual cumple como una tercera fuente de datos.
+
+::: {style="font-size: 1.5em; text-align: center;"}
+![Página oficial del catálogo LC](img/Catalogo.png){width="1000px"}
+:::
+
+| Campo | Catálogo LC |
+|-------|---------|
+| Nombre y dueño | Library of Congress Classification Outline |
+| URL y acceso | Verificado en https://www.loc.gov/catdir/cpso/lcco/ (Convertido a CSV) |
+| Formato y tamaño | CSV de menos de 1 KB |
+| Grano | Cada fila representa una subclase o materia específica (ej. Matemáticas, Física) |
+| Cobertura | Clasificaciones internacionales de conocimiento |
+| Licencia y restricciones | Es de dominio público, sin restricciones |
+| Llaves de integración | El prefijo de letras cruzará con la columna CLASIFICACIÓN del acervo |
+| Pregunta(s) relacionada(s) | Alimenta directamente la P1 y P2 al permitirnos saber de qué "área de la ciencia" son los libros que nunca se prestan. |
+
 ## Análisis de integración
 
-Ambas fuentes se unen a través de la variable *libro*: una indica qué libro se prestó, y la otra indica la información propia del libro. De esta manera se pueden encontrar patrones, como identificar qué libros son los que más se prestan.
+El acervo y los préstamos se unen a través del campo *NÚMERO ADQUISICIÓN*, el cual funciona como llave principal. Al hacer una revisión rápida en Python, vimos que el 100% de las llaves en los préstamos coinciden con el acervo. Además, la tercera fuente (el catálogo LC) se unirá usando las primeras letras de la columna *CLASIFICACIÓN*(esta columna también lo tienen los préstamos).
 
-La diferencia en su granularidad se encuentra principalmente en que, en los datos de préstamo —al ser únicos por fecha, alumno y libro—, hay repeticiones en la aparición de los libros, mientras que en los datos del acervo cada libro aparece una sola vez.
+La diferencia en su granularidad se encuentra principalmente en que, en los datos de préstamo —al ser únicos por fecha, alumno y libro—, hay repeticiones en la aparición de los libros, mientras que en los datos del acervo cada libro aparece una sola vez como un ejemplar físico. El catálogo LC es aún más general, pues agrupa muchas clasificaciones en una sola materia.
 
-Algunos problemas que podríamos anticipar:
+Algunos problemas que anticipamos tras revisar los datos son:
 
-- Que no concuerden el número del libro y su nombre entre los datos del acervo y los de préstamos.
-- Que los campos de credencial y de cuenta en los datos de préstamos no concuerden entre sí, ya sea porque el número se completa con ceros a la izquierda, o porque directamente los números sean completamente distintos. Si estos casos no se revisan con precaución, podrían duplicarse resultados, sesgando los datos.
+- **Tipos de datos distintos:** El sistema exportó el número de adquisición como texto (`STRING`) en el acervo, pero como número (`INTEGER`) en los préstamos. Tendremos que igualarlos a texto en BigQuery para que crucen.
+- **Valores vacíos (nulos):** Notamos que alrededor del 1.1% de los préstamos no tienen fecha de devolución, lo que nos dará problemas al calcular tiempos de préstamo. También, 5,036 libros (3.3%) no tienen clasificación, por lo que no cruzarán con nuestra tercera fuente.
+- **Libros sin uso:** Descubrimos que el 76% de los ejemplares del acervo no tienen ni un solo préstamo registrado entre 2020 y 2026.

@@ -198,7 +198,7 @@
     "href": "entregas/E1_arquitectura_dw/estrella.html#diagrama-estrella",
     "title": "Diagrama estrella",
     "section": "Diagrama Estrella",
-    "text": "Diagrama Estrella\n\n\n\n\n\n%%{init: {'er': {'layoutDirection': 'LR'}}}%%\nerDiagram\n    Dim_tiempo ||--o{ Hecho_prestamo : prestamo\n    Dim_tiempo ||--o{ Hecho_prestamo : devolucion\n    Dim_libro ||--o{ Hecho_prestamo : libro\n\n    Dim_libro {\n        int sk_libro PK \"Llave sustituta\"\n        string numero_adquisicion \"Llave natural\"\n        string titulo\n        string clasificacion\n        string prefijo_lc \"Jerarquía LC\"\n        string clase_lc \"Jerarquía LC\"\n    }\n\n    Hecho_prestamo {\n        int sk_libro FK \"Llave sustituta\"\n        int sk_fecha_prestamo FK \"Llave sustituta\"\n        int sk_fecha_devolucion FK \"Llave sustituta\"\n        int cantidad_prestamos \"Medida (Aditiva)\"\n        int dias_prestamo \"Medida (Aditiva)\"\n    }\n\n    Dim_tiempo {\n        int sk_fecha PK \"Llave sustituta\"\n        date fecha_completa \"Llave natural\"\n        int anio\n        int mes\n        string semestre\n    }",
+    "text": "Diagrama Estrella\n\n\n\n\n\n%%{init: {'er': {'layoutDirection': 'LR'}}}%%\nerDiagram\n    Dim_tiempo ||--o{ Hecho_prestamo : prestamo\n    Dim_tiempo ||--o{ Hecho_prestamo : devolucion\n    Dim_libro ||--o{ Hecho_prestamo : libro\n\n    Dim_libro {\n        int sk_libro PK \"Llave sustituta\"\n        string numero_adquisicion \"Llave natural\"\n        string titulo\n        string clasificacion\n        string prefijo_lc \"Jerarquía LC\"\n        string clase_lc \"Jerarquía LC\"\n    }\n\n    Hecho_prestamo {\n        int sk_libro FK \"Llave sustituta\"\n        int sk_fecha_prestamo FK \"Llave sustituta\"\n        int sk_fecha_devolucion FK \"Llave sustituta\"\n        int cantidad_prestamos \"Medida (Aditiva)\"\n        int dias_prestamo \"Medida (Aditiva)\"\n    }\n\n    Dim_tiempo {\n        int sk_fecha PK \"Llave sustituta\"\n        date fecha_completa \"Llave natural\"\n        int anio\n        int mes\n    }",
     "crumbs": [
       "E1",
       "Diagrama estrella"
@@ -222,21 +222,31 @@
     "text": "About this site"
   },
   {
-    "objectID": "entregas/E1_arquitectura_dw/arquitectura.html",
-    "href": "entregas/E1_arquitectura_dw/arquitectura.html",
-    "title": "Arquitectura",
-    "section": "",
-    "text": "Aquí se presenta nuestra arquitectura planteada.\n\n\nAmbas son los par de datasets compartidos por bilbioteca el dia 29 de septiembre.\nCapturas de las tablas.\n\n\n\nCodigo del DDL y captura de las tablas ya creadas\n\n\n\nCodigo de las tablas que contestan las preguntas y sus respectivas capturas",
+    "objectID": "entregas/E1_arquitectura_dw/arquitectura.html#zona-de-staging",
+    "href": "entregas/E1_arquitectura_dw/arquitectura.html#zona-de-staging",
+    "title": "Arquitectura Implementada",
+    "section": "1. Zona de Staging",
+    "text": "1. Zona de Staging\nEn esta capa (eq01_staging) están los datos extraídos de las fuentes originales. Aquí se aplicaron transformaciones de privacidad (eliminación de columnas PII como _CREDENCIAL_ y NOMBRE) y se cargó el catálogo externo de la Library of Congress.\n\n\n\nEvidencia en Staging",
     "crumbs": [
       "E1"
     ]
   },
   {
-    "objectID": "entregas/E1_arquitectura_dw/arquitectura.html#arquitectura-de-3-capas",
-    "href": "entregas/E1_arquitectura_dw/arquitectura.html#arquitectura-de-3-capas",
-    "title": "Arquitectura",
-    "section": "",
-    "text": "Aquí se presenta nuestra arquitectura planteada.\n\n\nAmbas son los par de datasets compartidos por bilbioteca el dia 29 de septiembre.\nCapturas de las tablas.\n\n\n\nCodigo del DDL y captura de las tablas ya creadas\n\n\n\nCodigo de las tablas que contestan las preguntas y sus respectivas capturas",
+    "objectID": "entregas/E1_arquitectura_dw/arquitectura.html#data-warehouse-esquema-estrella",
+    "href": "entregas/E1_arquitectura_dw/arquitectura.html#data-warehouse-esquema-estrella",
+    "title": "Arquitectura Implementada",
+    "section": "2. Data Warehouse (Esquema Estrella)",
+    "text": "2. Data Warehouse (Esquema Estrella)\neq01_dw se construyó utilizando el enfoque de Kimball (Esquema Estrella).\nEl siguiente Script DDL fue ejecutado en BigQuery para transformar los datos de Staging, limpiar la clasificación LC usando expresiones regulares (REGEXP_EXTRACT), resolver conflictos de tipos de datos (CAST), y generar las llaves sustitutas.\n\nScript de Transformación (Staging a DW)\n-- Dimensión Tiempo\nCREATE OR REPLACE TABLE `e1-aymd.eq01_dw.Dim_Tiempo` AS\nSELECT \n    CAST(FORMAT_DATE('%Y%m%d', fecha) AS INT64) AS sk_fecha,\n    fecha AS fecha_completa,\n    EXTRACT(YEAR FROM fecha) AS anio,\n    EXTRACT(MONTH FROM fecha) AS mes\nFROM UNNEST(GENERATE_DATE_ARRAY('2020-01-01', '2026-12-31')) AS fecha;\n\n\n-- Dimensión Libro\nCREATE OR REPLACE TABLE `e1-aymd.eq01_dw.Dim_Libro` AS\nWITH Libros_Limpios AS (\n    SELECT \n        Numero_Adquisicion AS numero_adquisicion,\n        Titulo AS titulo,\n        Clasificacion AS clasificacion,\n        REGEXP_EXTRACT(Clasificacion, r'^[A-Za-z]+') AS prefijo_lc\n    FROM `e1-aymd.eq01_staging.Libros_Completos`\n    WHERE Numero_Adquisicion IS NOT NULL\n)\nSELECT \n    ROW_NUMBER() OVER(ORDER BY l.numero_adquisicion) AS sk_libro,\n    l.numero_adquisicion,\n    l.titulo,\n    l.clasificacion,\n    l.prefijo_lc,\n    c.clase AS clase_lc,\n    c.subclase AS subclase_lc\nFROM Libros_Limpios l\nLEFT JOIN `e1-aymd.eq01_staging.Catalogo_LC` c \n    ON l.prefijo_lc = c.prefijo;\n\n-- Hecho_Prestamo\nCREATE OR REPLACE TABLE `e1-aymd.eq01_dw.Hecho_Prestamo` AS\nSELECT \n    l.sk_libro,\n    CAST(FORMAT_DATE('%Y%m%d', p.`FECHA PRÉSTAMO`) AS INT64) AS sk_fecha_prestamo,\n    CAST(FORMAT_DATE('%Y%m%d', p.`FECHA DEVOLUCIÓN`) AS INT64) AS sk_fecha_devolucion,\n    1 AS cantidad_prestamos,\n    DATE_DIFF(p.`FECHA DEVOLUCIÓN`, p.`FECHA PRÉSTAMO`, DAY) AS dias_prestamo\nFROM `e1-aymd.eq01_staging.Prestamo_Desde_2020` p\nINNER JOIN `e1-aymd.eq01_dw.Dim_Libro` l \n    ON CAST(p.`NÚMERO ADQUISICIÓN` AS STRING) = l.numero_adquisicion\nWHERE p.`FECHA PRÉSTAMO` IS NOT NULL;\n\n\n\nEvidencia Tablas DW",
+    "crumbs": [
+      "E1"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/arquitectura.html#data-marts",
+    "href": "entregas/E1_arquitectura_dw/arquitectura.html#data-marts",
+    "title": "Arquitectura Implementada",
+    "section": "3. Data Marts",
+    "text": "3. Data Marts\nEn la capa final (eq01_mart) materializamos las vistas y tablas que responden directamente a las preguntas de negocio (P1-P4).\nImplementamos la función de jerarquía ROLLUP, la cual generó automáticamente los subtotales por Clase y el Total histórico de la biblioteca.\n\nScript de Generación de Resultados\n-- Reporte de Desuso por Jerarquía LC (ROLLUP)\n-- Responde a P2 y P3: Identificar qué temáticas tienen menor circulación\nCREATE OR REPLACE TABLE `e1-aymd.eq01_mart.Reporte_Jerarquia_LC` AS\nSELECT \n    l.clase_lc,\n    l.subclase_lc,\n    COUNT(h.sk_libro) AS total_prestamos\nFROM `e1-aymd.eq01_dw.Dim_Libro` l\nLEFT JOIN `e1-aymd.eq01_dw.Hecho_Prestamo` h \n    ON l.sk_libro = h.sk_libro\nGROUP BY ROLLUP(l.clase_lc, l.subclase_lc)\nORDER BY l.clase_lc, l.subclase_lc;\n\n-- Respuesta a P1 (Libros no localizables / no devueltos)\nCREATE OR REPLACE TABLE `e1-aymd.eq01_mart.Respuesta_P1_Perdidos` AS\nSELECT \n    l.numero_adquisicion,\n    l.titulo,\n    l.clasificacion,\n    l.clase_lc AS area_tematica,\n    t.fecha_completa AS fecha_del_prestamo_perdido\nFROM `e1-aymd.eq01_dw.Hecho_Prestamo` h\nINNER JOIN `e1-aymd.eq01_dw.Dim_Libro` l \n    ON h.sk_libro = l.sk_libro\nINNER JOIN `e1-aymd.eq01_dw.Dim_Tiempo` t \n    ON h.sk_fecha_prestamo = t.sk_fecha\nWHERE h.sk_fecha_devolucion IS NULL\nORDER BY t.fecha_completa DESC;\n\n-- Respuesta a P4 (Tendencia de Obsolescencia por Año y Área)\nCREATE OR REPLACE TABLE `e1-aymd.eq01_mart.Respuesta_P4_Tendencia_Obsolescencia` AS\nSELECT \n    t.anio AS anio_prestamo,\n    l.clase_lc AS area_tematica,\n    COUNT(h.sk_libro) AS total_prestamos\nFROM `e1-aymd.eq01_dw.Hecho_Prestamo` h\nINNER JOIN `e1-aymd.eq01_dw.Dim_Libro` l \n    ON h.sk_libro = l.sk_libro\nINNER JOIN `e1-aymd.eq01_dw.Dim_Tiempo` t \n    ON h.sk_fecha_prestamo = t.sk_fecha\nWHERE t.anio IS NOT NULL\nGROUP BY t.anio, l.clase_lc\nORDER BY l.clase_lc, t.anio;\nEjecución de ROLLUP:\n\n\n\nJerarquía LC con ROLLUP\n\n\n\n\n\nRespuesta P1 - Libros Perdidos\n\n\n\n\n\nRespuesta P4 - Tendencia de Obsolescencia",
     "crumbs": [
       "E1"
     ]

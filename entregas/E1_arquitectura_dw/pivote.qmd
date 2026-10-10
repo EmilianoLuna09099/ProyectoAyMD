@@ -1,0 +1,39 @@
+---
+title: "Pivote"
+---
+
+## Pregunta afectada
+
+Fue necesario realizar un pivote en la **pregunta 2** del planteamiento de E0:
+
+> ¿Cuáles son las características comunes de los ejemplares fuera de circulación dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?
+
+## Motivo del pivote
+
+El acervo consta de aproximadamente 150 mil libros, por lo que encontrar todos los datos de cada uno (lugar y fecha de publicación, edición, autor, entre otras características) resultaba una tarea muy difícil y completamente extensa, que quedaba fuera del alcance del proyecto.
+
+## Qué cambia: antes y después
+
+Al notar que el dataset de libros obtenido tenía un atributo clasificador que sigue las reglas de la Clasificación de la Biblioteca del Congreso (LCC, por sus siglas en inglés), pareció más pertinente aprovechar esta característica y explotar la información de tópicos que se puede encontrar en esa sección.
+
+| | Pregunta |
+|---|----------|
+| **Antes (E0)** | ¿Cuáles son las características comunes de los ejemplares fuera de circulación dentro del acervo histórico de la biblioteca de la Facultad de Ciencias? |
+| **Después (E0 v2)** | ¿Cuáles son las características comunes en la signatura topográfica de los ejemplares con menos préstamos dentro del acervo histórico de la biblioteca de la Facultad de Ciencias? |
+
+### Nueva fuente de datos
+
+Para complementar esta parte se buscó una nueva fuente: la clasificación LCC. Al ser una clasificación extensa, buscamos tener un dataset completo que indique específicamente qué clase, subclase y tema específico abarca un libro. Este nuevo dataset se obtuvo directamente del sitio de la Biblioteca del Congreso:
+
+<https://www.loc.gov/catdir/cpso/lcco/>
+
+## Por qué sigue en la línea de E0
+
+El pivote es el mínimo necesario y se mantiene en el mismo dominio y línea de trabajo de E0. La pregunta original buscaba encontrar características comunes en libros con poca o nula circulación; sin embargo, la cantidad de datos por libro, dada la cantidad de libros, era una tarea demasiado extensa.
+
+La nueva pregunta es una especificación de la anterior: busca características concretas de los libros con pocos préstamos, que en este caso tienen que ver con los temas que aborda cada libro (varios libros pueden compartir un mismo tema). Esto se puede comprobar de manera mucho más accesible con el nuevo dataset.
+
+## Resumen de cambios en E0 v2
+
+- La pregunta 2 se actualizó a la nueva formulación en la sección **E0/preguntasv2**.
+- La versión original de E0 se conserva sin cambios.

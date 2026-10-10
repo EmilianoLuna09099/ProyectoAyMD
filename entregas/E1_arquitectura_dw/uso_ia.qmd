@@ -1,17 +1,42 @@
 ---
 title: "Uso de IA"
-format:
-  html:
-    toc: true
-    toc-title: "Contenido"
 ---
 
-## Identificación y creación del 3er conjunto de datos
+En cumplimiento con lo solicitado, documentamos a continuación el uso de herramientas de inteligencia artificial durante esta entrega (E1). Cada uso fue realizado por distintos integrantes del equipo, por lo que se registra de forma separada.
 
-Se utilizó la IA para analizar los prefijos temáticos de los libros de la Facultad. Geminí ayudó a detectar y confirmar que dichas letras correspondían al formato global estándar de la **Library of Congress (LC)**. 
+## Uso 1: Presentación y organización de las páginas
 
-A partir de este hallazgo, la herramienta nos asistió en la creación del archivo base `Catalogo_LC.csv` que sirvió como nuestra tercera fuente de datos externa.
+**Herramienta:** Claude (Sonnet 5.5), de Anthropic, a través de la interfaz de chat.
 
-## Mejora de redacción y formato
+**Tarea:** Apoyo para dar presentación y estructura en formato Quarto (`.qmd`) a las páginas de esta entrega, corregir ortografía y resolver dudas de sintaxis. En particular:
 
-Se empleó la herramienta como revisor de estilo para mejorar la claridad, fluidez y corrección ortotipográfica de los documentos finales redactados en formato Markdown (Quarto). Así mismo, sirvió como apoyo para la creación correcta de tablas y esquemas visuales.
+- La página de **Datos** (obtención de datos, tablas del catálogo y análisis de integración).
+- La página de **Pivote**, siguiendo la guía de la entrega.
+- El **diagrama estrella** en Mermaid (`erDiagram`), incluyendo el ajuste de la distribución de las líneas.
+
+**Prompts empleados (resumen fiel):**
+
+- Se compartió un borrador de texto con la obtención de los datos, la descripción de los dos datasets (acervo y préstamos) y el análisis de integración, y se pidió presentarlo para Quarto, con la sección del catálogo en forma de tablas y con la ortografía corregida.
+- Se preguntó cómo hacer diagramas en Mermaid (`erDiagram`) y se compartió la imagen del esquema estrella elaborado previamente para obtener su equivalente en Mermaid.
+- Se compartió una captura del diagrama ya renderizado en el sitio, donde las flechas y etiquetas quedaban empalmadas, y se pidió ayuda para corregirlo; después se compartió el código usado hasta ese momento para recibir una versión ajustada.
+- Se compartió el texto del pivote junto con la guía de la entrega, y se pidió corregir ortografía y presentación para Quarto.
+
+## Uso 2: Identificación del formato de clasificación de los libros
+
+**Herramienta:** Gemini.
+
+**Tarea:** Se utilizó para analizar los prefijos temáticos de los libros de la Facultad. La herramienta ayudó a detectar y confirmar que dichas letras correspondían al formato estándar de la Library of Congress (LC). A partir de este hallazgo, la herramienta asistió en la creación del archivo base `Catalogo_LC.csv`, que sirvió como la tercera fuente de datos externa del proyecto.
+
+**Prompts empleados:** *(pendiente: pegar los prompts de forma íntegra o como resumen fiel)*
+
+## Uso 3: Eliminación del atributo autor del dataset de libros
+
+**Herramienta:** Gemini
+
+**Tarea:** Apoyo de un integrante del equipo para quitar el atributo `autor` del dataset de libros.
+
+**Prompts empleados:** *(pendiente: pegar los prompts de forma íntegra o como resumen fiel)*
+
+## Nota
+
+Todo el contenido generado con apoyo de estas herramientas fue revisado por el equipo antes de incluirse en el sitio, y las ideas, decisiones y análisis presentados corresponden al criterio del equipo.

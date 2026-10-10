@@ -390,7 +390,8 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="clasificación-de-la-library-of-congress-tercera-fuente" class="level3">
 <h3 class="anchored" data-anchor-id="clasificación-de-la-library-of-congress-tercera-fuente">Clasificación de la Library of Congress (Tercera fuente)</h3>
-<p>Durante la exploración de los datos del acervo, identificamos que los libros contaban con etiquetas, como QA, QC y QH. Tras investigar su significado, descubrimos que corresponden al sistema de clasificación de la Library of Congress (LC), así que extrajimos los prefijos más usados (QA, QC, QH…) y armamos un CSV, el cual cumple como una tercera fuente de datos.</p>
+<p>Durante la exploración de los datos del acervo, identificamos que los libros contaban con etiquetas complejas de catalogación (como QA611 o RC300). Tras investigar su significado, descubrimos que corresponden al sistema de clasificación de la <strong>Library of Congress (LC)</strong>.</p>
+<p>Para sacarle provecho, descargamos el <em>Outline</em> jerárquico completo de la LC y construimos un catálogo de 3 niveles (Clase, Subclase y Tema Específico), el cual cruzará mediante rangos numéricos y servirá como nuestra tercera fuente de datos externa.</p>
 <div style="font-size: 1.5em; text-align: center;">
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -425,7 +426,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="even">
 <td>Grano</td>
-<td>Cada fila representa una subclase o materia específica (ej. Matemáticas, Física)</td>
+<td>Cada fila representa un rango numérico asociado a un tema específico (ej. Geometría, Topología) dentro de una subclase LC</td>
 </tr>
 <tr class="odd">
 <td>Cobertura</td>
@@ -437,7 +438,7 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 <tr class="odd">
 <td>Llaves de integración</td>
-<td>El prefijo de letras cruzará con la columna CLASIFICACIÓN del acervo</td>
+<td>El prefijo de letras y la evaluación de que el número del libro caiga dentro del rango numérico del tema</td>
 </tr>
 <tr class="even">
 <td>Pregunta(s) relacionada(s)</td>
@@ -449,12 +450,13 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="análisis-de-integración" class="level2">
 <h2 class="anchored" data-anchor-id="análisis-de-integración">Análisis de integración</h2>
-<p>El acervo y los préstamos se unen a través del campo <em>NÚMERO ADQUISICIÓN</em>, el cual funciona como llave principal. Al hacer una revisión rápida en Python, vimos que el 100% de las llaves en los préstamos coinciden con el acervo. Además, la tercera fuente (el catálogo LC) se unirá usando las primeras letras de la columna <em>CLASIFICACIÓN</em>(esta columna también lo tienen los préstamos).</p>
+<p>El acervo y los préstamos se unen a través del campo <em>NÚMERO ADQUISICIÓN</em>, el cual funciona como llave principal. Al hacer una revisión rápida en Python, vimos que el 100% de las llaves en los préstamos coinciden con el acervo. Además, la tercera fuente (el catálogo LC) se unirá usando la extracción de las letras del prefijo y evaluando matemáticamente el número de la <em>CLASIFICACIÓN</em> contra los rangos del catálogo.</p>
 <p>La diferencia en su granularidad se encuentra principalmente en que, en los datos de préstamo —al ser únicos por fecha, alumno y libro—, hay repeticiones en la aparición de los libros, mientras que en los datos del acervo cada libro aparece una sola vez como un ejemplar físico. El catálogo LC es aún más general, pues agrupa muchas clasificaciones en una sola materia.</p>
 <p>Algunos problemas que anticipamos tras revisar los datos son:</p>
 <ul>
 <li><strong>Tipos de datos distintos:</strong> El sistema exportó el número de adquisición como texto (<code>STRING</code>) en el acervo, pero como número (<code>INTEGER</code>) en los préstamos. Tendremos que igualarlos a texto en BigQuery para que crucen.</li>
 <li><strong>Valores vacíos (nulos):</strong> Notamos que alrededor del 1.1% de los préstamos no tienen fecha de devolución, lo que nos dará problemas al calcular tiempos de préstamo. También, 5,036 libros (3.3%) no tienen clasificación, por lo que no cruzarán con nuestra tercera fuente.</li>
+<li><strong>Baja calidad en metadatos (Autores):</strong> Descubrimos que a casi la mitad del acervo (72,710 libros) le falta el registro del autor original. Por esta razón, tomamos la decisión arquitectónica de descartar esta variable y no incluirla en nuestra <code>Dim_Libro</code> para evitar un sesgo masivo en el análisis.</li>
 <li><strong>Libros sin uso:</strong> Descubrimos que el 76% de los ejemplares del acervo no tienen ni un solo préstamo registrado entre 2020 y 2026.</li>
 </ul>
 

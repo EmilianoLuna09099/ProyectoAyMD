@@ -1,55 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E0_comprension_negocio/preguntas.html</loc>
-    <lastmod>2026-10-09T02:39:24.368Z</lastmod>
-  </url>
-  <url>
-    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E0_comprension_negocio/bitacora.html</loc>
-    <lastmod>2026-10-08T21:22:11.058Z</lastmod>
-  </url>
-  <url>
-    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E0_comprension_negocio/criterio_exito.html</loc>
-    <lastmod>2026-10-08T21:22:11.058Z</lastmod>
-  </url>
-  <url>
-    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E1_arquitectura_dw/trazabilidad.html</loc>
-    <lastmod>2026-10-10T16:06:39.047Z</lastmod>
-  </url>
-  <url>
-    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E1_arquitectura_dw/fuentes.html</loc>
-    <lastmod>2026-10-10T16:46:50.823Z</lastmod>
-  </url>
-  <url>
-    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E1_arquitectura_dw/estrella.html</loc>
-    <lastmod>2026-10-10T16:06:39.046Z</lastmod>
-  </url>
-  <url>
-    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/index.html</loc>
-    <lastmod>2026-10-08T21:22:11.059Z</lastmod>
-  </url>
-  <url>
     <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/about.html</loc>
-    <lastmod>2026-10-08T21:22:11.057Z</lastmod>
-  </url>
-  <url>
-    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E1_arquitectura_dw/arquitectura.html</loc>
-    <lastmod>2026-10-10T16:05:07.048Z</lastmod>
-  </url>
-  <url>
-    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E1_arquitectura_dw/uso_ia.html</loc>
-    <lastmod>2026-10-10T14:59:11.226Z</lastmod>
-  </url>
-  <url>
-    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E0_comprension_negocio/canvas.html</loc>
-    <lastmod>2026-10-08T21:22:11.058Z</lastmod>
+    <lastmod>2026-09-04T03:43:22.080Z</lastmod>
   </url>
   <url>
     <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E0_comprension_negocio/riesgos_supuestos.html</loc>
-    <lastmod>2026-10-08T21:22:11.058Z</lastmod>
+    <lastmod>2026-09-11T15:42:56.459Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E0_comprension_negocio/canvas.html</loc>
+    <lastmod>2026-09-12T23:55:43.779Z</lastmod>
   </url>
   <url>
     <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E0_comprension_negocio/uso_ia.html</loc>
-    <lastmod>2026-10-08T21:22:11.058Z</lastmod>
+    <lastmod>2026-09-11T22:08:35.893Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E0_comprension_negocio/preguntas.html</loc>
+    <lastmod>2026-10-10T15:55:57.574Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E1_arquitectura_dw/uso_ia.html</loc>
+    <lastmod>2026-10-10T18:38:46.903Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E1_arquitectura_dw/estrella.html</loc>
+    <lastmod>2026-10-10T16:15:02.902Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E1_arquitectura_dw/trazabilidad.html</loc>
+    <lastmod>2026-10-10T18:07:52.644Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E1_arquitectura_dw/arquitectura.html</loc>
+    <lastmod>2026-10-10T15:55:57.574Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E1_arquitectura_dw/fuentes.html</loc>
+    <lastmod>2026-10-10T17:15:01.326Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E1_arquitectura_dw/pivote.html</loc>
+    <lastmod>2026-10-10T18:20:13.619Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E0_comprension_negocio/criterio_exito.html</loc>
+    <lastmod>2026-09-11T16:08:45.932Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E0_comprension_negocio/bitacora.html</loc>
+    <lastmod>2026-09-11T15:45:01.684Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/entregas/E0_comprension_negocio/preguntasv2.html</loc>
+    <lastmod>2026-10-10T18:01:17.135Z</lastmod>
+  </url>
+  <url>
+    <loc>https://EmilianoLuna09099.github.io/ProyectoAyMD/index.html</loc>
+    <lastmod>2026-09-13T23:28:22.151Z</lastmod>
   </url>
 </urlset>

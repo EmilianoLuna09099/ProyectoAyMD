@@ -1,5 +1,100 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/riesgos_supuestos.html",
+    "href": "entregas/E0_comprension_negocio/riesgos_supuestos.html",
+    "title": "Riesgos",
+    "section": "",
+    "text": "A partir de la entrevista y del recorrido por las instalaciones, identificamos los siguientes riesgos para el proyecto.\n\n\nDurante la entrevista, la doctora dejó ver que no se puede saber a ciencia cierta si un libro ha sido consultado o no. Esto abre la posibilidad de que falten datos sobre la consulta de ciertos títulos, información necesaria para determinar si pueden ser descartados.\nMitigación propuesta: implementar un seguimiento más detallado del uso de los libros, para identificar cuáles son realmente consultados y cuáles han sido “olvidados” desde hace tiempo.\n\n\n\nOtro punto importante que la doctora aportó con mucho detalle es que el proceso de descarte o ingreso de libros debe estar estrictamente regulado por la facultad, ya que existe la posibilidad de que haya libros únicos en la universidad —o incluso en el país— y libros que sean patrimonio. Por esta razón, la manipulación o el descarte de libros puede verse limitado por intereses ajenos a la simple optimización de espacio.\nMitigación propuesta: generar un proceso de selección específico para este tipo de libros, que contemple un espacio especial, categorizado y resguardado, pero que no impida la llegada de nuevas líneas de conocimiento.\n\n\n\nSiguiendo con este tema, la doctora también enfatizó en que el equipo no puede realizar ciertas tareas porque no están dentro de sus funciones. Esto significa que, por mucho que ella quisiera catalogar los datos personalmente, no podría hacerlo.\nMitigación propuesta: plantear a la facultad un plan que genere un presupuesto para apoyar la organización de la biblioteca.\n\n\n\nDurante el recorrido por los pasillos notamos cajas de libros con hongos, lo cual plantea la necesidad de una revisión a profundidad por motivos de sanidad.",
+    "crumbs": [
+      "E0",
+      "Riesgos"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/riesgos_supuestos.html#riesgos-identificados",
+    "href": "entregas/E0_comprension_negocio/riesgos_supuestos.html#riesgos-identificados",
+    "title": "Riesgos",
+    "section": "",
+    "text": "A partir de la entrevista y del recorrido por las instalaciones, identificamos los siguientes riesgos para el proyecto.\n\n\nDurante la entrevista, la doctora dejó ver que no se puede saber a ciencia cierta si un libro ha sido consultado o no. Esto abre la posibilidad de que falten datos sobre la consulta de ciertos títulos, información necesaria para determinar si pueden ser descartados.\nMitigación propuesta: implementar un seguimiento más detallado del uso de los libros, para identificar cuáles son realmente consultados y cuáles han sido “olvidados” desde hace tiempo.\n\n\n\nOtro punto importante que la doctora aportó con mucho detalle es que el proceso de descarte o ingreso de libros debe estar estrictamente regulado por la facultad, ya que existe la posibilidad de que haya libros únicos en la universidad —o incluso en el país— y libros que sean patrimonio. Por esta razón, la manipulación o el descarte de libros puede verse limitado por intereses ajenos a la simple optimización de espacio.\nMitigación propuesta: generar un proceso de selección específico para este tipo de libros, que contemple un espacio especial, categorizado y resguardado, pero que no impida la llegada de nuevas líneas de conocimiento.\n\n\n\nSiguiendo con este tema, la doctora también enfatizó en que el equipo no puede realizar ciertas tareas porque no están dentro de sus funciones. Esto significa que, por mucho que ella quisiera catalogar los datos personalmente, no podría hacerlo.\nMitigación propuesta: plantear a la facultad un plan que genere un presupuesto para apoyar la organización de la biblioteca.\n\n\n\nDurante el recorrido por los pasillos notamos cajas de libros con hongos, lo cual plantea la necesidad de una revisión a profundidad por motivos de sanidad.",
+    "crumbs": [
+      "E0",
+      "Riesgos"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/canvas.html",
+    "href": "entregas/E0_comprension_negocio/canvas.html",
+    "title": "Canvas",
+    "section": "",
+    "text": "Canvas del proyecto",
+    "crumbs": [
+      "E0",
+      "Canvas"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/uso_ia.html",
+    "href": "entregas/E0_comprension_negocio/uso_ia.html",
+    "title": "IA",
+    "section": "",
+    "text": "Claude (Sonnet 5), de Anthropic, a través de la interfaz de chat.",
+    "crumbs": [
+      "E0",
+      "IA"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/uso_ia.html#herramienta-utilizada",
+    "href": "entregas/E0_comprension_negocio/uso_ia.html#herramienta-utilizada",
+    "title": "IA",
+    "section": "",
+    "text": "Claude (Sonnet 5), de Anthropic, a través de la interfaz de chat.",
+    "crumbs": [
+      "E0",
+      "IA"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/uso_ia.html#tareas-para-las-que-se-usó",
+    "href": "entregas/E0_comprension_negocio/uso_ia.html#tareas-para-las-que-se-usó",
+    "title": "IA",
+    "section": "Tareas para las que se usó",
+    "text": "Tareas para las que se usó\n\nRedacción y presentación de las páginas del sitio. Se utilizó la herramienta para organizar el contenido en formato Quarto (.qmd), corregir ortografía y dar estructura (encabezados, tablas, listas, citas) a la bitácora de entrevista, la sección de riesgos identificados y la sección de criterio de éxito.\nApoyo para ejemplificar indicadores/métricas. Se usó como apoyo para obtener ejemplos del tipo de indicadores que se podían proponer en la sección de criterio de éxito (por ejemplo, porcentaje de libros sin préstamos, frecuencia de consulta, proporción de préstamos respecto al acervo), como punto de partida para pensar qué variables podían ser relevantes.",
+    "crumbs": [
+      "E0",
+      "IA"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/uso_ia.html#prompts-empleados-resumen-fiel",
+    "href": "entregas/E0_comprension_negocio/uso_ia.html#prompts-empleados-resumen-fiel",
+    "title": "IA",
+    "section": "Prompts empleados (resumen fiel)",
+    "text": "Prompts empleados (resumen fiel)\n\n“¿Cómo puedo hacer tablas en Quarto para una página web?”\nSe compartió la transcripción de la bitácora de entrevista (en texto plano, con errores de formato en las tablas y de ortografía) y se pidió: “¿Me podrías organizar esto de mejor manera para un archivo qmd? Corrigiendo ortografía también, por favor.”\nSe compartió un borrador con los riesgos identificados durante la entrevista (falta de datos de consulta de libros, regulación de libros patrimoniales, limitaciones de funciones del personal, condiciones de sanidad) y se pidió darle presentación y organización para un archivo qmd.\nSe compartió un borrador de la sección de criterio de éxito, incluyendo el criterio definido con la stakeholder (liberar 15% del espacio) y una lista de posibles mediciones, junto con el enunciado de la indicación de tarea sobre cómo expresar el criterio de éxito. Se pidió ayuda para organizarlo en un archivo qmd.\nSe indicó una corrección: que no era necesario definir desde ese momento métricas técnicas específicas (como recall o error absoluto), sino explicar cómo el criterio de éxito del negocio podría vincularse con indicadores que después se conecten con métricas técnicas; se pidió ajustar la sección correspondiente conforme a esta aclaración.",
+    "crumbs": [
+      "E0",
+      "IA"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/uso_ia.html#nota",
+    "href": "entregas/E0_comprension_negocio/uso_ia.html#nota",
+    "title": "IA",
+    "section": "Nota",
+    "text": "Nota\nTodo el contenido generado con apoyo de la herramienta fue revisado por el equipo antes de incluirse en el sitio, y las ideas, decisiones y análisis presentados corresponden al criterio del equipo acorde al tema que se buscaba abordar y tomando como base la información recabada directamente en la entrevista con la Dra. María Victoria Guzmán Sánchez.",
+    "crumbs": [
+      "E0",
+      "IA"
+    ]
+  },
+  {
     "objectID": "entregas/E0_comprension_negocio/preguntas.html",
     "href": "entregas/E0_comprension_negocio/preguntas.html",
     "title": "Preguntas de investigación",
@@ -33,175 +128,58 @@
     ]
   },
   {
-    "objectID": "entregas/E0_comprension_negocio/bitacora.html",
-    "href": "entregas/E0_comprension_negocio/bitacora.html",
-    "title": "Bitácora de entrevista",
+    "objectID": "entregas/E1_arquitectura_dw/uso_ia.html",
+    "href": "entregas/E1_arquitectura_dw/uso_ia.html",
+    "title": "Uso de IA",
     "section": "",
-    "text": "Campo\nDetalle\n\n\n\n\nFecha\n09 de septiembre de 2026\n\n\nHora\n9:00 - 10:00 am\n\n\nLugar\nOficinas de personal de biblioteca “El Búnker”\n\n\nEntrevistada\nDra. María Victoria Guzmán Sánchez, coordinadora de la biblioteca de la Facultad de Ciencias de la UNAM\n\n\nEntrevistadores\nOscar Figueroa Bobadilla, José Adolfo Vázquez Dávila, Emiliano Luna Campos\n\n\nObjetivo\nObtener una perspectiva con experiencia sobre las problemáticas de espacio en la biblioteca",
-    "crumbs": [
-      "E0"
-    ]
-  },
-  {
-    "objectID": "entregas/E0_comprension_negocio/bitacora.html#datos-generales",
-    "href": "entregas/E0_comprension_negocio/bitacora.html#datos-generales",
-    "title": "Bitácora de entrevista",
-    "section": "",
-    "text": "Campo\nDetalle\n\n\n\n\nFecha\n09 de septiembre de 2026\n\n\nHora\n9:00 - 10:00 am\n\n\nLugar\nOficinas de personal de biblioteca “El Búnker”\n\n\nEntrevistada\nDra. María Victoria Guzmán Sánchez, coordinadora de la biblioteca de la Facultad de Ciencias de la UNAM\n\n\nEntrevistadores\nOscar Figueroa Bobadilla, José Adolfo Vázquez Dávila, Emiliano Luna Campos\n\n\nObjetivo\nObtener una perspectiva con experiencia sobre las problemáticas de espacio en la biblioteca",
-    "crumbs": [
-      "E0"
-    ]
-  },
-  {
-    "objectID": "entregas/E0_comprension_negocio/bitacora.html#contexto-de-la-entrevista",
-    "href": "entregas/E0_comprension_negocio/bitacora.html#contexto-de-la-entrevista",
-    "title": "Bitácora de entrevista",
-    "section": "Contexto de la entrevista",
-    "text": "Contexto de la entrevista\nLa entrevista se realizó de manera presencial en la oficina de la Dra. María y se llevó a cabo sin interrupción alguna.\nPor parte de la entrevistada, siempre se mostró muy abierta y amigable, dispuesta a tomarse el tiempo necesario para responder detenidamente las preguntas. Todas las respuestas fueron seguras y fundamentadas con explicaciones detalladas.",
-    "crumbs": [
-      "E0"
-    ]
-  },
-  {
-    "objectID": "entregas/E0_comprension_negocio/bitacora.html#bitácora",
-    "href": "entregas/E0_comprension_negocio/bitacora.html#bitácora",
-    "title": "Bitácora de entrevista",
-    "section": "Bitácora",
-    "text": "Bitácora\nPrimero nos presentamos y realizamos una breve introducción de por qué queríamos hacerle la entrevista. Antes de que pudiéramos formular cualquier pregunta, la Dra. María comenzó a describirnos las situaciones en las que se encontraba la biblioteca.\nSe le hicieron preguntas acerca del descarte de libros para ganar espacio en la biblioteca. Esto ya se podía intuir de cierto modo, ya que al recorrer los pasillos se notaban libros y cajas apiladas; incluso la oficina misma de la doctora estaba repleta de cajas de libros.\nAlgo interesante es que ella realizó su doctorado en el área de minería de datos, por lo que estaba familiarizada con el tema y entendía en qué zonas del problema podíamos aplicar algoritmos.\n\n“Esta cantidad de cajas que hay aquí en los pasillos, esa bodega que está ahí está llena de cajas y el sótano está lleno de cajas. Entonces el problema es… yo me encontré así, el montón es acumulativo y yo tengo que solucionar ese problema como biblioteca.”\n\n\n“Por ejemplo, yo tengo ahora mismo 8000 títulos en cajas que están hoy en el catálogo… pero realmente no está en el acervo, está metido en una caja. Eso es un problema.”\n\n\n“Aquí tenemos los 8000 títulos que están en caja, porque quien estuvo antes que yo decidió meterlos en caja, no sé bajo qué criterio, 8000 títulos.”\n\n\n“Entonces ahí tendrían que aplicar técnicas de data mining… tendrían que hacer un análisis para saber qué libros son los que se deben descartar, ya que yo sí tengo inventario, pero después tengo un montón que no están en ningún lugar.”\n\nDándonos ya un panorama amplio de una de las problemáticas de la biblioteca, comenzamos a realizarle las preguntas que habíamos preparado. Cabe mencionar que algunas no fueron formuladas, ya que en sus propios argumentos ya se habían respondido.\n\nSituación actual del espacio\nAl realizarle una pregunta más concreta en cuanto a espacios, nos dio una respuesta relacionada con cómo la ocupación de libros limita a su vez el espacio para los alumnos.\n¿Cuál es la situación actual del espacio en la biblioteca y cómo les afecta día a día?\n\n“Los estudiantes y los profesores de asignatura que también asisten a la biblioteca nos han dicho que la biblioteca está gentrificada, que no hay espacio, que necesitan incluso más espacio. Realmente hay poco espacio, sobre todo para que crezca el fondo o para crear espacios colaborativos para los estudiantes, donde haya pizarrones, donde haya mesas para trabajo en equipo, porque hoy solo tenemos espacios de silencio y, a veces, también hacen trabajo en equipo y los dejamos, porque entendemos que hay ejercicios que hay que hacer en grupo.\nY una manera de crear espacio es tener un proceso de descarte realmente acorde a lo que debe hacerse en una biblioteca. Pero aquí se pasó… no sé, hace 30 años que no se termina un proceso de descarte.”\n\n\n\nConsecuencias de mantener libros sin circulación\n¿Qué consecuencias operativas o para los usuarios tiene mantener libros sin circulación en las estanterías principales?\n\n“Mientras más libros tú tengas que no se estén usando… muchos libros se compran, vamos a partir de ahí, por las propias sugerencias que hacen los estudiantes o los profesores, y eso se va acumulando. Quizás en un momento tuvieron un uso, pero aquí hay libros de hace más de 20 años, 30 años, libros de 40 años. Si tú no haces un proceso de cómo es el uso de ese libro, en función de las necesidades de la comunidad de estudiantes, se te van a ir acumulando infinitamente; entonces tienes que hacer, obligatoriamente, un proceso de descarte.”\n\n\n“A la vez que tú hagas ese proceso, te deshaces de los 8000 libros que no se utilizan porque están obsoletos. Entonces, todo eso les afecta a ustedes realmente, porque no se tiene un fondo actualizado acorde a las nuevas tendencias del conocimiento, en la línea de conocimiento que hay ahora.”\n\n\n\nFrecuencia del problema\n¿Qué tan frecuente es que un libro ocioso ocupe el lugar de material nuevo o de mayor demanda?\n\n“Muy frecuente. De hecho, ahora te estoy diciendo que tenemos ese problema: no sabemos la magnitud de libros que tenemos que nunca se han usado. Sí tenemos identificado lo que más se ha usado.”\n\n\n“Pero muchas veces ya no nos caben en el fondo, y los libros nuevos y los libros viejos coexisten en el espacio físico, no coexisten en una estantería por criterio de uso. Puede haber un libro del año 50 o 52 junto con un libro del año 2025; podría suceder que coincidan en el mismo espacio y no hemos hecho un estudio de si el del año 50 realmente se está utilizando.”\n\n\n\nLimitaciones de tiempo e infraestructura\nComo coordinadora, esto nos ayuda a tener un panorama completo del problema, ya que se relaciona con otra situación.\n¿Qué limitaciones de tiempo, personal o infraestructura tienen para realizar este proceso de clasificación y reagrupamiento?\n\n“Bueno, el personal bibliotecario que debería hacer ese proceso no lo tiene en su función; es un tema administrativo.”\n\n\n“Para que ellos trabajen en este proceso —por ejemplo, lo que ya hicimos, que fue escanear en un sistema cada libro y registrarlo— se tuvo que solicitar una cláusula especial, que implica un pago adicional para la facultad. La facultad tiene que reembolsar un presupuesto para realizar ese trabajo.”\n\n\n“Entonces el proceso depende de esa negociación entre delegados sindicales, personal administrativo y la administración de la facultad.”\n\n\n“Por ejemplo, este proceso lo hicimos sábado y domingo, fuera de sus horarios de trabajo, durante un mes, para poder escanear todo lo que estaba en bodega o en el piso, en cualquier lugar.”\n\n\n\nErrores al retirar libros\n¿Se han equivocado antes al retirar un libro que, tiempo después, un profesor o alumno volvió a pedir?\n\n“El problema es que cuando tú retiras el libro, ya lo descartaste, ya se le da de baja del catálogo, y el profesor no lo puede localizar. Entonces nunca va a pasar que el profesor pida un libro que tú ya hayas descartado, porque lo quitaste del catálogo.”\n\n\n“Sí suele pasar que, de los 8000 libros que tengo en caja —que sí siguen en el catálogo— me los pueden pedir, y yo no los puedo localizar, porque, como estaban en caja desde la gestión anterior, tienes que ponerte a revisar caja por caja.”\n\n\n“Tengo muchísimas cajas de libros que no están en el catálogo, que en su momento alguien decidió meter en caja y dar de baja del catálogo sin terminar el proceso, porque cuando tú terminas el proceso, termina donándolo.”\n\n\n\nMétricas de éxito del proyecto\n¿Qué resultado haría que consideraran este proyecto un éxito? Por ejemplo, ¿liberar el 15% de los estantes sin recibir quejas por falta de títulos?\n\n“Sí, yo pienso así, más del 15%. Pero, fíjense, más que el estante, yo me sentiría satisfecha si al menos liberamos los espacios comunes. El problema no es solo la estantería, sino todo lo demás que tenemos. Liberar el 15% sería perfecto, pero después tenemos que liberar todo lo que tenemos en pasillos, en bodegas, en sótanos, que también es parte de la eficiencia del uso del espacio de la biblioteca.”\n\n\n\nReflexiones finales\nTras salir de la entrevista, el equipo notó qué tan grande y entrelazado es el problema de los espacios en la facultad. Realmente, la idea inicial era la de que la biblioteca da entrada y salida de libros continuamente y cabía la posibilidad de agilizar el proceso buscando. Sin embargo, nos encontramos con un problema más grande, en el cual hay muchísimos libros ocupando espacio en condiciones en las cuales tal vez ni siquiera están registrados o su registro se ha perdido por completo. Ahora tenemos un panorama con más variables acerca de la cantidad de libros que ocupan espacios comunes, o intereses relacionados con la protección de libros por su valor como patrimonio, así como un posible problema de cómo saber si ciertos libros son consultados y cómo se busca un equilibrio para que libros antiguos convivan con los más recientes.",
-    "crumbs": [
-      "E0"
-    ]
-  },
-  {
-    "objectID": "entregas/E0_comprension_negocio/criterio_exito.html",
-    "href": "entregas/E0_comprension_negocio/criterio_exito.html",
-    "title": "Exito",
-    "section": "",
-    "text": "El criterio de éxito se obtuvo de manera totalmente directa en la entrevista, a partir de la última pregunta. Se propuso optimizar en un 15% el espacio en los estantes de la biblioteca; sin embargo, la doctora propuso celebrar más bien el que espacios como pasillos, oficinas o el sótano queden despejados de cajas de libros o de libros tirados directamente.\nAsí, podríamos definir el criterio de la siguiente manera:\n\nLiberar el 15% de los espacios en las estanterías principales, bodegas y pasillos.",
-    "crumbs": [
-      "E0",
-      "Exito"
-    ]
-  },
-  {
-    "objectID": "entregas/E0_comprension_negocio/criterio_exito.html#criterio-de-éxito",
-    "href": "entregas/E0_comprension_negocio/criterio_exito.html#criterio-de-éxito",
-    "title": "Exito",
-    "section": "",
-    "text": "El criterio de éxito se obtuvo de manera totalmente directa en la entrevista, a partir de la última pregunta. Se propuso optimizar en un 15% el espacio en los estantes de la biblioteca; sin embargo, la doctora propuso celebrar más bien el que espacios como pasillos, oficinas o el sótano queden despejados de cajas de libros o de libros tirados directamente.\nAsí, podríamos definir el criterio de la siguiente manera:\n\nLiberar el 15% de los espacios en las estanterías principales, bodegas y pasillos.",
-    "crumbs": [
-      "E0",
-      "Exito"
-    ]
-  },
-  {
-    "objectID": "entregas/E0_comprension_negocio/criterio_exito.html#mediciones-y-métricas-de-apoyo",
-    "href": "entregas/E0_comprension_negocio/criterio_exito.html#mediciones-y-métricas-de-apoyo",
-    "title": "Exito",
-    "section": "Mediciones y métricas de apoyo",
-    "text": "Mediciones y métricas de apoyo\nPara poder dar seguimiento a este criterio, nos podemos apoyar de las siguientes mediciones:\n\nPorcentaje de libros sin préstamos registrados, o que se dejan en el carrito para ser acomodados.\nPasillos más visitados por piso, para identificar que libros son los mas concurridos.\nPrueba de exposición: colocar algunos libros del sótano en las estanterías principales, para observar si son consultados y con qué frecuencia.\nConsultas en los últimos N años (por ejemplo, 3 o 5 años), como indicador de vigencia de un título.\nProporción de préstamos totales respecto a la cantidad total de libros en el acervo.\n\nDe esta manera, estas mediciones se pueden convertir en las variables y etiquetas que permitan clasificar u ordenar los libros para el proceso de descarte.",
-    "crumbs": [
-      "E0",
-      "Exito"
-    ]
-  },
-  {
-    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html",
-    "href": "entregas/E1_arquitectura_dw/trazabilidad.html",
-    "title": "Trazabilidad",
-    "section": "",
-    "text": "PREGUNTA\nTAREA DE MINERÍA\nMÉTRICA (HECHO)\nDIMENSIONES\nFUENTE(S)\nESTADO\n\n\n\n\nP1 (E0): ¿Qué libros dentro del acervo histórico se encuentran en el catálogo y no son localizables en el acervo?\nDetección de anomalías (descriptiva)\ncantidad_prestamos filtrada a préstamos sin fecha de devolución\nDim_Libro, Dim_Tiempo\nPréstamos desde 2020, Acervo\nParcial: Solo detecta ejemplares que salieron en préstamo y no regresaron. No detecta libros extraviados en estantería sin haberse prestado, ni préstamos anteriores a 2020.\n\n\nP2 (E0): ¿Cuáles son las características comunes de los ejemplares fuera de circulación?\nSegmentación (clustering)\ncantidad_prestamos, dias_prestamo\nDim_Libro (Clase, Subclase y Tema específico LC), Dim_Tiempo\nPréstamos desde 2020, Acervo, Catálogo LC\nParcial: Las características se limitan a la temática (Jerarquía LC de 3 niveles) y al número de adquisición. No se cuenta con año de publicación, idioma ni estado físico.\n\n\nP3 (E0): ¿Qué criterios determinan qué libros deberían ser descartados?\nClasificación (candidato a descarte: sí/no)\ncantidad_prestamos (total y en últimos N años), dias_prestamo\nDim_Libro, Dim_Tiempo\nPréstamos desde 2020, Acervo, Catálogo LC\nParcial: Solo es posible construir criterios de uso (circulación temporal). Criterios como estado físico o valor histórico documental no existen en las fuentes.\n\n\nP4 (E0): ¿Qué factores influyen para que un libro deje de ser relevante en el tiempo?\nRegresión (tendencia del uso en el tiempo)\ncantidad_prestamos por año\nDim_Tiempo (año), Dim_Libro (temática LC y núm. adquisición)\nPréstamos desde 2020, Acervo, Catálogo LC\nParcial: Solo se evalúan la temática y la antigüedad usando el número de adquisición como sustituto.",
+    "text": "En cumplimiento con lo solicitado, documentamos a continuación el uso de herramientas de inteligencia artificial durante esta entrega (E1). Cada uso fue realizado por distintos integrantes del equipo, por lo que se registra de forma separada.",
     "crumbs": [
       "E1",
-      "Trazabilidad"
+      "Uso de IA"
     ]
   },
   {
-    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html#matriz-de-trazabilidad-a-e0",
-    "href": "entregas/E1_arquitectura_dw/trazabilidad.html#matriz-de-trazabilidad-a-e0",
-    "title": "Trazabilidad",
-    "section": "",
-    "text": "PREGUNTA\nTAREA DE MINERÍA\nMÉTRICA (HECHO)\nDIMENSIONES\nFUENTE(S)\nESTADO\n\n\n\n\nP1 (E0): ¿Qué libros dentro del acervo histórico se encuentran en el catálogo y no son localizables en el acervo?\nDetección de anomalías (descriptiva)\ncantidad_prestamos filtrada a préstamos sin fecha de devolución\nDim_Libro, Dim_Tiempo\nPréstamos desde 2020, Acervo\nParcial: Solo detecta ejemplares que salieron en préstamo y no regresaron. No detecta libros extraviados en estantería sin haberse prestado, ni préstamos anteriores a 2020.\n\n\nP2 (E0): ¿Cuáles son las características comunes de los ejemplares fuera de circulación?\nSegmentación (clustering)\ncantidad_prestamos, dias_prestamo\nDim_Libro (Clase, Subclase y Tema específico LC), Dim_Tiempo\nPréstamos desde 2020, Acervo, Catálogo LC\nParcial: Las características se limitan a la temática (Jerarquía LC de 3 niveles) y al número de adquisición. No se cuenta con año de publicación, idioma ni estado físico.\n\n\nP3 (E0): ¿Qué criterios determinan qué libros deberían ser descartados?\nClasificación (candidato a descarte: sí/no)\ncantidad_prestamos (total y en últimos N años), dias_prestamo\nDim_Libro, Dim_Tiempo\nPréstamos desde 2020, Acervo, Catálogo LC\nParcial: Solo es posible construir criterios de uso (circulación temporal). Criterios como estado físico o valor histórico documental no existen en las fuentes.\n\n\nP4 (E0): ¿Qué factores influyen para que un libro deje de ser relevante en el tiempo?\nRegresión (tendencia del uso en el tiempo)\ncantidad_prestamos por año\nDim_Tiempo (año), Dim_Libro (temática LC y núm. adquisición)\nPréstamos desde 2020, Acervo, Catálogo LC\nParcial: Solo se evalúan la temática y la antigüedad usando el número de adquisición como sustituto.",
+    "objectID": "entregas/E1_arquitectura_dw/uso_ia.html#uso-1-presentación-y-organización-de-las-páginas",
+    "href": "entregas/E1_arquitectura_dw/uso_ia.html#uso-1-presentación-y-organización-de-las-páginas",
+    "title": "Uso de IA",
+    "section": "Uso 1: Presentación y organización de las páginas",
+    "text": "Uso 1: Presentación y organización de las páginas\nHerramienta: Claude (Sonnet 5.5), de Anthropic, a través de la interfaz de chat.\nTarea: Apoyo para dar presentación y estructura en formato Quarto (.qmd) a las páginas de esta entrega, corregir ortografía y resolver dudas de sintaxis. En particular:\n\nLa página de Datos (obtención de datos, tablas del catálogo y análisis de integración).\nLa página de Pivote, siguiendo la guía de la entrega.\nEl diagrama estrella en Mermaid (erDiagram), incluyendo el ajuste de la distribución de las líneas.\n\nPrompts empleados (resumen fiel):\n\nSe compartió un borrador de texto con la obtención de los datos, la descripción de los dos datasets (acervo y préstamos) y el análisis de integración, y se pidió presentarlo para Quarto, con la sección del catálogo en forma de tablas y con la ortografía corregida.\nSe preguntó cómo hacer diagramas en Mermaid (erDiagram) y se compartió la imagen del esquema estrella elaborado previamente para obtener su equivalente en Mermaid.\nSe compartió una captura del diagrama ya renderizado en el sitio, donde las flechas y etiquetas quedaban empalmadas, y se pidió ayuda para corregirlo; después se compartió el código usado hasta ese momento para recibir una versión ajustada.\nSe compartió el texto del pivote junto con la guía de la entrega, y se pidió corregir ortografía y presentación para Quarto.",
     "crumbs": [
       "E1",
-      "Trazabilidad"
+      "Uso de IA"
     ]
   },
   {
-    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html#verificación-inversa-dimensiones-y-métricas",
-    "href": "entregas/E1_arquitectura_dw/trazabilidad.html#verificación-inversa-dimensiones-y-métricas",
-    "title": "Trazabilidad",
-    "section": "Verificación Inversa: Dimensiones y Métricas",
-    "text": "Verificación Inversa: Dimensiones y Métricas\nCada elemento del esquema estrella responde al menos a una pregunta de la E0, demostrando que no existen dimensiones ni métricas huérfanas.\n\n\n\nELEMENTO DEL ESQUEMA\nTIPO\nPREGUNTAS QUE RESPONDE\n\n\n\n\nDim_Libro\nDimensión\nP1, P2, P3, P4\n\n\nDim_Tiempo (rol fecha de préstamo)\nDimensión\nP1, P2, P3, P4\n\n\nDim_Tiempo (rol fecha de devolución)\nDimensión\nP1\n\n\ncantidad_prestamos\nMétrica aditiva\nP1, P2, P3, P4\n\n\ndias_prestamo\nMétrica aditiva\nP2, P3",
+    "objectID": "entregas/E1_arquitectura_dw/uso_ia.html#uso-2-identificación-del-formato-de-clasificación-de-los-libros",
+    "href": "entregas/E1_arquitectura_dw/uso_ia.html#uso-2-identificación-del-formato-de-clasificación-de-los-libros",
+    "title": "Uso de IA",
+    "section": "Uso 2: Identificación del formato de clasificación de los libros",
+    "text": "Uso 2: Identificación del formato de clasificación de los libros\nHerramienta: Gemini.\nTarea: Se utilizó para analizar los prefijos temáticos de los libros de la Facultad. La herramienta ayudó a detectar y confirmar que dichas letras correspondían al formato estándar de la Library of Congress (LC). A partir de este hallazgo, la herramienta asistió en la creación del archivo base Catalogo_LC.csv, que sirvió como la tercera fuente de datos externa del proyecto.\nPrompts empleados: (pendiente: pegar los prompts de forma íntegra o como resumen fiel)",
     "crumbs": [
       "E1",
-      "Trazabilidad"
+      "Uso de IA"
     ]
   },
   {
-    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html#relación-con-el-criterio-de-éxito",
-    "href": "entregas/E1_arquitectura_dw/trazabilidad.html#relación-con-el-criterio-de-éxito",
-    "title": "Trazabilidad",
-    "section": "Relación con el Criterio de Éxito",
-    "text": "Relación con el Criterio de Éxito\nLas métricas de apoyo definidas en E0 que el modelo sí puede calcular son el porcentaje de libros sin préstamos registrados y las consultas en los últimos N años. Ambas se obtienen cruzando Dim_Libro con Hecho_Prestamo mediante un LEFT JOIN, de modo que los ejemplares sin ningún préstamo histórico también aparecen en el resultado con un valor de cero.\nEl criterio de éxito del proyecto está directamente alineado con la granularidad del modelo: el objetivo de liberar el 15% del acervo se medirá calculando matemáticamente el 15% del total de ejemplares (unidades) registrados en la dimensión de libros, identificándolos como candidatos viables para descarte.",
+    "objectID": "entregas/E1_arquitectura_dw/uso_ia.html#uso-3-eliminación-del-atributo-autor-del-dataset-de-libros",
+    "href": "entregas/E1_arquitectura_dw/uso_ia.html#uso-3-eliminación-del-atributo-autor-del-dataset-de-libros",
+    "title": "Uso de IA",
+    "section": "Uso 3: Eliminación del atributo autor del dataset de libros",
+    "text": "Uso 3: Eliminación del atributo autor del dataset de libros\nHerramienta: Gemini\nTarea: Apoyo de un integrante del equipo para quitar el atributo autor del dataset de libros.\nPrompts empleados: (pendiente: pegar los prompts de forma íntegra o como resumen fiel)",
     "crumbs": [
       "E1",
-      "Trazabilidad"
+      "Uso de IA"
     ]
   },
   {
-    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html#limitaciones-de-cobertura",
-    "href": "entregas/E1_arquitectura_dw/trazabilidad.html#limitaciones-de-cobertura",
-    "title": "Trazabilidad",
-    "section": "Limitaciones de Cobertura",
-    "text": "Limitaciones de Cobertura\n\nLectura en sala: Los libros consultados dentro de la biblioteca sin préstamo a domicilio no generan registro en el sistema. El modelo asume estrictamente que “cero préstamos = cero uso”, lo que podría marcar como candidatos a descarte libros que sí se leen en sala (afecta P2 y P3).\nCatálogo frente a acervo físico: La fuente de “Libros completos” es un registro histórico de adquisiciones, no un inventario físico en tiempo real de los estantes. Por eso, la P1 solo puede responderse de forma indirecta.\nVentana temporal y pandemia: Los préstamos inician en 2020. Durante 2020 y 2021 la circulación fue mínima por el cierre de instalaciones debido a la pandemia, lo que sesga las tendencias temporales de la P4 en esos primeros años.\nAntigüedad del libro: Al no existir el año de publicación en la base de datos, la P4 utilizará el numero_adquisicion como un sustituto de la antigüedad en el acervo, asumiendo que los números de adquisición se asignan de forma secuencial cronológica.",
+    "objectID": "entregas/E1_arquitectura_dw/uso_ia.html#nota",
+    "href": "entregas/E1_arquitectura_dw/uso_ia.html#nota",
+    "title": "Uso de IA",
+    "section": "Nota",
+    "text": "Nota\nTodo el contenido generado con apoyo de estas herramientas fue revisado por el equipo antes de incluirse en el sitio, y las ideas, decisiones y análisis presentados corresponden al criterio del equipo.",
     "crumbs": [
       "E1",
-      "Trazabilidad"
-    ]
-  },
-  {
-    "objectID": "entregas/E1_arquitectura_dw/fuentes.html",
-    "href": "entregas/E1_arquitectura_dw/fuentes.html",
-    "title": "Datos",
-    "section": "",
-    "text": "Los datos se obtuvieron directamente de la misma biblioteca de la Facultad de Ciencias.",
-    "crumbs": [
-      "E1",
-      "Datos"
-    ]
-  },
-  {
-    "objectID": "entregas/E1_arquitectura_dw/fuentes.html#obtención-de-datos",
-    "href": "entregas/E1_arquitectura_dw/fuentes.html#obtención-de-datos",
-    "title": "Datos",
-    "section": "Obtención de datos",
-    "text": "Obtención de datos\nAl hablar por primera vez en la entrevista con la coordinadora de la biblioteca, se mostró abierta a prestarnos los datos del acervo y los préstamos de biblioteca para poder trabajar sobre estos mismos.\nEs por esta razón que, en lugar de buscar en DeepSearch, portales de datos, buscadores de datasets o datos públicos, se visitó nuevamente el “búnker” de la biblioteca para solicitar una segunda reunion con la coordinadora. Esta segunda reunión se llevo nuevamente a cabo en la oficina de la Dra. María Victoria Guzmán Sánchez, en esta ocasion no se tenia la intencionde “robarle” tanto tiempo a la coordinadora por lo que sin muchas vueltas se le solicitaron los datos acerca de los que nos había mencionado con anterioridad.\nLa coordinadora muy abierta y entusiasmada nos proporcionó a través de correo los datos del acervo de libros y de préstamos, los cuales son un par de datasets que contienen alrededor de 150 mil y 170 mil registros respectivamente, cada uno.",
-    "crumbs": [
-      "E1",
-      "Datos"
-    ]
-  },
-  {
-    "objectID": "entregas/E1_arquitectura_dw/fuentes.html#catálogo",
-    "href": "entregas/E1_arquitectura_dw/fuentes.html#catálogo",
-    "title": "Datos",
-    "section": "Catálogo",
-    "text": "Catálogo\n\n\n\n\nDrive donde se compartieron los datasets\n\n\n\n\n\n\n\nDatasets desplegados\n\n\n\n\nLibros del acervo\n\n\n\n\nVistazo de los libros del acervo\n\n\n\n\n\n\n\n\n\n\nCampo\nLibros\n\n\n\n\nNombre y dueño\nTodos los libros del acervo de la biblioteca, Facultad de Ciencias, UNAM\n\n\nURL y acceso\nEnlace verificado y forma de acceso (descarga, API, BigQuery)\n\n\nFormato y tamaño\nCSV de 14.6 MB\n\n\nGrano\nCada fila representa un libro único perteneciente al acervo de la biblioteca\n\n\nCobertura\nTodos los libros registrados en el acervo\n\n\nLicencia y restricciones\nNo se presentó alguna restricción especial\n\n\nLlaves de integración\nNombres e identificadores de libros; su catálogo se relaciona con los préstamos\n\n\nPregunta(s) relacionada(s)\nEste catálogo alimenta directamente las cuatro preguntas planteadas en la E0, ya que contiene las características de qué libros están en el dataset y permite identificar cuáles no es posible localizar, sus características comunes y sus factores de relevancia\n\n\n\n\n\nPréstamos de la biblioteca\n\n\n\n\nVistazo de los prestamos\n\n\n\n\n\n\n\n\n\n\nCampo\nPrestamos\n\n\n\n\nNombre y dueño\nPréstamos desde 2020, Facultad de Ciencias, UNAM\n\n\nURL y acceso\nEnlace verificado y forma de acceso (descarga, API, BigQuery)\n\n\nFormato y tamaño\nCSV de 25.5 MB\n\n\nGrano\nCada fila representa un préstamo de un libro a una persona\n\n\nCobertura\nPeriodo 2020–2026\n\n\nLicencia y restricciones\nContiene nombres y números de cuenta de las personas que piden libros, los cuales se solicitó explícitamente que no fueran revelados\n\n\nLlaves de integración\nNombres e identificadores de libros; su catálogo se relaciona con los préstamos\n\n\nPregunta(s) relacionada(s)\nEste dataset también se relaciona con las cuatro preguntas, ya que brinda la información de los libros prestados, permitiendo relacionarlos con su información particular\n\n\n\n\n\nClasificación de la Library of Congress (Tercera fuente)\nDurante la exploración de los datos del acervo, identificamos que los libros contaban con etiquetas complejas de catalogación (como QA611 o RC300). Tras investigar su significado, descubrimos que corresponden al sistema de clasificación de la Library of Congress (LC).\nPara sacarle provecho, descargamos el Outline jerárquico completo de la LC y construimos un catálogo de 3 niveles (Clase, Subclase y Tema Específico), el cual cruzará mediante rangos numéricos y servirá como nuestra tercera fuente de datos externa.\n\n\n\n\nPágina oficial del catálogo LC\n\n\n\n\n\n\n\n\n\n\nCampo\nCatálogo LC\n\n\n\n\nNombre y dueño\nLibrary of Congress Classification Outline\n\n\nURL y acceso\nVerificado en https://www.loc.gov/catdir/cpso/lcco/ (Convertido a CSV)\n\n\nFormato y tamaño\nCSV de menos de 1 KB\n\n\nGrano\nCada fila representa un rango numérico asociado a un tema específico (ej. Geometría, Topología) dentro de una subclase LC\n\n\nCobertura\nClasificaciones internacionales de conocimiento\n\n\nLicencia y restricciones\nEs de dominio público, sin restricciones\n\n\nLlaves de integración\nEl prefijo de letras y la evaluación de que el número del libro caiga dentro del rango numérico del tema\n\n\nPregunta(s) relacionada(s)\nAlimenta directamente la P1 y P2 al permitirnos saber de qué “área de la ciencia” son los libros que nunca se prestan.",
-    "crumbs": [
-      "E1",
-      "Datos"
-    ]
-  },
-  {
-    "objectID": "entregas/E1_arquitectura_dw/fuentes.html#análisis-de-integración",
-    "href": "entregas/E1_arquitectura_dw/fuentes.html#análisis-de-integración",
-    "title": "Datos",
-    "section": "Análisis de integración",
-    "text": "Análisis de integración\nEl acervo y los préstamos se unen a través del campo NÚMERO ADQUISICIÓN, el cual funciona como llave principal. Al hacer una revisión rápida en Python, vimos que el 100% de las llaves en los préstamos coinciden con el acervo. Además, la tercera fuente (el catálogo LC) se unirá usando la extracción de las letras del prefijo y evaluando matemáticamente el número de la CLASIFICACIÓN contra los rangos del catálogo.\nLa diferencia en su granularidad se encuentra principalmente en que, en los datos de préstamo —al ser únicos por fecha, alumno y libro—, hay repeticiones en la aparición de los libros, mientras que en los datos del acervo cada libro aparece una sola vez como un ejemplar físico. El catálogo LC es aún más general, pues agrupa muchas clasificaciones en una sola materia.\nAlgunos problemas que anticipamos tras revisar los datos son:\n\nTipos de datos distintos: El sistema exportó el número de adquisición como texto (STRING) en el acervo, pero como número (INTEGER) en los préstamos. Tendremos que igualarlos a texto en BigQuery para que crucen.\nValores vacíos (nulos): Notamos que alrededor del 1.1% de los préstamos no tienen fecha de devolución, lo que nos dará problemas al calcular tiempos de préstamo. También, 5,036 libros (3.3%) no tienen clasificación, por lo que no cruzarán con nuestra tercera fuente.\nBaja calidad en metadatos (Autores): Descubrimos que a casi la mitad del acervo (72,710 libros) le falta el registro del autor original. Por esta razón, tomamos la decisión arquitectónica de descartar esta variable y no incluirla en nuestra Dim_Libro para evitar un sesgo masivo en el análisis.\nLibros sin uso: Descubrimos que el 76% de los ejemplares del acervo no tienen ni un solo préstamo registrado entre 2020 y 2026.",
-    "crumbs": [
-      "E1",
-      "Datos"
+      "Uso de IA"
     ]
   },
   {
@@ -260,21 +238,59 @@
     ]
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Proyecto Almacenes y Mineria de Datos",
+    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html",
+    "href": "entregas/E1_arquitectura_dw/trazabilidad.html",
+    "title": "Trazabilidad",
     "section": "",
-    "text": "Sitio de Quarto para el semestre en la materia de Almacenes y Mineria de Datos.\nIntegrantes:\nJosé Adolfo Vázquez Dávila\nOscar Figueroa Bobadilla\nEmiliano Luna Campos",
+    "text": "PREGUNTA\nTAREA DE MINERÍA\nMÉTRICA (HECHO)\nDIMENSIONES\nFUENTE(S)\nESTADO\n\n\n\n\nP1 (E0): ¿Qué libros dentro del acervo histórico se encuentran en el catálogo y no son localizables en el acervo?\nDetección de anomalías (descriptiva)\ncantidad_prestamos filtrada a préstamos sin fecha de devolución\nDim_Libro, Dim_Tiempo\nPréstamos desde 2020, Acervo\nParcial: Solo detecta ejemplares que salieron en préstamo y no regresaron. No detecta libros extraviados en estantería sin haberse prestado, ni préstamos anteriores a 2020.\n\n\nP2 (E0): ¿Cuáles son las características comunes en la signatura topográfica de los ejemplares con menos préstamos dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?\nSegmentación (clustering)\ncantidad_prestamos, dias_prestamo\nDim_Libro (Clase, Subclase y Tema específico LC), Dim_Tiempo\nPréstamos desde 2020, Acervo, Catálogo LC\nParcial: Las características se limitan a la temática (Jerarquía LC de 3 niveles) y al número de adquisición. No se cuenta con año de publicación, idioma ni estado físico.\n\n\nP3 (E0): ¿Qué criterios determinan qué libros deberían ser descartados?\nClasificación (candidato a descarte: sí/no)\ncantidad_prestamos (total y en últimos N años), dias_prestamo\nDim_Libro, Dim_Tiempo\nPréstamos desde 2020, Acervo, Catálogo LC\nParcial: Solo es posible construir criterios de uso (circulación temporal). Criterios como estado físico o valor histórico documental no existen en las fuentes.\n\n\nP4 (E0): ¿Qué factores influyen para que un libro deje de ser relevante en el tiempo?\nRegresión (tendencia del uso en el tiempo)\ncantidad_prestamos por año\nDim_Tiempo (año), Dim_Libro (temática LC y núm. adquisición)\nPréstamos desde 2020, Acervo, Catálogo LC\nParcial: Solo se evalúan la temática y la antigüedad usando el número de adquisición como sustituto.",
     "crumbs": [
-      "Introduction"
+      "E1",
+      "Trazabilidad"
     ]
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html#matriz-de-trazabilidad-a-e0",
+    "href": "entregas/E1_arquitectura_dw/trazabilidad.html#matriz-de-trazabilidad-a-e0",
+    "title": "Trazabilidad",
     "section": "",
-    "text": "About this site"
+    "text": "PREGUNTA\nTAREA DE MINERÍA\nMÉTRICA (HECHO)\nDIMENSIONES\nFUENTE(S)\nESTADO\n\n\n\n\nP1 (E0): ¿Qué libros dentro del acervo histórico se encuentran en el catálogo y no son localizables en el acervo?\nDetección de anomalías (descriptiva)\ncantidad_prestamos filtrada a préstamos sin fecha de devolución\nDim_Libro, Dim_Tiempo\nPréstamos desde 2020, Acervo\nParcial: Solo detecta ejemplares que salieron en préstamo y no regresaron. No detecta libros extraviados en estantería sin haberse prestado, ni préstamos anteriores a 2020.\n\n\nP2 (E0): ¿Cuáles son las características comunes en la signatura topográfica de los ejemplares con menos préstamos dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?\nSegmentación (clustering)\ncantidad_prestamos, dias_prestamo\nDim_Libro (Clase, Subclase y Tema específico LC), Dim_Tiempo\nPréstamos desde 2020, Acervo, Catálogo LC\nParcial: Las características se limitan a la temática (Jerarquía LC de 3 niveles) y al número de adquisición. No se cuenta con año de publicación, idioma ni estado físico.\n\n\nP3 (E0): ¿Qué criterios determinan qué libros deberían ser descartados?\nClasificación (candidato a descarte: sí/no)\ncantidad_prestamos (total y en últimos N años), dias_prestamo\nDim_Libro, Dim_Tiempo\nPréstamos desde 2020, Acervo, Catálogo LC\nParcial: Solo es posible construir criterios de uso (circulación temporal). Criterios como estado físico o valor histórico documental no existen en las fuentes.\n\n\nP4 (E0): ¿Qué factores influyen para que un libro deje de ser relevante en el tiempo?\nRegresión (tendencia del uso en el tiempo)\ncantidad_prestamos por año\nDim_Tiempo (año), Dim_Libro (temática LC y núm. adquisición)\nPréstamos desde 2020, Acervo, Catálogo LC\nParcial: Solo se evalúan la temática y la antigüedad usando el número de adquisición como sustituto.",
+    "crumbs": [
+      "E1",
+      "Trazabilidad"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html#verificación-inversa-dimensiones-y-métricas",
+    "href": "entregas/E1_arquitectura_dw/trazabilidad.html#verificación-inversa-dimensiones-y-métricas",
+    "title": "Trazabilidad",
+    "section": "Verificación Inversa: Dimensiones y Métricas",
+    "text": "Verificación Inversa: Dimensiones y Métricas\nCada elemento del esquema estrella responde al menos a una pregunta de la E0, demostrando que no existen dimensiones ni métricas huérfanas.\n\n\n\nELEMENTO DEL ESQUEMA\nTIPO\nPREGUNTAS QUE RESPONDE\n\n\n\n\nDim_Libro\nDimensión\nP1, P2, P3, P4\n\n\nDim_Tiempo (rol fecha de préstamo)\nDimensión\nP1, P2, P3, P4\n\n\nDim_Tiempo (rol fecha de devolución)\nDimensión\nP1\n\n\ncantidad_prestamos\nMétrica aditiva\nP1, P2, P3, P4\n\n\ndias_prestamo\nMétrica aditiva\nP2, P3",
+    "crumbs": [
+      "E1",
+      "Trazabilidad"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html#relación-con-el-criterio-de-éxito",
+    "href": "entregas/E1_arquitectura_dw/trazabilidad.html#relación-con-el-criterio-de-éxito",
+    "title": "Trazabilidad",
+    "section": "Relación con el Criterio de Éxito",
+    "text": "Relación con el Criterio de Éxito\nLas métricas de apoyo definidas en E0 que el modelo sí puede calcular son el porcentaje de libros sin préstamos registrados y las consultas en los últimos N años. Ambas se obtienen cruzando Dim_Libro con Hecho_Prestamo mediante un LEFT JOIN, de modo que los ejemplares sin ningún préstamo histórico también aparecen en el resultado con un valor de cero.\nEl criterio de éxito del proyecto está directamente alineado con la granularidad del modelo: el objetivo de liberar el 15% del acervo se medirá calculando matemáticamente el 15% del total de ejemplares (unidades) registrados en la dimensión de libros, identificándolos como candidatos viables para descarte.",
+    "crumbs": [
+      "E1",
+      "Trazabilidad"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/trazabilidad.html#limitaciones-de-cobertura",
+    "href": "entregas/E1_arquitectura_dw/trazabilidad.html#limitaciones-de-cobertura",
+    "title": "Trazabilidad",
+    "section": "Limitaciones de Cobertura",
+    "text": "Limitaciones de Cobertura\n\nLectura en sala: Los libros consultados dentro de la biblioteca sin préstamo a domicilio no generan registro en el sistema. El modelo asume estrictamente que “cero préstamos = cero uso”, lo que podría marcar como candidatos a descarte libros que sí se leen en sala (afecta P2 y P3).\nCatálogo frente a acervo físico: La fuente de “Libros completos” es un registro histórico de adquisiciones, no un inventario físico en tiempo real de los estantes. Por eso, la P1 solo puede responderse de forma indirecta.\nVentana temporal y pandemia: Los préstamos inician en 2020. Durante 2020 y 2021 la circulación fue mínima por el cierre de instalaciones debido a la pandemia, lo que sesga las tendencias temporales de la P4 en esos primeros años.\nAntigüedad del libro: Al no existir el año de publicación en la base de datos, la P4 utilizará el numero_adquisicion como un sustituto de la antigüedad en el acervo, asumiendo que los números de adquisición se asignan de forma secuencial cronológica.",
+    "crumbs": [
+      "E1",
+      "Trazabilidad"
+    ]
   },
   {
     "objectID": "entregas/E1_arquitectura_dw/arquitectura.html#zona-de-staging",
@@ -307,124 +323,229 @@
     ]
   },
   {
-    "objectID": "entregas/E1_arquitectura_dw/uso_ia.html",
-    "href": "entregas/E1_arquitectura_dw/uso_ia.html",
-    "title": "Uso de IA",
+    "objectID": "entregas/E1_arquitectura_dw/fuentes.html",
+    "href": "entregas/E1_arquitectura_dw/fuentes.html",
+    "title": "Datos",
     "section": "",
-    "text": "Se utilizó la IA para analizar los prefijos temáticos de los libros de la Facultad. Geminí ayudó a detectar y confirmar que dichas letras correspondían al formato global estándar de la Library of Congress (LC).\nA partir de este hallazgo, la herramienta nos asistió en la creación del archivo base Catalogo_LC.csv que sirvió como nuestra tercera fuente de datos externa.",
+    "text": "Los datos se obtuvieron directamente de la misma biblioteca de la Facultad de Ciencias.",
     "crumbs": [
       "E1",
-      "Uso de IA"
+      "Datos"
     ]
   },
   {
-    "objectID": "entregas/E1_arquitectura_dw/uso_ia.html#identificación-y-creación-del-3er-conjunto-de-datos",
-    "href": "entregas/E1_arquitectura_dw/uso_ia.html#identificación-y-creación-del-3er-conjunto-de-datos",
-    "title": "Uso de IA",
-    "section": "",
-    "text": "Se utilizó la IA para analizar los prefijos temáticos de los libros de la Facultad. Geminí ayudó a detectar y confirmar que dichas letras correspondían al formato global estándar de la Library of Congress (LC).\nA partir de este hallazgo, la herramienta nos asistió en la creación del archivo base Catalogo_LC.csv que sirvió como nuestra tercera fuente de datos externa.",
+    "objectID": "entregas/E1_arquitectura_dw/fuentes.html#obtención-de-datos",
+    "href": "entregas/E1_arquitectura_dw/fuentes.html#obtención-de-datos",
+    "title": "Datos",
+    "section": "Obtención de datos",
+    "text": "Obtención de datos\nAl hablar por primera vez en la entrevista con la coordinadora de la biblioteca, se mostró abierta a prestarnos los datos del acervo y los préstamos de biblioteca para poder trabajar sobre estos mismos.\nEs por esta razón que, en lugar de buscar en DeepSearch, portales de datos, buscadores de datasets o datos públicos, se visitó nuevamente el “búnker” de la biblioteca para solicitar una segunda reunion con la coordinadora. Esta segunda reunión se llevo nuevamente a cabo en la oficina de la Dra. María Victoria Guzmán Sánchez, en esta ocasion no se tenia la intencionde “robarle” tanto tiempo a la coordinadora por lo que sin muchas vueltas se le solicitaron los datos acerca de los que nos había mencionado con anterioridad.\nLa coordinadora muy abierta y entusiasmada nos proporcionó a través de correo los datos del acervo de libros y de préstamos, los cuales son un par de datasets que contienen alrededor de 150 mil y 170 mil registros respectivamente, cada uno.",
     "crumbs": [
       "E1",
-      "Uso de IA"
+      "Datos"
     ]
   },
   {
-    "objectID": "entregas/E1_arquitectura_dw/uso_ia.html#mejora-de-redacción-y-formato",
-    "href": "entregas/E1_arquitectura_dw/uso_ia.html#mejora-de-redacción-y-formato",
-    "title": "Uso de IA",
-    "section": "Mejora de redacción y formato",
-    "text": "Mejora de redacción y formato\nSe empleó la herramienta como revisor de estilo para mejorar la claridad, fluidez y corrección ortotipográfica de los documentos finales redactados en formato Markdown (Quarto). Así mismo, sirvió como apoyo para la creación correcta de tablas y esquemas visuales.",
+    "objectID": "entregas/E1_arquitectura_dw/fuentes.html#catálogo",
+    "href": "entregas/E1_arquitectura_dw/fuentes.html#catálogo",
+    "title": "Datos",
+    "section": "Catálogo",
+    "text": "Catálogo\n\n\n\n\nDrive donde se compartieron los datasets\n\n\n\n\n\n\n\nDatasets desplegados\n\n\n\n\nLibros del acervo\n\n\n\n\nVistazo de los libros del acervo\n\n\n\n\n\n\n\n\n\n\nCampo\nLibros\n\n\n\n\nNombre y dueño\nTodos los libros del acervo de la biblioteca, Facultad de Ciencias, UNAM\n\n\nURL y acceso\nEnlace verificado y forma de acceso (descarga, API, BigQuery)\n\n\nFormato y tamaño\nCSV de 14.6 MB\n\n\nGrano\nCada fila representa un libro único perteneciente al acervo de la biblioteca\n\n\nCobertura\nTodos los libros registrados en el acervo\n\n\nLicencia y restricciones\nNo se presentó alguna restricción especial\n\n\nLlaves de integración\nNombres e identificadores de libros; su catálogo se relaciona con los préstamos\n\n\nPregunta(s) relacionada(s)\nEste catálogo alimenta directamente las cuatro preguntas planteadas en la E0, ya que contiene las características de qué libros están en el dataset y permite identificar cuáles no es posible localizar, sus características comunes y sus factores de relevancia\n\n\n\n\n\nPréstamos de la biblioteca\n\n\n\n\nVistazo de los prestamos\n\n\n\n\n\n\n\n\n\n\nCampo\nPrestamos\n\n\n\n\nNombre y dueño\nPréstamos desde 2020, Facultad de Ciencias, UNAM\n\n\nURL y acceso\nEnlace verificado y forma de acceso (descarga, API, BigQuery)\n\n\nFormato y tamaño\nCSV de 25.5 MB\n\n\nGrano\nCada fila representa un préstamo de un libro a una persona\n\n\nCobertura\nPeriodo 2020–2026\n\n\nLicencia y restricciones\nContiene nombres y números de cuenta de las personas que piden libros, los cuales se solicitó explícitamente que no fueran revelados\n\n\nLlaves de integración\nNombres e identificadores de libros; su catálogo se relaciona con los préstamos\n\n\nPregunta(s) relacionada(s)\nEste dataset también se relaciona con las cuatro preguntas, ya que brinda la información de los libros prestados, permitiendo relacionarlos con su información particular\n\n\n\n\n\nClasificación de la Library of Congress (Tercera fuente)\nDurante la exploración de los datos del acervo, identificamos que los libros contaban con etiquetas complejas de catalogación (como QA611 o RC300). Tras investigar su significado, descubrimos que corresponden al sistema de clasificación de la Library of Congress (LC).\nPara sacarle provecho, descargamos el Outline jerárquico completo de la LC y construimos un catálogo de 3 niveles (Clase, Subclase y Tema Específico), el cual cruzará mediante rangos numéricos y servirá como nuestra tercera fuente de datos externa.\n\n\n\n\nPágina oficial del catálogo LC\n\n\n\n\n\n\n\n\n\n\nCampo\nCatálogo LC\n\n\n\n\nNombre y dueño\nLibrary of Congress Classification Outline\n\n\nURL y acceso\nVerificado en https://www.loc.gov/catdir/cpso/lcco/ (Convertido a CSV)\n\n\nFormato y tamaño\nCSV de menos de 1 KB\n\n\nGrano\nCada fila representa un rango numérico asociado a un tema específico (ej. Geometría, Topología) dentro de una subclase LC\n\n\nCobertura\nClasificaciones internacionales de conocimiento\n\n\nLicencia y restricciones\nEs de dominio público, sin restricciones\n\n\nLlaves de integración\nEl prefijo de letras y la evaluación de que el número del libro caiga dentro del rango numérico del tema\n\n\nPregunta(s) relacionada(s)\nAlimenta directamente la P1 y P2 al permitirnos saber de qué “área de la ciencia” son los libros que nunca se prestan.",
     "crumbs": [
       "E1",
-      "Uso de IA"
+      "Datos"
     ]
   },
   {
-    "objectID": "entregas/E0_comprension_negocio/canvas.html",
-    "href": "entregas/E0_comprension_negocio/canvas.html",
-    "title": "Canvas",
+    "objectID": "entregas/E1_arquitectura_dw/fuentes.html#análisis-de-integración",
+    "href": "entregas/E1_arquitectura_dw/fuentes.html#análisis-de-integración",
+    "title": "Datos",
+    "section": "Análisis de integración",
+    "text": "Análisis de integración\nEl acervo y los préstamos se unen a través del campo NÚMERO ADQUISICIÓN, el cual funciona como llave principal. Al hacer una revisión rápida en Python, vimos que el 100% de las llaves en los préstamos coinciden con el acervo. Además, la tercera fuente (el catálogo LC) se unirá usando la extracción de las letras del prefijo y evaluando matemáticamente el número de la CLASIFICACIÓN contra los rangos del catálogo.\nLa diferencia en su granularidad se encuentra principalmente en que, en los datos de préstamo —al ser únicos por fecha, alumno y libro—, hay repeticiones en la aparición de los libros, mientras que en los datos del acervo cada libro aparece una sola vez como un ejemplar físico. El catálogo LC es aún más general, pues agrupa muchas clasificaciones en una sola materia.\nAlgunos problemas que anticipamos tras revisar los datos son:\n\nTipos de datos distintos: El sistema exportó el número de adquisición como texto (STRING) en el acervo, pero como número (INTEGER) en los préstamos. Tendremos que igualarlos a texto en BigQuery para que crucen.\nValores vacíos (nulos): Notamos que alrededor del 1.1% de los préstamos no tienen fecha de devolución, lo que nos dará problemas al calcular tiempos de préstamo. También, 5,036 libros (3.3%) no tienen clasificación, por lo que no cruzarán con nuestra tercera fuente.\nBaja calidad en metadatos (Autores): Descubrimos que a casi la mitad del acervo (72,710 libros) le falta el registro del autor original. Por esta razón, tomamos la decisión arquitectónica de descartar esta variable y no incluirla en nuestra Dim_Libro para evitar un sesgo masivo en el análisis.\nLibros sin uso: Descubrimos que el 76% de los ejemplares del acervo no tienen ni un solo préstamo registrado entre 2020 y 2026.",
+    "crumbs": [
+      "E1",
+      "Datos"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/pivote.html",
+    "href": "entregas/E1_arquitectura_dw/pivote.html",
+    "title": "Pivote",
     "section": "",
-    "text": "Canvas del proyecto",
+    "text": "Fue necesario realizar un pivote en la pregunta 2 del planteamiento de E0:\n\n¿Cuáles son las características comunes de los ejemplares fuera de circulación dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?",
     "crumbs": [
-      "E0",
-      "Canvas"
+      "E1",
+      "Pivote"
     ]
   },
   {
-    "objectID": "entregas/E0_comprension_negocio/riesgos_supuestos.html",
-    "href": "entregas/E0_comprension_negocio/riesgos_supuestos.html",
-    "title": "Riesgos",
+    "objectID": "entregas/E1_arquitectura_dw/pivote.html#pregunta-afectada",
+    "href": "entregas/E1_arquitectura_dw/pivote.html#pregunta-afectada",
+    "title": "Pivote",
     "section": "",
-    "text": "A partir de la entrevista y del recorrido por las instalaciones, identificamos los siguientes riesgos para el proyecto.\n\n\nDurante la entrevista, la doctora dejó ver que no se puede saber a ciencia cierta si un libro ha sido consultado o no. Esto abre la posibilidad de que falten datos sobre la consulta de ciertos títulos, información necesaria para determinar si pueden ser descartados.\nMitigación propuesta: implementar un seguimiento más detallado del uso de los libros, para identificar cuáles son realmente consultados y cuáles han sido “olvidados” desde hace tiempo.\n\n\n\nOtro punto importante que la doctora aportó con mucho detalle es que el proceso de descarte o ingreso de libros debe estar estrictamente regulado por la facultad, ya que existe la posibilidad de que haya libros únicos en la universidad —o incluso en el país— y libros que sean patrimonio. Por esta razón, la manipulación o el descarte de libros puede verse limitado por intereses ajenos a la simple optimización de espacio.\nMitigación propuesta: generar un proceso de selección específico para este tipo de libros, que contemple un espacio especial, categorizado y resguardado, pero que no impida la llegada de nuevas líneas de conocimiento.\n\n\n\nSiguiendo con este tema, la doctora también enfatizó en que el equipo no puede realizar ciertas tareas porque no están dentro de sus funciones. Esto significa que, por mucho que ella quisiera catalogar los datos personalmente, no podría hacerlo.\nMitigación propuesta: plantear a la facultad un plan que genere un presupuesto para apoyar la organización de la biblioteca.\n\n\n\nDurante el recorrido por los pasillos notamos cajas de libros con hongos, lo cual plantea la necesidad de una revisión a profundidad por motivos de sanidad.",
+    "text": "Fue necesario realizar un pivote en la pregunta 2 del planteamiento de E0:\n\n¿Cuáles son las características comunes de los ejemplares fuera de circulación dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?",
     "crumbs": [
-      "E0",
-      "Riesgos"
+      "E1",
+      "Pivote"
     ]
   },
   {
-    "objectID": "entregas/E0_comprension_negocio/riesgos_supuestos.html#riesgos-identificados",
-    "href": "entregas/E0_comprension_negocio/riesgos_supuestos.html#riesgos-identificados",
-    "title": "Riesgos",
+    "objectID": "entregas/E1_arquitectura_dw/pivote.html#motivo-del-pivote",
+    "href": "entregas/E1_arquitectura_dw/pivote.html#motivo-del-pivote",
+    "title": "Pivote",
+    "section": "Motivo del pivote",
+    "text": "Motivo del pivote\nEl acervo consta de aproximadamente 150 mil libros, por lo que encontrar todos los datos de cada uno (lugar y fecha de publicación, edición, autor, entre otras características) resultaba una tarea muy difícil y completamente extensa, que quedaba fuera del alcance del proyecto.",
+    "crumbs": [
+      "E1",
+      "Pivote"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/pivote.html#qué-cambia-antes-y-después",
+    "href": "entregas/E1_arquitectura_dw/pivote.html#qué-cambia-antes-y-después",
+    "title": "Pivote",
+    "section": "Qué cambia: antes y después",
+    "text": "Qué cambia: antes y después\nAl notar que el dataset de libros obtenido tenía un atributo clasificador que sigue las reglas de la Clasificación de la Biblioteca del Congreso (LCC, por sus siglas en inglés), pareció más pertinente aprovechar esta característica y explotar la información de tópicos que se puede encontrar en esa sección.\n\n\n\n\n\n\n\n\nPregunta\n\n\n\n\nAntes (E0)\n¿Cuáles son las características comunes de los ejemplares fuera de circulación dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?\n\n\nDespués (E0 v2)\n¿Cuáles son las características comunes en la signatura topográfica de los ejemplares con menos préstamos dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?\n\n\n\n\nNueva fuente de datos\nPara complementar esta parte se buscó una nueva fuente: la clasificación LCC. Al ser una clasificación extensa, buscamos tener un dataset completo que indique específicamente qué clase, subclase y tema específico abarca un libro. Este nuevo dataset se obtuvo directamente del sitio de la Biblioteca del Congreso:\nhttps://www.loc.gov/catdir/cpso/lcco/",
+    "crumbs": [
+      "E1",
+      "Pivote"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/pivote.html#por-qué-sigue-en-la-línea-de-e0",
+    "href": "entregas/E1_arquitectura_dw/pivote.html#por-qué-sigue-en-la-línea-de-e0",
+    "title": "Pivote",
+    "section": "Por qué sigue en la línea de E0",
+    "text": "Por qué sigue en la línea de E0\nEl pivote es el mínimo necesario y se mantiene en el mismo dominio y línea de trabajo de E0. La pregunta original buscaba encontrar características comunes en libros con poca o nula circulación; sin embargo, la cantidad de datos por libro, dada la cantidad de libros, era una tarea demasiado extensa.\nLa nueva pregunta es una especificación de la anterior: busca características concretas de los libros con pocos préstamos, que en este caso tienen que ver con los temas que aborda cada libro (varios libros pueden compartir un mismo tema). Esto se puede comprobar de manera mucho más accesible con el nuevo dataset.",
+    "crumbs": [
+      "E1",
+      "Pivote"
+    ]
+  },
+  {
+    "objectID": "entregas/E1_arquitectura_dw/pivote.html#resumen-de-cambios-en-e0-v2",
+    "href": "entregas/E1_arquitectura_dw/pivote.html#resumen-de-cambios-en-e0-v2",
+    "title": "Pivote",
+    "section": "Resumen de cambios en E0 v2",
+    "text": "Resumen de cambios en E0 v2\n\nLa pregunta 2 se actualizó a la nueva formulación en la sección E0/preguntasv2.\nLa versión original de E0 se conserva sin cambios.",
+    "crumbs": [
+      "E1",
+      "Pivote"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/criterio_exito.html",
+    "href": "entregas/E0_comprension_negocio/criterio_exito.html",
+    "title": "Exito",
     "section": "",
-    "text": "A partir de la entrevista y del recorrido por las instalaciones, identificamos los siguientes riesgos para el proyecto.\n\n\nDurante la entrevista, la doctora dejó ver que no se puede saber a ciencia cierta si un libro ha sido consultado o no. Esto abre la posibilidad de que falten datos sobre la consulta de ciertos títulos, información necesaria para determinar si pueden ser descartados.\nMitigación propuesta: implementar un seguimiento más detallado del uso de los libros, para identificar cuáles son realmente consultados y cuáles han sido “olvidados” desde hace tiempo.\n\n\n\nOtro punto importante que la doctora aportó con mucho detalle es que el proceso de descarte o ingreso de libros debe estar estrictamente regulado por la facultad, ya que existe la posibilidad de que haya libros únicos en la universidad —o incluso en el país— y libros que sean patrimonio. Por esta razón, la manipulación o el descarte de libros puede verse limitado por intereses ajenos a la simple optimización de espacio.\nMitigación propuesta: generar un proceso de selección específico para este tipo de libros, que contemple un espacio especial, categorizado y resguardado, pero que no impida la llegada de nuevas líneas de conocimiento.\n\n\n\nSiguiendo con este tema, la doctora también enfatizó en que el equipo no puede realizar ciertas tareas porque no están dentro de sus funciones. Esto significa que, por mucho que ella quisiera catalogar los datos personalmente, no podría hacerlo.\nMitigación propuesta: plantear a la facultad un plan que genere un presupuesto para apoyar la organización de la biblioteca.\n\n\n\nDurante el recorrido por los pasillos notamos cajas de libros con hongos, lo cual plantea la necesidad de una revisión a profundidad por motivos de sanidad.",
+    "text": "El criterio de éxito se obtuvo de manera totalmente directa en la entrevista, a partir de la última pregunta. Se propuso optimizar en un 15% el espacio en los estantes de la biblioteca; sin embargo, la doctora propuso celebrar más bien el que espacios como pasillos, oficinas o el sótano queden despejados de cajas de libros o de libros tirados directamente.\nAsí, podríamos definir el criterio de la siguiente manera:\n\nLiberar el 15% de los espacios en las estanterías principales, bodegas y pasillos.",
     "crumbs": [
       "E0",
-      "Riesgos"
+      "Exito"
     ]
   },
   {
-    "objectID": "entregas/E0_comprension_negocio/uso_ia.html",
-    "href": "entregas/E0_comprension_negocio/uso_ia.html",
-    "title": "IA",
+    "objectID": "entregas/E0_comprension_negocio/criterio_exito.html#criterio-de-éxito",
+    "href": "entregas/E0_comprension_negocio/criterio_exito.html#criterio-de-éxito",
+    "title": "Exito",
     "section": "",
-    "text": "Claude (Sonnet 5), de Anthropic, a través de la interfaz de chat.",
+    "text": "El criterio de éxito se obtuvo de manera totalmente directa en la entrevista, a partir de la última pregunta. Se propuso optimizar en un 15% el espacio en los estantes de la biblioteca; sin embargo, la doctora propuso celebrar más bien el que espacios como pasillos, oficinas o el sótano queden despejados de cajas de libros o de libros tirados directamente.\nAsí, podríamos definir el criterio de la siguiente manera:\n\nLiberar el 15% de los espacios en las estanterías principales, bodegas y pasillos.",
     "crumbs": [
       "E0",
-      "IA"
+      "Exito"
     ]
   },
   {
-    "objectID": "entregas/E0_comprension_negocio/uso_ia.html#herramienta-utilizada",
-    "href": "entregas/E0_comprension_negocio/uso_ia.html#herramienta-utilizada",
-    "title": "IA",
+    "objectID": "entregas/E0_comprension_negocio/criterio_exito.html#mediciones-y-métricas-de-apoyo",
+    "href": "entregas/E0_comprension_negocio/criterio_exito.html#mediciones-y-métricas-de-apoyo",
+    "title": "Exito",
+    "section": "Mediciones y métricas de apoyo",
+    "text": "Mediciones y métricas de apoyo\nPara poder dar seguimiento a este criterio, nos podemos apoyar de las siguientes mediciones:\n\nPorcentaje de libros sin préstamos registrados, o que se dejan en el carrito para ser acomodados.\nPasillos más visitados por piso, para identificar que libros son los mas concurridos.\nPrueba de exposición: colocar algunos libros del sótano en las estanterías principales, para observar si son consultados y con qué frecuencia.\nConsultas en los últimos N años (por ejemplo, 3 o 5 años), como indicador de vigencia de un título.\nProporción de préstamos totales respecto a la cantidad total de libros en el acervo.\n\nDe esta manera, estas mediciones se pueden convertir en las variables y etiquetas que permitan clasificar u ordenar los libros para el proceso de descarte.",
+    "crumbs": [
+      "E0",
+      "Exito"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/bitacora.html",
+    "href": "entregas/E0_comprension_negocio/bitacora.html",
+    "title": "Bitácora de entrevista",
     "section": "",
-    "text": "Claude (Sonnet 5), de Anthropic, a través de la interfaz de chat.",
+    "text": "Campo\nDetalle\n\n\n\n\nFecha\n09 de septiembre de 2026\n\n\nHora\n9:00 - 10:00 am\n\n\nLugar\nOficinas de personal de biblioteca “El Búnker”\n\n\nEntrevistada\nDra. María Victoria Guzmán Sánchez, coordinadora de la biblioteca de la Facultad de Ciencias de la UNAM\n\n\nEntrevistadores\nOscar Figueroa Bobadilla, José Adolfo Vázquez Dávila, Emiliano Luna Campos\n\n\nObjetivo\nObtener una perspectiva con experiencia sobre las problemáticas de espacio en la biblioteca",
     "crumbs": [
-      "E0",
-      "IA"
+      "E0"
     ]
   },
   {
-    "objectID": "entregas/E0_comprension_negocio/uso_ia.html#tareas-para-las-que-se-usó",
-    "href": "entregas/E0_comprension_negocio/uso_ia.html#tareas-para-las-que-se-usó",
-    "title": "IA",
-    "section": "Tareas para las que se usó",
-    "text": "Tareas para las que se usó\n\nRedacción y presentación de las páginas del sitio. Se utilizó la herramienta para organizar el contenido en formato Quarto (.qmd), corregir ortografía y dar estructura (encabezados, tablas, listas, citas) a la bitácora de entrevista, la sección de riesgos identificados y la sección de criterio de éxito.\nApoyo para ejemplificar indicadores/métricas. Se usó como apoyo para obtener ejemplos del tipo de indicadores que se podían proponer en la sección de criterio de éxito (por ejemplo, porcentaje de libros sin préstamos, frecuencia de consulta, proporción de préstamos respecto al acervo), como punto de partida para pensar qué variables podían ser relevantes.",
+    "objectID": "entregas/E0_comprension_negocio/bitacora.html#datos-generales",
+    "href": "entregas/E0_comprension_negocio/bitacora.html#datos-generales",
+    "title": "Bitácora de entrevista",
+    "section": "",
+    "text": "Campo\nDetalle\n\n\n\n\nFecha\n09 de septiembre de 2026\n\n\nHora\n9:00 - 10:00 am\n\n\nLugar\nOficinas de personal de biblioteca “El Búnker”\n\n\nEntrevistada\nDra. María Victoria Guzmán Sánchez, coordinadora de la biblioteca de la Facultad de Ciencias de la UNAM\n\n\nEntrevistadores\nOscar Figueroa Bobadilla, José Adolfo Vázquez Dávila, Emiliano Luna Campos\n\n\nObjetivo\nObtener una perspectiva con experiencia sobre las problemáticas de espacio en la biblioteca",
     "crumbs": [
-      "E0",
-      "IA"
+      "E0"
     ]
   },
   {
-    "objectID": "entregas/E0_comprension_negocio/uso_ia.html#prompts-empleados-resumen-fiel",
-    "href": "entregas/E0_comprension_negocio/uso_ia.html#prompts-empleados-resumen-fiel",
-    "title": "IA",
-    "section": "Prompts empleados (resumen fiel)",
-    "text": "Prompts empleados (resumen fiel)\n\n“¿Cómo puedo hacer tablas en Quarto para una página web?”\nSe compartió la transcripción de la bitácora de entrevista (en texto plano, con errores de formato en las tablas y de ortografía) y se pidió: “¿Me podrías organizar esto de mejor manera para un archivo qmd? Corrigiendo ortografía también, por favor.”\nSe compartió un borrador con los riesgos identificados durante la entrevista (falta de datos de consulta de libros, regulación de libros patrimoniales, limitaciones de funciones del personal, condiciones de sanidad) y se pidió darle presentación y organización para un archivo qmd.\nSe compartió un borrador de la sección de criterio de éxito, incluyendo el criterio definido con la stakeholder (liberar 15% del espacio) y una lista de posibles mediciones, junto con el enunciado de la indicación de tarea sobre cómo expresar el criterio de éxito. Se pidió ayuda para organizarlo en un archivo qmd.\nSe indicó una corrección: que no era necesario definir desde ese momento métricas técnicas específicas (como recall o error absoluto), sino explicar cómo el criterio de éxito del negocio podría vincularse con indicadores que después se conecten con métricas técnicas; se pidió ajustar la sección correspondiente conforme a esta aclaración.",
+    "objectID": "entregas/E0_comprension_negocio/bitacora.html#contexto-de-la-entrevista",
+    "href": "entregas/E0_comprension_negocio/bitacora.html#contexto-de-la-entrevista",
+    "title": "Bitácora de entrevista",
+    "section": "Contexto de la entrevista",
+    "text": "Contexto de la entrevista\nLa entrevista se realizó de manera presencial en la oficina de la Dra. María y se llevó a cabo sin interrupción alguna.\nPor parte de la entrevistada, siempre se mostró muy abierta y amigable, dispuesta a tomarse el tiempo necesario para responder detenidamente las preguntas. Todas las respuestas fueron seguras y fundamentadas con explicaciones detalladas.",
     "crumbs": [
-      "E0",
-      "IA"
+      "E0"
     ]
   },
   {
-    "objectID": "entregas/E0_comprension_negocio/uso_ia.html#nota",
-    "href": "entregas/E0_comprension_negocio/uso_ia.html#nota",
-    "title": "IA",
-    "section": "Nota",
-    "text": "Nota\nTodo el contenido generado con apoyo de la herramienta fue revisado por el equipo antes de incluirse en el sitio, y las ideas, decisiones y análisis presentados corresponden al criterio del equipo acorde al tema que se buscaba abordar y tomando como base la información recabada directamente en la entrevista con la Dra. María Victoria Guzmán Sánchez.",
+    "objectID": "entregas/E0_comprension_negocio/bitacora.html#bitácora",
+    "href": "entregas/E0_comprension_negocio/bitacora.html#bitácora",
+    "title": "Bitácora de entrevista",
+    "section": "Bitácora",
+    "text": "Bitácora\nPrimero nos presentamos y realizamos una breve introducción de por qué queríamos hacerle la entrevista. Antes de que pudiéramos formular cualquier pregunta, la Dra. María comenzó a describirnos las situaciones en las que se encontraba la biblioteca.\nSe le hicieron preguntas acerca del descarte de libros para ganar espacio en la biblioteca. Esto ya se podía intuir de cierto modo, ya que al recorrer los pasillos se notaban libros y cajas apiladas; incluso la oficina misma de la doctora estaba repleta de cajas de libros.\nAlgo interesante es que ella realizó su doctorado en el área de minería de datos, por lo que estaba familiarizada con el tema y entendía en qué zonas del problema podíamos aplicar algoritmos.\n\n“Esta cantidad de cajas que hay aquí en los pasillos, esa bodega que está ahí está llena de cajas y el sótano está lleno de cajas. Entonces el problema es… yo me encontré así, el montón es acumulativo y yo tengo que solucionar ese problema como biblioteca.”\n\n\n“Por ejemplo, yo tengo ahora mismo 8000 títulos en cajas que están hoy en el catálogo… pero realmente no está en el acervo, está metido en una caja. Eso es un problema.”\n\n\n“Aquí tenemos los 8000 títulos que están en caja, porque quien estuvo antes que yo decidió meterlos en caja, no sé bajo qué criterio, 8000 títulos.”\n\n\n“Entonces ahí tendrían que aplicar técnicas de data mining… tendrían que hacer un análisis para saber qué libros son los que se deben descartar, ya que yo sí tengo inventario, pero después tengo un montón que no están en ningún lugar.”\n\nDándonos ya un panorama amplio de una de las problemáticas de la biblioteca, comenzamos a realizarle las preguntas que habíamos preparado. Cabe mencionar que algunas no fueron formuladas, ya que en sus propios argumentos ya se habían respondido.\n\nSituación actual del espacio\nAl realizarle una pregunta más concreta en cuanto a espacios, nos dio una respuesta relacionada con cómo la ocupación de libros limita a su vez el espacio para los alumnos.\n¿Cuál es la situación actual del espacio en la biblioteca y cómo les afecta día a día?\n\n“Los estudiantes y los profesores de asignatura que también asisten a la biblioteca nos han dicho que la biblioteca está gentrificada, que no hay espacio, que necesitan incluso más espacio. Realmente hay poco espacio, sobre todo para que crezca el fondo o para crear espacios colaborativos para los estudiantes, donde haya pizarrones, donde haya mesas para trabajo en equipo, porque hoy solo tenemos espacios de silencio y, a veces, también hacen trabajo en equipo y los dejamos, porque entendemos que hay ejercicios que hay que hacer en grupo.\nY una manera de crear espacio es tener un proceso de descarte realmente acorde a lo que debe hacerse en una biblioteca. Pero aquí se pasó… no sé, hace 30 años que no se termina un proceso de descarte.”\n\n\n\nConsecuencias de mantener libros sin circulación\n¿Qué consecuencias operativas o para los usuarios tiene mantener libros sin circulación en las estanterías principales?\n\n“Mientras más libros tú tengas que no se estén usando… muchos libros se compran, vamos a partir de ahí, por las propias sugerencias que hacen los estudiantes o los profesores, y eso se va acumulando. Quizás en un momento tuvieron un uso, pero aquí hay libros de hace más de 20 años, 30 años, libros de 40 años. Si tú no haces un proceso de cómo es el uso de ese libro, en función de las necesidades de la comunidad de estudiantes, se te van a ir acumulando infinitamente; entonces tienes que hacer, obligatoriamente, un proceso de descarte.”\n\n\n“A la vez que tú hagas ese proceso, te deshaces de los 8000 libros que no se utilizan porque están obsoletos. Entonces, todo eso les afecta a ustedes realmente, porque no se tiene un fondo actualizado acorde a las nuevas tendencias del conocimiento, en la línea de conocimiento que hay ahora.”\n\n\n\nFrecuencia del problema\n¿Qué tan frecuente es que un libro ocioso ocupe el lugar de material nuevo o de mayor demanda?\n\n“Muy frecuente. De hecho, ahora te estoy diciendo que tenemos ese problema: no sabemos la magnitud de libros que tenemos que nunca se han usado. Sí tenemos identificado lo que más se ha usado.”\n\n\n“Pero muchas veces ya no nos caben en el fondo, y los libros nuevos y los libros viejos coexisten en el espacio físico, no coexisten en una estantería por criterio de uso. Puede haber un libro del año 50 o 52 junto con un libro del año 2025; podría suceder que coincidan en el mismo espacio y no hemos hecho un estudio de si el del año 50 realmente se está utilizando.”\n\n\n\nLimitaciones de tiempo e infraestructura\nComo coordinadora, esto nos ayuda a tener un panorama completo del problema, ya que se relaciona con otra situación.\n¿Qué limitaciones de tiempo, personal o infraestructura tienen para realizar este proceso de clasificación y reagrupamiento?\n\n“Bueno, el personal bibliotecario que debería hacer ese proceso no lo tiene en su función; es un tema administrativo.”\n\n\n“Para que ellos trabajen en este proceso —por ejemplo, lo que ya hicimos, que fue escanear en un sistema cada libro y registrarlo— se tuvo que solicitar una cláusula especial, que implica un pago adicional para la facultad. La facultad tiene que reembolsar un presupuesto para realizar ese trabajo.”\n\n\n“Entonces el proceso depende de esa negociación entre delegados sindicales, personal administrativo y la administración de la facultad.”\n\n\n“Por ejemplo, este proceso lo hicimos sábado y domingo, fuera de sus horarios de trabajo, durante un mes, para poder escanear todo lo que estaba en bodega o en el piso, en cualquier lugar.”\n\n\n\nErrores al retirar libros\n¿Se han equivocado antes al retirar un libro que, tiempo después, un profesor o alumno volvió a pedir?\n\n“El problema es que cuando tú retiras el libro, ya lo descartaste, ya se le da de baja del catálogo, y el profesor no lo puede localizar. Entonces nunca va a pasar que el profesor pida un libro que tú ya hayas descartado, porque lo quitaste del catálogo.”\n\n\n“Sí suele pasar que, de los 8000 libros que tengo en caja —que sí siguen en el catálogo— me los pueden pedir, y yo no los puedo localizar, porque, como estaban en caja desde la gestión anterior, tienes que ponerte a revisar caja por caja.”\n\n\n“Tengo muchísimas cajas de libros que no están en el catálogo, que en su momento alguien decidió meter en caja y dar de baja del catálogo sin terminar el proceso, porque cuando tú terminas el proceso, termina donándolo.”\n\n\n\nMétricas de éxito del proyecto\n¿Qué resultado haría que consideraran este proyecto un éxito? Por ejemplo, ¿liberar el 15% de los estantes sin recibir quejas por falta de títulos?\n\n“Sí, yo pienso así, más del 15%. Pero, fíjense, más que el estante, yo me sentiría satisfecha si al menos liberamos los espacios comunes. El problema no es solo la estantería, sino todo lo demás que tenemos. Liberar el 15% sería perfecto, pero después tenemos que liberar todo lo que tenemos en pasillos, en bodegas, en sótanos, que también es parte de la eficiencia del uso del espacio de la biblioteca.”\n\n\n\nReflexiones finales\nTras salir de la entrevista, el equipo notó qué tan grande y entrelazado es el problema de los espacios en la facultad. Realmente, la idea inicial era la de que la biblioteca da entrada y salida de libros continuamente y cabía la posibilidad de agilizar el proceso buscando. Sin embargo, nos encontramos con un problema más grande, en el cual hay muchísimos libros ocupando espacio en condiciones en las cuales tal vez ni siquiera están registrados o su registro se ha perdido por completo. Ahora tenemos un panorama con más variables acerca de la cantidad de libros que ocupan espacios comunes, o intereses relacionados con la protección de libros por su valor como patrimonio, así como un posible problema de cómo saber si ciertos libros son consultados y cómo se busca un equilibrio para que libros antiguos convivan con los más recientes.",
+    "crumbs": [
+      "E0"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/preguntasv2.html",
+    "href": "entregas/E0_comprension_negocio/preguntasv2.html",
+    "title": "Preguntas de investigación, segunda version",
+    "section": "",
+    "text": "Después de la entrevista con la Dra. María Victoria Guzmán Sánchez, y de conocer más a profundidad la situación sobre los problemas de optimización de la biblioteca, pudimos darnos cuenta de que la cuestión no se limita únicamente al espacio físico en las estanterías ocupado por libros que no son consultados, sino que los espacios comunes se ven afectados de igual manera.\nTeniendo en cuenta que nuestro objetivo de minería de datos es:\n\nAnalizar los patrones de uso de los libros dentro del acervo histórico para su posterior evaluación y descarte.\n\nLas preguntas que guiarán este proyecto son las siguientes.",
     "crumbs": [
       "E0",
-      "IA"
+      "Preguntas de investigación, segunda version"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/preguntasv2.html#contexto",
+    "href": "entregas/E0_comprension_negocio/preguntasv2.html#contexto",
+    "title": "Preguntas de investigación, segunda version",
+    "section": "",
+    "text": "Después de la entrevista con la Dra. María Victoria Guzmán Sánchez, y de conocer más a profundidad la situación sobre los problemas de optimización de la biblioteca, pudimos darnos cuenta de que la cuestión no se limita únicamente al espacio físico en las estanterías ocupado por libros que no son consultados, sino que los espacios comunes se ven afectados de igual manera.\nTeniendo en cuenta que nuestro objetivo de minería de datos es:\n\nAnalizar los patrones de uso de los libros dentro del acervo histórico para su posterior evaluación y descarte.\n\nLas preguntas que guiarán este proyecto son las siguientes.",
+    "crumbs": [
+      "E0",
+      "Preguntas de investigación, segunda version"
+    ]
+  },
+  {
+    "objectID": "entregas/E0_comprension_negocio/preguntasv2.html#preguntas-de-investigación",
+    "href": "entregas/E0_comprension_negocio/preguntasv2.html#preguntas-de-investigación",
+    "title": "Preguntas de investigación, segunda version",
+    "section": "Preguntas de investigación",
+    "text": "Preguntas de investigación\n\n[P1] Pregunta 1 — Prioridad alta\n¿Qué libros dentro del acervo histórico de la biblioteca de la Facultad de Ciencias se encuentran en el catálogo y no son localizables en el acervo?\n\n\n[P2] Pregunta 2 — Prioridad alta\n¿Cuáles son las características comunes en la signatura topográfica de los ejemplares con menos préstamos dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?\n\n\n[P3] Pregunta 3 — Prioridad alta\n¿Qué criterios determinan qué libros deberían ser descartados?\n\n\n[P4] Pregunta 4 — Prioridad alta\n¿Qué factores influyen para que un libro deje de ser relevante?",
+    "crumbs": [
+      "E0",
+      "Preguntas de investigación, segunda version"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Proyecto Almacenes y Mineria de Datos",
+    "section": "",
+    "text": "Sitio de Quarto para el semestre en la materia de Almacenes y Mineria de Datos.\nIntegrantes:\nJosé Adolfo Vázquez Dávila\nOscar Figueroa Bobadilla\nEmiliano Luna Campos",
+    "crumbs": [
+      "Introduction"
     ]
   }
 ]

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.10.19">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -42,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-bf27225e3a48a9273f3daa8f8e829971.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-ec6c51f2d67698c1203769899b1e9b21.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-d248f73aeb05ac65ad0b5326cc8879c1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -153,6 +153,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../entregas/E0_comprension_negocio/preguntasv2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preguntas de investigación, segunda version</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../entregas/E0_comprension_negocio/riesgos_supuestos.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Riesgos</span></a>
   </div>
@@ -204,6 +210,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Uso de IA</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../entregas/E1_arquitectura_dw/pivote.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Pivote</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -213,11 +225,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Contenido</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#identificación-y-creación-del-3er-conjunto-de-datos" id="toc-identificación-y-creación-del-3er-conjunto-de-datos" class="nav-link active" data-scroll-target="#identificación-y-creación-del-3er-conjunto-de-datos">Identificación y creación del 3er conjunto de datos</a></li>
-  <li><a href="#mejora-de-redacción-y-formato" id="toc-mejora-de-redacción-y-formato" class="nav-link" data-scroll-target="#mejora-de-redacción-y-formato">Mejora de redacción y formato</a></li>
+  <li><a href="#uso-1-presentación-y-organización-de-las-páginas" id="toc-uso-1-presentación-y-organización-de-las-páginas" class="nav-link active" data-scroll-target="#uso-1-presentación-y-organización-de-las-páginas">Uso 1: Presentación y organización de las páginas</a></li>
+  <li><a href="#uso-2-identificación-del-formato-de-clasificación-de-los-libros" id="toc-uso-2-identificación-del-formato-de-clasificación-de-los-libros" class="nav-link" data-scroll-target="#uso-2-identificación-del-formato-de-clasificación-de-los-libros">Uso 2: Identificación del formato de clasificación de los libros</a></li>
+  <li><a href="#uso-3-eliminación-del-atributo-autor-del-dataset-de-libros" id="toc-uso-3-eliminación-del-atributo-autor-del-dataset-de-libros" class="nav-link" data-scroll-target="#uso-3-eliminación-del-atributo-autor-del-dataset-de-libros">Uso 3: Eliminación del atributo autor del dataset de libros</a></li>
+  <li><a href="#nota" id="toc-nota" class="nav-link" data-scroll-target="#nota">Nota</a></li>
   </ul>
 </nav>
     </div>
@@ -243,14 +257,39 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="identificación-y-creación-del-3er-conjunto-de-datos" class="level2">
-<h2 class="anchored" data-anchor-id="identificación-y-creación-del-3er-conjunto-de-datos">Identificación y creación del 3er conjunto de datos</h2>
-<p>Se utilizó la IA para analizar los prefijos temáticos de los libros de la Facultad. Geminí ayudó a detectar y confirmar que dichas letras correspondían al formato global estándar de la <strong>Library of Congress (LC)</strong>.</p>
-<p>A partir de este hallazgo, la herramienta nos asistió en la creación del archivo base <code>Catalogo_LC.csv</code> que sirvió como nuestra tercera fuente de datos externa.</p>
+<p>En cumplimiento con lo solicitado, documentamos a continuación el uso de herramientas de inteligencia artificial durante esta entrega (E1). Cada uso fue realizado por distintos integrantes del equipo, por lo que se registra de forma separada.</p>
+<section id="uso-1-presentación-y-organización-de-las-páginas" class="level2">
+<h2 class="anchored" data-anchor-id="uso-1-presentación-y-organización-de-las-páginas">Uso 1: Presentación y organización de las páginas</h2>
+<p><strong>Herramienta:</strong> Claude (Sonnet 5.5), de Anthropic, a través de la interfaz de chat.</p>
+<p><strong>Tarea:</strong> Apoyo para dar presentación y estructura en formato Quarto (<code>.qmd</code>) a las páginas de esta entrega, corregir ortografía y resolver dudas de sintaxis. En particular:</p>
+<ul>
+<li>La página de <strong>Datos</strong> (obtención de datos, tablas del catálogo y análisis de integración).</li>
+<li>La página de <strong>Pivote</strong>, siguiendo la guía de la entrega.</li>
+<li>El <strong>diagrama estrella</strong> en Mermaid (<code>erDiagram</code>), incluyendo el ajuste de la distribución de las líneas.</li>
+</ul>
+<p><strong>Prompts empleados (resumen fiel):</strong></p>
+<ul>
+<li>Se compartió un borrador de texto con la obtención de los datos, la descripción de los dos datasets (acervo y préstamos) y el análisis de integración, y se pidió presentarlo para Quarto, con la sección del catálogo en forma de tablas y con la ortografía corregida.</li>
+<li>Se preguntó cómo hacer diagramas en Mermaid (<code>erDiagram</code>) y se compartió la imagen del esquema estrella elaborado previamente para obtener su equivalente en Mermaid.</li>
+<li>Se compartió una captura del diagrama ya renderizado en el sitio, donde las flechas y etiquetas quedaban empalmadas, y se pidió ayuda para corregirlo; después se compartió el código usado hasta ese momento para recibir una versión ajustada.</li>
+<li>Se compartió el texto del pivote junto con la guía de la entrega, y se pidió corregir ortografía y presentación para Quarto.</li>
+</ul>
 </section>
-<section id="mejora-de-redacción-y-formato" class="level2">
-<h2 class="anchored" data-anchor-id="mejora-de-redacción-y-formato">Mejora de redacción y formato</h2>
-<p>Se empleó la herramienta como revisor de estilo para mejorar la claridad, fluidez y corrección ortotipográfica de los documentos finales redactados en formato Markdown (Quarto). Así mismo, sirvió como apoyo para la creación correcta de tablas y esquemas visuales.</p>
+<section id="uso-2-identificación-del-formato-de-clasificación-de-los-libros" class="level2">
+<h2 class="anchored" data-anchor-id="uso-2-identificación-del-formato-de-clasificación-de-los-libros">Uso 2: Identificación del formato de clasificación de los libros</h2>
+<p><strong>Herramienta:</strong> Gemini.</p>
+<p><strong>Tarea:</strong> Se utilizó para analizar los prefijos temáticos de los libros de la Facultad. La herramienta ayudó a detectar y confirmar que dichas letras correspondían al formato estándar de la Library of Congress (LC). A partir de este hallazgo, la herramienta asistió en la creación del archivo base <code>Catalogo_LC.csv</code>, que sirvió como la tercera fuente de datos externa del proyecto.</p>
+<p><strong>Prompts empleados:</strong> <em>(pendiente: pegar los prompts de forma íntegra o como resumen fiel)</em></p>
+</section>
+<section id="uso-3-eliminación-del-atributo-autor-del-dataset-de-libros" class="level2">
+<h2 class="anchored" data-anchor-id="uso-3-eliminación-del-atributo-autor-del-dataset-de-libros">Uso 3: Eliminación del atributo autor del dataset de libros</h2>
+<p><strong>Herramienta:</strong> Gemini</p>
+<p><strong>Tarea:</strong> Apoyo de un integrante del equipo para quitar el atributo <code>autor</code> del dataset de libros.</p>
+<p><strong>Prompts empleados:</strong> <em>(pendiente: pegar los prompts de forma íntegra o como resumen fiel)</em></p>
+</section>
+<section id="nota" class="level2">
+<h2 class="anchored" data-anchor-id="nota">Nota</h2>
+<p>Todo el contenido generado con apoyo de estas herramientas fue revisado por el equipo antes de incluirse en el sitio, y las ideas, decisiones y análisis presentados corresponden al criterio del equipo.</p>
 
 
 </section>

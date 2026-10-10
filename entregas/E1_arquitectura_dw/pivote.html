@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Arquitectura – Proyecto Almacenes y Mineria de Datos</title>
+<title>Pivote – Proyecto Almacenes y Mineria de Datos</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,41 +25,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -122,7 +87,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/arquitectura.html">E1</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/arquitectura.html">E1</a></li><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/pivote.html">Pivote</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -208,7 +173,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../entregas/E1_arquitectura_dw/arquitectura.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../entregas/E1_arquitectura_dw/arquitectura.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">E1</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -217,7 +182,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../entregas/E1_arquitectura_dw/arquitectura.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../entregas/E1_arquitectura_dw/arquitectura.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Arquitectura</span></a>
   </div>
 </li>
@@ -247,7 +212,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../entregas/E1_arquitectura_dw/pivote.html" class="sidebar-item-text sidebar-link">
+  <a href="../../entregas/E1_arquitectura_dw/pivote.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Pivote</span></a>
   </div>
 </li>
@@ -260,28 +225,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Contenido</h2>
+    <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#arquitectura-de-3-capas-en-google-cloud" id="toc-arquitectura-de-3-capas-en-google-cloud" class="nav-link active" data-scroll-target="#arquitectura-de-3-capas-en-google-cloud">Arquitectura de 3 Capas en Google Cloud</a></li>
-  <li><a href="#zona-de-staging" id="toc-zona-de-staging" class="nav-link" data-scroll-target="#zona-de-staging">1. Zona de Staging</a></li>
-  <li><a href="#data-warehouse-esquema-estrella" id="toc-data-warehouse-esquema-estrella" class="nav-link" data-scroll-target="#data-warehouse-esquema-estrella">2. Data Warehouse (Esquema Estrella)</a>
+  <li><a href="#pregunta-afectada" id="toc-pregunta-afectada" class="nav-link active" data-scroll-target="#pregunta-afectada">Pregunta afectada</a></li>
+  <li><a href="#motivo-del-pivote" id="toc-motivo-del-pivote" class="nav-link" data-scroll-target="#motivo-del-pivote">Motivo del pivote</a></li>
+  <li><a href="#qué-cambia-antes-y-después" id="toc-qué-cambia-antes-y-después" class="nav-link" data-scroll-target="#qué-cambia-antes-y-después">Qué cambia: antes y después</a>
   <ul class="collapse">
-  <li><a href="#script-de-definición-ddl" id="toc-script-de-definición-ddl" class="nav-link" data-scroll-target="#script-de-definición-ddl">Script de Definición (DDL)</a></li>
+  <li><a href="#nueva-fuente-de-datos" id="toc-nueva-fuente-de-datos" class="nav-link" data-scroll-target="#nueva-fuente-de-datos">Nueva fuente de datos</a></li>
   </ul></li>
-  <li><a href="#data-marts" id="toc-data-marts" class="nav-link" data-scroll-target="#data-marts">3. Data Marts</a>
-  <ul class="collapse">
-  <li><a href="#script-de-consultas-analíticas" id="toc-script-de-consultas-analíticas" class="nav-link" data-scroll-target="#script-de-consultas-analíticas">Script de Consultas Analíticas</a></li>
-  </ul></li>
+  <li><a href="#por-qué-sigue-en-la-línea-de-e0" id="toc-por-qué-sigue-en-la-línea-de-e0" class="nav-link" data-scroll-target="#por-qué-sigue-en-la-línea-de-e0">Por qué sigue en la línea de E0</a></li>
+  <li><a href="#resumen-de-cambios-en-e0-v2" id="toc-resumen-de-cambios-en-e0-v2" class="nav-link" data-scroll-target="#resumen-de-cambios-en-e0-v2">Resumen de cambios en E0 v2</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/arquitectura.html">E1</a></li><li class="breadcrumb-item"><a href="../../entregas/E1_arquitectura_dw/pivote.html">Pivote</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Arquitectura</h1>
+<h1 class="title">Pivote</h1>
 </div>
 
 
@@ -298,154 +261,61 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="arquitectura-de-3-capas-en-google-cloud" class="level2">
-<h2 class="anchored" data-anchor-id="arquitectura-de-3-capas-en-google-cloud">Arquitectura de 3 Capas en Google Cloud</h2>
-<hr>
+<section id="pregunta-afectada" class="level2">
+<h2 class="anchored" data-anchor-id="pregunta-afectada">Pregunta afectada</h2>
+<p>Fue necesario realizar un pivote en la <strong>pregunta 2</strong> del planteamiento de E0:</p>
+<blockquote class="blockquote">
+<p>¿Cuáles son las características comunes de los ejemplares fuera de circulación dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?</p>
+</blockquote>
 </section>
-<section id="zona-de-staging" class="level2">
-<h2 class="anchored" data-anchor-id="zona-de-staging">1. Zona de Staging</h2>
-<p>En esta capa (<code>eq01_staging</code>) están los datos extraídos de las fuentes originales. Aquí se aplicaron transformaciones de privacidad (eliminación de columnas PII como <code>_CREDENCIAL_</code> y <code>NOMBRE</code>) y se cargó el catálogo externo de la Library of Congress.</p>
-<p><strong>Evidencia de esquemas de carga en Staging:</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/staging_schema_catalogo_lc.png" class="img-fluid figure-img"></p>
-<figcaption>Esquema Catalogo LC</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/staging_schema_libros_completos.png" class="img-fluid figure-img"></p>
-<figcaption>Esquema Libros Completos</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/staging_schema_prestamo.png" class="img-fluid figure-img"></p>
-<figcaption>Esquema Préstamos</figcaption>
-</figure>
-</div>
-<hr>
+<section id="motivo-del-pivote" class="level2">
+<h2 class="anchored" data-anchor-id="motivo-del-pivote">Motivo del pivote</h2>
+<p>El acervo consta de aproximadamente 150 mil libros, por lo que encontrar todos los datos de cada uno (lugar y fecha de publicación, edición, autor, entre otras características) resultaba una tarea muy difícil y completamente extensa, que quedaba fuera del alcance del proyecto.</p>
 </section>
-<section id="data-warehouse-esquema-estrella" class="level2">
-<h2 class="anchored" data-anchor-id="data-warehouse-esquema-estrella">2. Data Warehouse (Esquema Estrella)</h2>
-<p><code>eq01_dw</code> se construyó utilizando el enfoque de Kimball (Esquema Estrella).</p>
-<p>El siguiente Script DDL fue ejecutado en BigQuery definiendo estrictamente las estructuras, metadatos y relaciones lógicas entre dimensiones y hechos.</p>
-<section id="script-de-definición-ddl" class="level3">
-<h3 class="anchored" data-anchor-id="script-de-definición-ddl">Script de Definición (DDL)</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- Dimensión Tiempo</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Tiempo` (</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    sk_fecha INT64 <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    fecha_completa <span class="dt">DATE</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    anio INT64,</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    mes INT64,</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">PRIMARY</span> <span class="kw">KEY</span> (sk_fecha) <span class="kw">NOT</span> ENFORCED</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>) OPTIONS (description <span class="op">=</span> <span class="st">'Dimensión de tiempo. SCD Tipo 0. Responde a: P1, P4'</span>);</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">-- Dimensión Libro</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro` (</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    sk_libro INT64 <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    numero_adquisicion STRING,</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>    titulo STRING,</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    clasificacion STRING,</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    prefijo_lc STRING,</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    clase_lc STRING,</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    subclase_lc STRING,</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    tema_especifico_lc STRING,</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">PRIMARY</span> <span class="kw">KEY</span> (sk_libro) <span class="kw">NOT</span> ENFORCED</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>) OPTIONS (description <span class="op">=</span> <span class="st">'Dimensión de ejemplares físicos. SCD Tipo 1. Responde a: P1, P2, P3, P4'</span>);</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">-- Tabla de Hechos: Préstamos</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> `e1<span class="op">-</span>aymd.eq01_dw.Hecho_Prestamo` (</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    sk_libro INT64 <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    sk_fecha_prestamo INT64 <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    sk_fecha_devolucion INT64,</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    cantidad_prestamos INT64,</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    dias_prestamo INT64,</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (sk_libro) <span class="kw">REFERENCES</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro`(sk_libro) <span class="kw">NOT</span> ENFORCED,</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (sk_fecha_prestamo) <span class="kw">REFERENCES</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Tiempo`(sk_fecha) <span class="kw">NOT</span> ENFORCED,</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (sk_fecha_devolucion) <span class="kw">REFERENCES</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Tiempo`(sk_fecha) <span class="kw">NOT</span> ENFORCED</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>) OPTIONS (description <span class="op">=</span> <span class="st">'Grano: Una fila por cada evento de préstamo de un ejemplar físico.'</span>);</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Evidencia de la creación de los esquemas en el DW:</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/dw_schema_tiempo.png" class="img-fluid figure-img"></p>
-<figcaption>Esquema Dim_Tiempo</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/dw_schema_libro.png" class="img-fluid figure-img"></p>
-<figcaption>Esquema Dim_Libro</figcaption>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/dw_schema_hecho.png" class="img-fluid figure-img"></p>
-<figcaption>Esquema Hecho_Prestamo</figcaption>
-</figure>
-</div>
-<hr>
+<section id="qué-cambia-antes-y-después" class="level2">
+<h2 class="anchored" data-anchor-id="qué-cambia-antes-y-después">Qué cambia: antes y después</h2>
+<p>Al notar que el dataset de libros obtenido tenía un atributo clasificador que sigue las reglas de la Clasificación de la Biblioteca del Congreso (LCC, por sus siglas en inglés), pareció más pertinente aprovechar esta característica y explotar la información de tópicos que se puede encontrar en esa sección.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 76%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Pregunta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Antes (E0)</strong></td>
+<td>¿Cuáles son las características comunes de los ejemplares fuera de circulación dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?</td>
+</tr>
+<tr class="even">
+<td><strong>Después (E0 v2)</strong></td>
+<td>¿Cuáles son las características comunes en la signatura topográfica de los ejemplares con menos préstamos dentro del acervo histórico de la biblioteca de la Facultad de Ciencias?</td>
+</tr>
+</tbody>
+</table>
+<section id="nueva-fuente-de-datos" class="level3">
+<h3 class="anchored" data-anchor-id="nueva-fuente-de-datos">Nueva fuente de datos</h3>
+<p>Para complementar esta parte se buscó una nueva fuente: la clasificación LCC. Al ser una clasificación extensa, buscamos tener un dataset completo que indique específicamente qué clase, subclase y tema específico abarca un libro. Este nuevo dataset se obtuvo directamente del sitio de la Biblioteca del Congreso:</p>
+<p><a href="https://www.loc.gov/catdir/cpso/lcco/" class="uri">https://www.loc.gov/catdir/cpso/lcco/</a></p>
 </section>
 </section>
-<section id="data-marts" class="level2">
-<h2 class="anchored" data-anchor-id="data-marts">3. Data Marts</h2>
-<p>En la capa final (<code>eq01_mart</code>) diseñamos las consultas SQL de análisis que responden directamente a las preguntas de negocio (P1-P4).</p>
-<p>Implementamos la función de jerarquía <strong><code>ROLLUP</code></strong> para los niveles de clasificación LC.</p>
-<section id="script-de-consultas-analíticas" class="level3">
-<h3 class="anchored" data-anchor-id="script-de-consultas-analíticas">Script de Consultas Analíticas</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- Responde: P1 ¿Qué libros no son localizables en el acervo?</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> </span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    l.numero_adquisicion,</span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    l.titulo,</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    l.clasificacion,</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    t.fecha_completa <span class="kw">AS</span> fecha_del_prestamo_perdido</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> `e1<span class="op">-</span>aymd.eq01_dw.Hecho_Prestamo` h</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="kw">INNER</span> <span class="kw">JOIN</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro` l <span class="kw">ON</span> h.sk_libro <span class="op">=</span> l.sk_libro</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="kw">INNER</span> <span class="kw">JOIN</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Tiempo` t <span class="kw">ON</span> h.sk_fecha_prestamo <span class="op">=</span> t.sk_fecha</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> h.sk_fecha_devolucion <span class="kw">IS</span> <span class="kw">NULL</span>;</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">-- Responde: P2 Características comunes de ejemplares fuera de circulación (ROLLUP)</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> </span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">COALESCE</span>(l.clase_lc, <span class="st">'Sin Clasificación'</span>) <span class="kw">AS</span> clase,</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    l.subclase_lc <span class="kw">AS</span> subclase,</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    l.tema_especifico_lc <span class="kw">AS</span> tema_especifico,</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">SUM</span>(h.cantidad_prestamos) <span class="kw">AS</span> total_prestamos</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro` l</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="kw">LEFT</span> <span class="kw">JOIN</span> `e1<span class="op">-</span>aymd.eq01_dw.Hecho_Prestamo` h <span class="kw">ON</span> l.sk_libro <span class="op">=</span> h.sk_libro</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> <span class="kw">ROLLUP</span>(clase, l.subclase_lc, l.tema_especifico_lc)</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="kw">ORDER</span> <span class="kw">BY</span> clase, subclase, tema_especifico;</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="co">-- Responde: P3 Criterios de descarte (Ejemplares con Cero uso o nula circulación)</span></span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> </span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    l.numero_adquisicion,</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    l.titulo,</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">COALESCE</span>(<span class="fu">SUM</span>(h.cantidad_prestamos), <span class="dv">0</span>) <span class="kw">AS</span> historico_prestamos</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro` l</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="kw">LEFT</span> <span class="kw">JOIN</span> `e1<span class="op">-</span>aymd.eq01_dw.Hecho_Prestamo` h <span class="kw">ON</span> l.sk_libro <span class="op">=</span> h.sk_libro</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> l.numero_adquisicion, l.titulo</span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="kw">HAVING</span> historico_prestamos <span class="op">=</span> <span class="dv">0</span>;</span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="co">-- Responde: P4 Factores de obsolescencia (Tendencia de caída temporal)</span></span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> </span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    t.anio <span class="kw">AS</span> anio_prestamo,</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    l.clase_lc <span class="kw">AS</span> area_tematica,</span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    <span class="fu">SUM</span>(h.cantidad_prestamos) <span class="kw">AS</span> total_prestamos</span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> `e1<span class="op">-</span>aymd.eq01_dw.Hecho_Prestamo` h</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="kw">INNER</span> <span class="kw">JOIN</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro` l <span class="kw">ON</span> h.sk_libro <span class="op">=</span> l.sk_libro</span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="kw">INNER</span> <span class="kw">JOIN</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Tiempo` t <span class="kw">ON</span> h.sk_fecha_prestamo <span class="op">=</span> t.sk_fecha</span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> t.anio <span class="kw">IS</span> <span class="kw">NOT</span> <span class="kw">NULL</span></span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> t.anio, l.clase_lc</span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="kw">ORDER</span> <span class="kw">BY</span> l.clase_lc, t.anio;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Evidencia de validación sintáctica en BigQuery:</strong></p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="img/mart_valida_todas.png" class="img-fluid figure-img"></p>
-<figcaption>Consultas Válidas P1-P4</figcaption>
-</figure>
-</div>
+<section id="por-qué-sigue-en-la-línea-de-e0" class="level2">
+<h2 class="anchored" data-anchor-id="por-qué-sigue-en-la-línea-de-e0">Por qué sigue en la línea de E0</h2>
+<p>El pivote es el mínimo necesario y se mantiene en el mismo dominio y línea de trabajo de E0. La pregunta original buscaba encontrar características comunes en libros con poca o nula circulación; sin embargo, la cantidad de datos por libro, dada la cantidad de libros, era una tarea demasiado extensa.</p>
+<p>La nueva pregunta es una especificación de la anterior: busca características concretas de los libros con pocos préstamos, que en este caso tienen que ver con los temas que aborda cada libro (varios libros pueden compartir un mismo tema). Esto se puede comprobar de manera mucho más accesible con el nuevo dataset.</p>
+</section>
+<section id="resumen-de-cambios-en-e0-v2" class="level2">
+<h2 class="anchored" data-anchor-id="resumen-de-cambios-en-e0-v2">Resumen de cambios en E0 v2</h2>
+<ul>
+<li>La pregunta 2 se actualizó a la nueva formulación en la sección <strong>E0/preguntasv2</strong>.</li>
+<li>La versión original de E0 se conserva sin cambios.</li>
+</ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->

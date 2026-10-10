@@ -1,0 +1,42 @@
+---
+title: "Trazabilidad"
+format:
+  html:
+    toc: true
+    toc-title: "Contenido"
+---
+
+## Matriz de Trazabilidad a E0
+
+| PREGUNTA | TAREA DE MINERÍA | MÉTRICA (HECHO) | DIMENSIONES | FUENTE(S) | ESTADO |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **P1 (E0):** ¿Qué libros dentro del acervo histórico se encuentran en el catálogo y no son localizables en el acervo? | Detección de anomalías (descriptiva) | `cantidad_prestamos` filtrada a préstamos sin fecha de devolución | `Dim_Libro`, `Dim_Tiempo` | Préstamos desde 2020, Acervo | **Parcial**: Solo detecta ejemplares que salieron en préstamo y no regresaron. No detecta libros extraviados en estantería sin haberse prestado, ni préstamos anteriores a 2020. |
+| **P2 (E0):** ¿Cuáles son las características comunes de los ejemplares fuera de circulación? | Segmentación (clustering) | `cantidad_prestamos`, `dias_prestamo` | `Dim_Libro` (Clase, Subclase y Tema específico LC), `Dim_Tiempo` | Préstamos desde 2020, Acervo, Catálogo LC | **Parcial**: Las características se limitan a la temática (Jerarquía LC de 3 niveles) y al número de adquisición. No se cuenta con año de publicación, idioma ni estado físico. |
+| **P3 (E0):** ¿Qué criterios determinan qué libros deberían ser descartados? | Clasificación (candidato a descarte: sí/no) | `cantidad_prestamos` (total y en últimos N años), `dias_prestamo` | `Dim_Libro`, `Dim_Tiempo` | Préstamos desde 2020, Acervo, Catálogo LC | **Parcial**: Solo es posible construir criterios de uso (circulación temporal). Criterios como estado físico o valor histórico documental no existen en las fuentes. |
+| **P4 (E0):** ¿Qué factores influyen para que un libro deje de ser relevante en el tiempo? | Regresión (tendencia del uso en el tiempo) | `cantidad_prestamos` por año | `Dim_Tiempo` (año), `Dim_Libro` (temática LC y núm. adquisición) | Préstamos desde 2020, Acervo, Catálogo LC | **Parcial**: Solo se evalúan la temática y la antigüedad usando el número de adquisición como sustituto. |
+
+## Verificación Inversa: Dimensiones y Métricas
+
+Cada elemento del esquema estrella responde al menos a una pregunta de la E0, demostrando que **no existen dimensiones ni métricas huérfanas**.
+
+| ELEMENTO DEL ESQUEMA | TIPO | PREGUNTAS QUE RESPONDE |
+| :--- | :--- | :--- |
+| `Dim_Libro` | Dimensión | P1, P2, P3, P4 |
+| `Dim_Tiempo` (rol fecha de préstamo) | Dimensión | P1, P2, P3, P4 |
+| `Dim_Tiempo` (rol fecha de devolución) | Dimensión | P1 |
+| `cantidad_prestamos` | Métrica aditiva | P1, P2, P3, P4 |
+| `dias_prestamo` | Métrica aditiva | P2, P3 |
+
+## Relación con el Criterio de Éxito
+
+Las métricas de apoyo definidas en E0 que el modelo sí puede calcular son el **porcentaje de libros sin préstamos registrados** y las **consultas en los últimos N años**. Ambas se obtienen cruzando `Dim_Libro` con `Hecho_Prestamo` mediante un `LEFT JOIN`, de modo que los ejemplares sin ningún préstamo histórico también aparecen en el resultado con un valor de cero.
+
+El criterio de éxito del proyecto está directamente alineado con la granularidad del modelo: el objetivo de liberar el 15% del acervo se medirá calculando matemáticamente el 15% del total de ejemplares (unidades) registrados en la dimensión de libros, identificándolos como candidatos viables para descarte.
+
+## Limitaciones de Cobertura
+
+1. **Lectura en sala:** Los libros consultados dentro de la biblioteca sin préstamo a domicilio no generan registro en el sistema. El modelo asume estrictamente que “cero préstamos = cero uso”, lo que podría marcar como candidatos a descarte libros que sí se leen en sala (afecta P2 y P3).
+2. **Catálogo frente a acervo físico:** La fuente de "Libros completos" es un registro histórico de adquisiciones, no un inventario físico en tiempo real de los estantes. Por eso, la P1 solo puede responderse de forma indirecta.
+3. **Ventana temporal y pandemia:** Los préstamos inician en 2020. Durante 2020 y 2021 la circulación fue mínima por el cierre de instalaciones debido a la pandemia, lo que sesga las tendencias temporales de la P4 en esos primeros años.
+4. **Antigüedad del libro:** Al no existir el año de publicación en la base de datos, la P4 utilizará el `numero_adquisicion` como un sustituto de la antigüedad en el acervo, asumiendo que los números de adquisición se asignan de forma secuencial cronológica.
+

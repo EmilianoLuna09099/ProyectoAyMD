@@ -60,7 +60,9 @@ La coordinadora muy abierta y entusiasmada nos proporcionó a través de correo 
 
 ### Clasificación de la Library of Congress (Tercera fuente)
 
-Durante la exploración de los datos del acervo, identificamos que los libros contaban con etiquetas, como QA, QC y QH. Tras investigar su significado, descubrimos que corresponden al sistema de clasificación de la Library of Congress (LC), así que extrajimos los prefijos más usados (QA, QC, QH...) y armamos un CSV, el cual cumple como una tercera fuente de datos.
+Durante la exploración de los datos del acervo, identificamos que los libros contaban con etiquetas complejas de catalogación (como QA611 o RC300). Tras investigar su significado, descubrimos que corresponden al sistema de clasificación de la **Library of Congress (LC)**. 
+
+Para sacarle provecho, descargamos el *Outline* jerárquico completo de la LC y construimos un catálogo de 3 niveles (Clase, Subclase y Tema Específico), el cual cruzará mediante rangos numéricos y servirá como nuestra tercera fuente de datos externa.
 
 ::: {style="font-size: 1.5em; text-align: center;"}
 ![Página oficial del catálogo LC](img/Catalogo.png){width="1000px"}
@@ -71,15 +73,15 @@ Durante la exploración de los datos del acervo, identificamos que los libros co
 | Nombre y dueño | Library of Congress Classification Outline |
 | URL y acceso | Verificado en https://www.loc.gov/catdir/cpso/lcco/ (Convertido a CSV) |
 | Formato y tamaño | CSV de menos de 1 KB |
-| Grano | Cada fila representa una subclase o materia específica (ej. Matemáticas, Física) |
+| Grano | Cada fila representa un rango numérico asociado a un tema específico (ej. Geometría, Topología) dentro de una subclase LC |
 | Cobertura | Clasificaciones internacionales de conocimiento |
 | Licencia y restricciones | Es de dominio público, sin restricciones |
-| Llaves de integración | El prefijo de letras cruzará con la columna CLASIFICACIÓN del acervo |
+| Llaves de integración | El prefijo de letras y la evaluación de que el número del libro caiga dentro del rango numérico del tema |
 | Pregunta(s) relacionada(s) | Alimenta directamente la P1 y P2 al permitirnos saber de qué "área de la ciencia" son los libros que nunca se prestan. |
 
 ## Análisis de integración
 
-El acervo y los préstamos se unen a través del campo *NÚMERO ADQUISICIÓN*, el cual funciona como llave principal. Al hacer una revisión rápida en Python, vimos que el 100% de las llaves en los préstamos coinciden con el acervo. Además, la tercera fuente (el catálogo LC) se unirá usando las primeras letras de la columna *CLASIFICACIÓN*(esta columna también lo tienen los préstamos).
+El acervo y los préstamos se unen a través del campo *NÚMERO ADQUISICIÓN*, el cual funciona como llave principal. Al hacer una revisión rápida en Python, vimos que el 100% de las llaves en los préstamos coinciden con el acervo. Además, la tercera fuente (el catálogo LC) se unirá usando la extracción de las letras del prefijo y evaluando matemáticamente el número de la *CLASIFICACIÓN* contra los rangos del catálogo.
 
 La diferencia en su granularidad se encuentra principalmente en que, en los datos de préstamo —al ser únicos por fecha, alumno y libro—, hay repeticiones en la aparición de los libros, mientras que en los datos del acervo cada libro aparece una sola vez como un ejemplar físico. El catálogo LC es aún más general, pues agrupa muchas clasificaciones en una sola materia.
 
@@ -87,4 +89,5 @@ Algunos problemas que anticipamos tras revisar los datos son:
 
 - **Tipos de datos distintos:** El sistema exportó el número de adquisición como texto (`STRING`) en el acervo, pero como número (`INTEGER`) en los préstamos. Tendremos que igualarlos a texto en BigQuery para que crucen.
 - **Valores vacíos (nulos):** Notamos que alrededor del 1.1% de los préstamos no tienen fecha de devolución, lo que nos dará problemas al calcular tiempos de préstamo. También, 5,036 libros (3.3%) no tienen clasificación, por lo que no cruzarán con nuestra tercera fuente.
+- **Baja calidad en metadatos (Autores):** Descubrimos que a casi la mitad del acervo (72,710 libros) le falta el registro del autor original. Por esta razón, tomamos la decisión arquitectónica de descartar esta variable y no incluirla en nuestra `Dim_Libro` para evitar un sesgo masivo en el análisis.
 - **Libros sin uso:** Descubrimos que el 76% de los ejemplares del acervo no tienen ni un solo préstamo registrado entre 2020 y 2026.

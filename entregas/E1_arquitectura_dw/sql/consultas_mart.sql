@@ -13,13 +13,14 @@ WHERE h.sk_fecha_devolucion IS NULL;
 SELECT 
     COALESCE(l.clase_lc, 'Sin Clasificación') AS clase,
     l.subclase_lc AS subclase,
+    l.tema_especifico_lc AS tema_especifico,
     SUM(h.cantidad_prestamos) AS total_prestamos
 FROM `e1-aymd.eq01_dw.Dim_Libro` l
 LEFT JOIN `e1-aymd.eq01_dw.Hecho_Prestamo` h ON l.sk_libro = h.sk_libro
-GROUP BY ROLLUP(clase, l.subclase_lc)
-ORDER BY clase, subclase;
+GROUP BY ROLLUP(clase, l.subclase_lc, l.tema_especifico_lc)
+ORDER BY clase, subclase, tema_especifico;
 
--- Responde: P3 Criterios de descarte (Ejemplares con CERO uso o nula circulación)
+-- Responde: P3 Criterios de descarte (Ejemplares con Cero uso o nula circulación)
 SELECT 
     l.numero_adquisicion,
     l.titulo,

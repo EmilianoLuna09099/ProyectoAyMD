@@ -24,7 +24,7 @@ Cabe mencionar que este grano responde la **P1** de manera *parcial*. Dado que n
 Para mantener el modelo alineado con nuestro objetivo de negocio (identificar libros para descarte) y respetar la privacidad de los estudiantes (eliminando los datos personales), nuestro esquema contará unicamente con dos dimensiones:
 
 *   **Dim_Libro:** Contiene el detalle de cada ejemplar físico.
-    *   *Atributos principales:* Llave sustituta (`sk_libro`), Número de adquisición (Llave natural), Título, Clasificación y Jerarquía LC (Prefijo y Clase).
+    *   *Atributos principales:* Llave sustituta (`sk_libro`), Número de adquisición (Llave natural), Título, Clasificación y Jerarquía LC completa de 3 niveles.
     *   *Justificación:* Es esencial para agrupar los libros inactivos por área de conocimiento (Ciencias, Matemáticas, etc.) usando la tercera fuente oficial.
     *   *SCD (Tipo 1 - Sobrescribir):* Si en el futuro un bibliotecario corrige un error ortográfico en el título o ajusta la clasificación de un libro, simplemente sobrescribiremos el registro. No necesitamos guardar el historial de errores tipográficos.
 *   **Dim_Tiempo:** Contiene el desglose de fechas.
@@ -54,7 +54,9 @@ erDiagram
         string titulo
         string clasificacion
         string prefijo_lc "Jerarquía LC"
-        string clase_lc "Jerarquía LC"
+        string clase_lc "Nivel 1"
+        string subclase_lc "Nivel 2"
+        string tema_especifico_lc "Nivel 3"
     }
 
     Hecho_prestamo {

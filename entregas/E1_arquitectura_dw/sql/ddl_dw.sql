@@ -1,4 +1,4 @@
--- 1. Dimensión Tiempo
+-- Dimensión Tiempo
 CREATE TABLE `e1-aymd.eq01_dw.Dim_Tiempo` (
     sk_fecha INT64 NOT NULL,
     fecha_completa DATE,
@@ -7,7 +7,7 @@ CREATE TABLE `e1-aymd.eq01_dw.Dim_Tiempo` (
     PRIMARY KEY (sk_fecha) NOT ENFORCED
 ) OPTIONS (description = 'Dimensión de tiempo. SCD Tipo 0. Responde a: P1, P4');
 
--- 2. Dimensión Libro
+-- Dimensión Libro
 CREATE TABLE `e1-aymd.eq01_dw.Dim_Libro` (
     sk_libro INT64 NOT NULL,
     numero_adquisicion STRING,
@@ -16,10 +16,11 @@ CREATE TABLE `e1-aymd.eq01_dw.Dim_Libro` (
     prefijo_lc STRING,
     clase_lc STRING,
     subclase_lc STRING,
+    tema_especifico_lc STRING,
     PRIMARY KEY (sk_libro) NOT ENFORCED
 ) OPTIONS (description = 'Dimensión de ejemplares físicos. SCD Tipo 1. Responde a: P1, P2, P3, P4');
 
--- 3. Tabla de Hechos: Préstamos
+-- Tabla de Hechos: Préstamos
 CREATE TABLE `e1-aymd.eq01_dw.Hecho_Prestamo` (
     sk_libro INT64 NOT NULL,
     sk_fecha_prestamo INT64 NOT NULL,

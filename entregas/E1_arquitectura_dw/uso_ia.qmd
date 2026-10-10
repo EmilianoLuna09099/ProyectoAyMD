@@ -27,15 +27,13 @@ En cumplimiento con lo solicitado, documentamos a continuación el uso de herram
 
 **Tarea:** Se utilizó para analizar los prefijos temáticos de los libros de la Facultad. La herramienta ayudó a detectar y confirmar que dichas letras correspondían al formato estándar de la Library of Congress (LC). A partir de este hallazgo, la herramienta asistió en la creación del archivo base `Catalogo_LC.csv`, que sirvió como la tercera fuente de datos externa del proyecto.
 
-**Prompts empleados:** *(pendiente: pegar los prompts de forma íntegra o como resumen fiel)*
+**Prompts empleados:** Quiero que me construyas un csv llamado "Catalogo.csv" en base a los 2 url que te proporcioné, dado que hay un cuarto nivel de detalle, nos limitaremos unicamente hasta el tercero, por ello, tendrás que incluir un rango en el que  si libros diferentes caen en ese rango, tendrán la misma etiqueta en el campo "tema_especifico",  el csv final debe incluir las columnas: prefijo_lc, rango_inicio, rango_fin, clase, subclase, tema_especifico.
 
-## Uso 3: Eliminación del atributo autor del dataset de libros
+## Uso 3: Atributo autor del dataset de libros
 
 **Herramienta:** Gemini
 
-**Tarea:** Apoyo de un integrante del equipo para quitar el atributo `autor` del dataset de libros.
-
-**Prompts empleados:** *(pendiente: pegar los prompts de forma íntegra o como resumen fiel)*
+**Tarea:** Apoyo de un integrante del equipo para entender porque no hacia falta el atributo autor y porque incluso podria sesgar la busqueda.
 
 ## Nota
 

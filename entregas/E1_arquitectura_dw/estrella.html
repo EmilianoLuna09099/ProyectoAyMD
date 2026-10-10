@@ -198,7 +198,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../entregas/E1_arquitectura_dw/trazabilidad.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Matriz de Trazabilidad</span></a>
+ <span class="menu-text">Trazabilidad</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -269,7 +269,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><strong>Dim_Libro:</strong> Contiene el detalle de cada ejemplar físico.
 <ul>
-<li><em>Atributos principales:</em> Llave sustituta (<code>sk_libro</code>), Número de adquisición (Llave natural), Título, Clasificación y Jerarquía LC (Prefijo y Clase).</li>
+<li><em>Atributos principales:</em> Llave sustituta (<code>sk_libro</code>), Número de adquisición (Llave natural), Título, Clasificación y Jerarquía LC completa de 3 niveles.</li>
 <li><em>Justificación:</em> Es esencial para agrupar los libros inactivos por área de conocimiento (Ciencias, Matemáticas, etc.) usando la tercera fuente oficial.</li>
 <li><em>SCD (Tipo 1 - Sobrescribir):</em> Si en el futuro un bibliotecario corrige un error ortográfico en el título o ajusta la clasificación de un libro, simplemente sobrescribiremos el registro. No necesitamos guardar el historial de errores tipográficos.</li>
 </ul></li>
@@ -308,7 +308,9 @@ erDiagram
         string titulo
         string clasificacion
         string prefijo_lc "Jerarquía LC"
-        string clase_lc "Jerarquía LC"
+        string clase_lc "Nivel 1"
+        string subclase_lc "Nivel 2"
+        string tema_especifico_lc "Nivel 3"
     }
 
     Hecho_prestamo {

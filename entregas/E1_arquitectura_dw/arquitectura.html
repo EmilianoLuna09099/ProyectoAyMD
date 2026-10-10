@@ -230,7 +230,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../entregas/E1_arquitectura_dw/trazabilidad.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Matriz de Trazabilidad</span></a>
+ <span class="menu-text">Trazabilidad</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -320,7 +320,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>El siguiente Script DDL fue ejecutado en BigQuery definiendo estrictamente las estructuras, metadatos y relaciones lógicas entre dimensiones y hechos.</p>
 <section id="script-de-definición-ddl" class="level3">
 <h3 class="anchored" data-anchor-id="script-de-definición-ddl">Script de Definición (DDL)</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- 1. Dimensión Tiempo</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode sql code-with-copy"><code class="sourceCode sql"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">-- Dimensión Tiempo</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Tiempo` (</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    sk_fecha INT64 <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    fecha_completa <span class="dt">DATE</span>,</span>
@@ -329,7 +329,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">PRIMARY</span> <span class="kw">KEY</span> (sk_fecha) <span class="kw">NOT</span> ENFORCED</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>) OPTIONS (description <span class="op">=</span> <span class="st">'Dimensión de tiempo. SCD Tipo 0. Responde a: P1, P4'</span>);</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">-- 2. Dimensión Libro</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">-- Dimensión Libro</span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro` (</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    sk_libro INT64 <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    numero_adquisicion STRING,</span>
@@ -338,20 +338,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    prefijo_lc STRING,</span>
 <span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    clase_lc STRING,</span>
 <span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    subclase_lc STRING,</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="kw">PRIMARY</span> <span class="kw">KEY</span> (sk_libro) <span class="kw">NOT</span> ENFORCED</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>) OPTIONS (description <span class="op">=</span> <span class="st">'Dimensión de ejemplares físicos. SCD Tipo 1. Responde a: P1, P2, P3, P4'</span>);</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co">-- 3. Tabla de Hechos: Préstamos</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> `e1<span class="op">-</span>aymd.eq01_dw.Hecho_Prestamo` (</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>    sk_libro INT64 <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    sk_fecha_prestamo INT64 <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    sk_fecha_devolucion INT64,</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    cantidad_prestamos INT64,</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    dias_prestamo INT64,</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (sk_libro) <span class="kw">REFERENCES</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro`(sk_libro) <span class="kw">NOT</span> ENFORCED,</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (sk_fecha_prestamo) <span class="kw">REFERENCES</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Tiempo`(sk_fecha) <span class="kw">NOT</span> ENFORCED,</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (sk_fecha_devolucion) <span class="kw">REFERENCES</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Tiempo`(sk_fecha) <span class="kw">NOT</span> ENFORCED</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>) OPTIONS (description <span class="op">=</span> <span class="st">'Grano: Una fila por cada evento de préstamo de un ejemplar físico.'</span>);</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    tema_especifico_lc STRING,</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="kw">PRIMARY</span> <span class="kw">KEY</span> (sk_libro) <span class="kw">NOT</span> ENFORCED</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>) OPTIONS (description <span class="op">=</span> <span class="st">'Dimensión de ejemplares físicos. SCD Tipo 1. Responde a: P1, P2, P3, P4'</span>);</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="co">-- Tabla de Hechos: Préstamos</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">CREATE</span> <span class="kw">TABLE</span> `e1<span class="op">-</span>aymd.eq01_dw.Hecho_Prestamo` (</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>    sk_libro INT64 <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    sk_fecha_prestamo INT64 <span class="kw">NOT</span> <span class="kw">NULL</span>,</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    sk_fecha_devolucion INT64,</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    cantidad_prestamos INT64,</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>    dias_prestamo INT64,</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (sk_libro) <span class="kw">REFERENCES</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro`(sk_libro) <span class="kw">NOT</span> ENFORCED,</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (sk_fecha_prestamo) <span class="kw">REFERENCES</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Tiempo`(sk_fecha) <span class="kw">NOT</span> ENFORCED,</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="kw">FOREIGN</span> <span class="kw">KEY</span> (sk_fecha_devolucion) <span class="kw">REFERENCES</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Tiempo`(sk_fecha) <span class="kw">NOT</span> ENFORCED</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>) OPTIONS (description <span class="op">=</span> <span class="st">'Grano: Una fila por cada evento de préstamo de un ejemplar físico.'</span>);</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Evidencia de la creación de los esquemas en el DW:</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
@@ -395,33 +396,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> </span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    <span class="fu">COALESCE</span>(l.clase_lc, <span class="st">'Sin Clasificación'</span>) <span class="kw">AS</span> clase,</span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    l.subclase_lc <span class="kw">AS</span> subclase,</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">SUM</span>(h.cantidad_prestamos) <span class="kw">AS</span> total_prestamos</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro` l</span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="kw">LEFT</span> <span class="kw">JOIN</span> `e1<span class="op">-</span>aymd.eq01_dw.Hecho_Prestamo` h <span class="kw">ON</span> l.sk_libro <span class="op">=</span> h.sk_libro</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> <span class="kw">ROLLUP</span>(clase, l.subclase_lc)</span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="kw">ORDER</span> <span class="kw">BY</span> clase, subclase;</span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="co">-- Responde: P3 Criterios de descarte (Ejemplares con CERO uso o nula circulación)</span></span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> </span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    l.numero_adquisicion,</span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    l.titulo,</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    <span class="fu">COALESCE</span>(<span class="fu">SUM</span>(h.cantidad_prestamos), <span class="dv">0</span>) <span class="kw">AS</span> historico_prestamos</span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro` l</span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="kw">LEFT</span> <span class="kw">JOIN</span> `e1<span class="op">-</span>aymd.eq01_dw.Hecho_Prestamo` h <span class="kw">ON</span> l.sk_libro <span class="op">=</span> h.sk_libro</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> l.numero_adquisicion, l.titulo</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="kw">HAVING</span> historico_prestamos <span class="op">=</span> <span class="dv">0</span>;</span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a><span class="co">-- Responde: P4 Factores de obsolescencia (Tendencia de caída temporal)</span></span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> </span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    t.anio <span class="kw">AS</span> anio_prestamo,</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    l.clase_lc <span class="kw">AS</span> area_tematica,</span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    <span class="fu">SUM</span>(h.cantidad_prestamos) <span class="kw">AS</span> total_prestamos</span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> `e1<span class="op">-</span>aymd.eq01_dw.Hecho_Prestamo` h</span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="kw">INNER</span> <span class="kw">JOIN</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro` l <span class="kw">ON</span> h.sk_libro <span class="op">=</span> l.sk_libro</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="kw">INNER</span> <span class="kw">JOIN</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Tiempo` t <span class="kw">ON</span> h.sk_fecha_prestamo <span class="op">=</span> t.sk_fecha</span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> t.anio <span class="kw">IS</span> <span class="kw">NOT</span> <span class="kw">NULL</span></span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> t.anio, l.clase_lc</span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="kw">ORDER</span> <span class="kw">BY</span> l.clase_lc, t.anio;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    l.tema_especifico_lc <span class="kw">AS</span> tema_especifico,</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>    <span class="fu">SUM</span>(h.cantidad_prestamos) <span class="kw">AS</span> total_prestamos</span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro` l</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a><span class="kw">LEFT</span> <span class="kw">JOIN</span> `e1<span class="op">-</span>aymd.eq01_dw.Hecho_Prestamo` h <span class="kw">ON</span> l.sk_libro <span class="op">=</span> h.sk_libro</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> <span class="kw">ROLLUP</span>(clase, l.subclase_lc, l.tema_especifico_lc)</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="kw">ORDER</span> <span class="kw">BY</span> clase, subclase, tema_especifico;</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="co">-- Responde: P3 Criterios de descarte (Ejemplares con Cero uso o nula circulación)</span></span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> </span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>    l.numero_adquisicion,</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>    l.titulo,</span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">COALESCE</span>(<span class="fu">SUM</span>(h.cantidad_prestamos), <span class="dv">0</span>) <span class="kw">AS</span> historico_prestamos</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro` l</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a><span class="kw">LEFT</span> <span class="kw">JOIN</span> `e1<span class="op">-</span>aymd.eq01_dw.Hecho_Prestamo` h <span class="kw">ON</span> l.sk_libro <span class="op">=</span> h.sk_libro</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> l.numero_adquisicion, l.titulo</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a><span class="kw">HAVING</span> historico_prestamos <span class="op">=</span> <span class="dv">0</span>;</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a><span class="co">-- Responde: P4 Factores de obsolescencia (Tendencia de caída temporal)</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a><span class="kw">SELECT</span> </span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    t.anio <span class="kw">AS</span> anio_prestamo,</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>    l.clase_lc <span class="kw">AS</span> area_tematica,</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>    <span class="fu">SUM</span>(h.cantidad_prestamos) <span class="kw">AS</span> total_prestamos</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a><span class="kw">FROM</span> `e1<span class="op">-</span>aymd.eq01_dw.Hecho_Prestamo` h</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a><span class="kw">INNER</span> <span class="kw">JOIN</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Libro` l <span class="kw">ON</span> h.sk_libro <span class="op">=</span> l.sk_libro</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="kw">INNER</span> <span class="kw">JOIN</span> `e1<span class="op">-</span>aymd.eq01_dw.Dim_Tiempo` t <span class="kw">ON</span> h.sk_fecha_prestamo <span class="op">=</span> t.sk_fecha</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="kw">WHERE</span> t.anio <span class="kw">IS</span> <span class="kw">NOT</span> <span class="kw">NULL</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a><span class="kw">GROUP</span> <span class="kw">BY</span> t.anio, l.clase_lc</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a><span class="kw">ORDER</span> <span class="kw">BY</span> l.clase_lc, t.anio;</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p><strong>Evidencia de validación sintáctica en BigQuery:</strong></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
